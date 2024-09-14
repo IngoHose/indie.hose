@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>indie.hose</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>indie.hose. Alles geht.</h1>
+    </header>
+
+    <main>
+        <article>
+            <h2>Erster Blogbeitrag</h2>
+            <p>Das ist der Inhalt meines ersten Blogbeitrags.</p>
+        </article>
+        <article>
+            <h2>Zweiter Blogbeitrag</h2>
+            <p>Hier ist der Text für meinen zweiten Beitrag.</p>
+        </article>
+    </main>
+
+    <footer>
+        <p>© 2024 indie.hose</p>
+    </footer>
+</body>
+</html>
