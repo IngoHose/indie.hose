@@ -19,7 +19,6 @@
                 <h3>Radio.indie-hose gestartet</h3>
                 <p>Euer neues Lieblingsradio für freshe Indie-Tunes und Perlen unter dem Radar ist nun auf laut.fm gestartet. Hört doch gerne mal rein und gebt uns konstruktives Feedback auf unserer Instapage: @radio.indie-hose. Viel Spaß beim Hören.
             <article>
-                
         </section>
 
         <!-- Zweite Rubrik -->
@@ -32,12 +31,12 @@
         <section>
             <h2>Höre unseren Stream</h2>
             <!-- Hier kannst du den Laut.fm Webplayer einfügen -->
-            <iframe src="https://laut.fm/deinradiostation" frameborder="0" width="300" height="150"></iframe>
+            <iframe width="100%" height="150" id="widget" name="widget" border="0" style="border:0px" allowtransparency="true" scrolling="no" src="//laut.fm/widgets/player_for/indie-hose?player%5Bstations%5D=indie-hose&player%5Bcolor%5D%5Bcolor%5D=white&player%5Bshadow%5D=true&player%5Bdisplay%5D%5Bborder%5D%5Bradius%5D=10px&player%5Bcolor%5D%5Bbackground_to%5D=%23666666&player%5Bcolor%5D%5Bbackground_from%5D=%23333333&player%5Bborder%5D%5Bcolor%5D=%23cccccc&player%5Bborder%5D%5Bwidth%5D=0px&player%5Bbutton%5D%5Bcolor%5D%5Bbackground_to%5D=%23333333&player%5Bbutton%5D%5Bcolor%5D%5Bbackground_from%5D=%23111111&player%5Bbutton%5D%5Bborder%5D%5Bcolor%5D=%23333333&player%5Bbutton%5D%5Bborder%5D%5Bwidth%5D=2px">widget</iframe> 
         </section>
     </main>
 
     <footer>
-        <p>© 2024 Radio Indie Hose</p>
+        <p>© 2024 Radio-indie.hose</p>
     </footer>
 </body>
 </html>
