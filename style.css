@@ -17,6 +17,10 @@ main {
     padding: 20px;
 }
 
+a {
+    text-decoration: none;
+}
+
 article {
     background-color: white;
     margin: 20px 0;
