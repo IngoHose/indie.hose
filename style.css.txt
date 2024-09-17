@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: slateblue;
+    background-color: #6a5acd;
 }
 
 header {
@@ -13,7 +13,7 @@ header {
 }
 
 text {
-    color: white;
+    color: #FFFFFF;
 }
 
 main {
