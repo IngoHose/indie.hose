@@ -3,12 +3,12 @@ background-color: slateblue;
 color: white;
 font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    padding: 0 0 0 20px ;
+    padding: 0 20px 0 20px ;
 }
 
 nav {
     background-color: #4b4949;
-    padding: 1rem;
+    padding: 5px;
 }
 
 nav ul {
