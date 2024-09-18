@@ -83,7 +83,7 @@ article {
 
 footer {
     text-align: left;
-    padding: 10px;
+    padding: 1px 0 0 10px;
     background-color: #333;
     color: white;
     position: fixed;
