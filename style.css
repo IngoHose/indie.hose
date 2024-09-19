@@ -67,13 +67,14 @@ main {
 .webplayer {
     text-align: left;
     margin: 10px 0;
+    width: 66.6%;
 }
 
 .webplayer iframe {
     width: 100%;
     height: auto;
-    max-width: 400px;
-    aspect-ratio: 16 / 9;
+    max-width: 100%;
+  
 }
 
 @media (max-width: 768px) and (orientation: portrait) {
