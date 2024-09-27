@@ -162,6 +162,11 @@ article {
     line-height: 1.5
 }
 
+img {
+  max-width: 100%;
+  max-height: auto;  
+}
+
 footer {
     text-align: left;
     padding-left: 20px;
