@@ -145,6 +145,14 @@ main {
 .news {
     background-color: slateblue;
     border-radius: 10px;
+    padding: 0 30px 0 10px;
+    text-align: justify;
+    line-height: 1.5;
+    
+}
+.update {
+    background-color: slateblue;
+    border-radius: 10px;
     padding: 10px;
     text-align: justify;
     line-height: 1.5;
