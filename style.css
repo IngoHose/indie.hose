@@ -146,6 +146,8 @@ main {
     background-color: slateblue;
     border-radius: 10px;
     padding: 10px;
+    line-height: 1.5;
+    max-width: 66%;
 }
 
 .news h2{
