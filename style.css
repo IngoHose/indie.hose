@@ -146,9 +146,9 @@ main {
     background-color: slateblue;
     border-radius: 10px;
     padding: 10px;
+    text-align: justify;
     line-height: 1.5;
 }
-
 .about {
      background-color: slateblue;
     border-radius: 10px;
