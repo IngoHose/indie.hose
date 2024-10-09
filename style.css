@@ -146,7 +146,7 @@ main {
 
 .article-container article {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-    padding: 10px 40px 10px 40px;
+    padding: 10px 25px 10px 25px;
     border-radius: 5px;
     text-align: justify;
     line-height: 1.5
