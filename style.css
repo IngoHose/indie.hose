@@ -190,7 +190,7 @@ main.blog-area {
   padding: 15px 20px;
 }
 
-.support,
+.support,.sendeplan,
 .about {
   margin: 20px 0;
   background-color: #33333350;
@@ -270,8 +270,18 @@ footer {
     margin-top: 150px;
   }
 
+  .support,.sendeplan,.about,.kontakt {
+    width: 100%;
+    text-align: justify;
+    margin-top: 150px;
+  }
+
   .shorts-area {
     display: none;
     text-align: justify;
+  }
+
+  img {
+    margin-top: 150px;
   }
 }
