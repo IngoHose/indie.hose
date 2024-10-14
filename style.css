@@ -1,5 +1,5 @@
 body {
-  background-color: slateblue;
+  background-color: rgb(115, 93, 243);
   color: white;
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
@@ -77,7 +77,7 @@ nav ul li a:hover {
 .subheader {
   display: flex;
   align-items: center;
-  background-color: slateblue;
+  background-color: rgb(115, 93, 243);
   padding: 10px 30px;
   position: fixed;
   top: 60px;
