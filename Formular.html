@@ -1,8 +1,50 @@
 <form id="articleForm">
-  <input type="text" name="author" placeholder="Autorname" required />
-  <input type="date" name="date" required />
-  <input type="text" name="title" placeholder="Titel" required />
-  <input type="text" name="subtitle" placeholder="Untertitel" />
-  <textarea name="content" placeholder="Inhaltstext" required></textarea>
+  <input type="text" name="author" placeholder="Autorname" required><br>
+  <input type="date" name="date" required><br>
+  <input type="text" name="title" placeholder="Titel" required><br>
+  <textarea name="content" placeholder="Inhalt" required></textarea><br>
   <button type="submit">Artikel einreichen</button>
 </form>
+
+<script>
+  document.getElementById('articleForm').addEventListener('submit', async function (e) {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+    const article = {
+      author: formData.get('author'),
+      date: formData.get('date'),
+      title: formData.get('title'),
+      content: formData.get('content')
+    };
+
+    const content = `---
+author: ${article.author}
+date: ${article.date}
+title: ${article.title}
+---
+${article.content}`;
+
+    const token = 'DEIN_GITHUB_TOKEN';
+    const repo = 'DEIN_REPO';
+    const username = 'DEIN_USERNAME';
+    const filename = `${article.title.replace(/\s+/g, '-')}.md`;
+
+    const response = await fetch(`https://api.github.com/repos/${username}/${repo}/contents/blog/${filename}`, {
+      method: 'PUT',
+      headers: {
+        'Authorization': `token ${token}`,
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        message: `Artikel hinzugefügt: ${article.title}`,
+        content: btoa(content)
+      })
+    });
+
+    if (response.ok) {
+      alert('Artikel erfolgreich eingereicht!');
+    } else {
+      alert('Fehler beim Hochladen des Artikels.');
+    }
+  });
+</script>
