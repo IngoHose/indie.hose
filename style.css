@@ -162,16 +162,45 @@ main.blog-area {
   width: 70%;
   display: flex;
   flex-direction: column;
-  gap: 30px;
   border-radius: 5px;
   text-align: justify;
-  line-height: 1.5;
+  gap: 30px;
+  padding-left: 30px;
+}
+
+.blog-area p {
+  margin: 16px 0;
+}
+
+.blog-area h3 {
+  margin-bottom: 16px;
+}
+
+.blog-area h4 {
+  text-align: end;
+  font-size: small;
 }
 
 .blog-area article {
   background-color: #33333350;
   padding: 15px 20px;
-  }
+  float: left;
+}
+
+.blog-area ol {
+  padding-left: 30px;
+}
+
+.blog-area img {
+ float: right;
+ padding-left: 20px;
+ width: 300px;  
+ height: 300px;
+}
+
+.blog-area a, .blog-area a:visited {
+  color: white;
+}
 
 .shorts-area {
   position: fixed;
