@@ -24,7 +24,8 @@
         top: 3.7rem;
         left: 0;
         font-size: small;
-        padding-bottom: 3px;
+        padding-bottom: 10px;
+        width: 100%;
     }
 
     .nav-open nav ul {
@@ -55,11 +56,19 @@ main {
 }
  
 .player-mobil {
-    background: #333;
         font-size: 12pt;
         flex-wrap: nowrap;
     }
+
+    .playbutton {
+        display: none;
+    }
     
+    .info {
+        display: flex;
+        align-items: center;
+        padding: 10px 0;
+    }
 
     .blog-area {
         width: 100%;
