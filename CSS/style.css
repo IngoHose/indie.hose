@@ -37,7 +37,7 @@ header {
 
 .logo h2 {
   font-size: 12px;
-  color:rgb(135, 115, 247);
+  color: rgb(135, 115, 247);
   padding-bottom: 5px;
 }
 
@@ -59,13 +59,13 @@ header {
   align-items: center;
 }
 
-.playbutton a, .info a {
+.playbutton a,
+.info a {
   display: flex;
   color: white;
   text-decoration: none;
   font-size: smaller;
   justify-content: center;
-  
 }
 
 .info {
@@ -99,9 +99,9 @@ header {
 
 @media (min-width: 768px) {
 
-.player-mobil {
-  display: none;
-}
+  .player-mobil {
+    display: none;
+  }
 }
 
 nav ul {
@@ -143,7 +143,7 @@ nav ul li a:hover {
 main {
   position: relative;
   margin-top: 30px;
-  display: flex;  
+  display: flex;
   line-height: 1.5;
 }
 
@@ -187,13 +187,14 @@ main.blog-area {
 }
 
 .blog-area img {
- float: right;
- padding-left: 20px;
- width: 300px;  
- height: 300px;
+  float: right;
+  padding-left: 20px;
+  width: 300px;
+  height: 300px;
 }
 
-.blog-area a, .blog-area a:visited {
+.blog-area a,
+.blog-area a:visited {
   color: white;
 }
 
@@ -234,12 +235,13 @@ main.blog-area {
 .about p {
   margin: 16px 0;
 }
+
 .about h2 {
   margin-bottom: 16px;
 }
 
 .sendeplan h2 {
-padding-left: 30px;
+  padding-left: 30px;
 }
 
 .link {
@@ -264,10 +266,9 @@ padding-left: 30px;
   border: solid black;
 }
 
-footer {  
+footer {
   text-align: left;
   padding: 100px 30px 30px;
   color: white;
   margin-top: 5px;
 }
-
