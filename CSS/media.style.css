@@ -10,8 +10,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: rgb(115, 93, 243);
   color: white;
-  font-size: 16px;
-}
+ }
 
 header {
   display: flex;
@@ -45,7 +44,6 @@ nav ul {
   background-color: #333;
   top: 3.7rem;
   left: 0;
-  font-size: small;
   padding-bottom: 10px;
   width: 100%;
   list-style: none;
@@ -149,13 +147,12 @@ main {
   text-align: justify;
   padding: 10px 10px 0;
   gap: 1rem;
+  font-size: 0.8rem;
 }
 
 .blog-area article {
   padding: 10px;
-  font-size: small;
   background-color: #33333350;
-  /* float: left; */
 }
 
 .blog-area p {
@@ -168,7 +165,7 @@ main {
 
 .blog-area h4 {
   text-align: end;
-  font-size: small;
+  font-size: 0.7rem;
 }
 
 .blog-area ol {
@@ -176,8 +173,10 @@ main {
 }
 
 .blog-area img {
-  width: 200px;
-  height: 200px;
+  width: 12rem;
+  height: auto;
+  float: right;
+  margin-left: 15px;
 }
 
 .blog-area a,
