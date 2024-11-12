@@ -167,10 +167,24 @@
     padding-left: 30px;
   }
   
-  .blog-area img {
-   width: 20rem;
-   height: auto;
-  }
+  .image-caption {
+  float: right;
+  margin-left: 20px;
+  width: 200px;
+  text-align: left;
+ }
+
+.image-caption img {
+  width: 100%;
+  height: auto;
+}
+
+.image-caption figcaption {
+  font-size: 14px;
+  color: white;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
   
   .blog-area a,
   .blog-area a:visited {
