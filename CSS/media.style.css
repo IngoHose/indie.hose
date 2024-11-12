@@ -172,11 +172,23 @@ main {
   padding-left: 20px;
 }
 
-.blog-area img {
-  width: 12rem;
-  height: auto;
+.image-caption {
   float: right;
-  margin-left: 15px;
+  margin-left: 20px;
+  width: 200px;
+  text-align: left;
+ }
+
+.image-caption img {
+  width: 100%;
+  height: auto;
+}
+
+.image-caption figcaption {
+  font-size: 14px;
+  color: white;
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
 
 .blog-area a,
