@@ -39,7 +39,7 @@ header {
 }
 
 nav ul {
-  display: flex;
+  display: none;
   position: absolute;
   background-color: #333;
   top: 3.7rem;
@@ -48,7 +48,6 @@ nav ul {
   width: 100%;
   list-style: none;
   font-size: small;
-  justify-content: space-between;
 }
 
 .nav-open nav ul {
