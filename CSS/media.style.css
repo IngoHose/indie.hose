@@ -222,31 +222,32 @@ main {
   margin-left: 0;
 }
 
-footer {
-  padding: 0 0 20px 10px;
-}
-
 .kontaktformular {
   border-radius: 8px;
 }
+
 .formulargruppe {
   margin-bottom: 15px;
 }
+
 label {
   display: block;
   margin-bottom: 5px;
 }
+
 input, textarea {
   width: 100%;
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
+
 .datenschutz {
   font-size: 0.9em;
   color: #ffffff;
   margin-top: 10px;
 }
+
 button {
   background-color: #007bff;
   color: white;
@@ -257,4 +258,8 @@ button {
 }
 button:hover {
   background-color: #0056b3;
+}
+
+footer {
+  padding: 0 0 20px 10px;
 }
