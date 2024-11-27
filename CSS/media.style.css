@@ -51,10 +51,12 @@ nav ul {
 
 .nav-open nav ul {
   display: flex;
+  flex-direction: column;
 }
 
 nav ul li {
   margin-left: 20px;
+  padding-bottom: 10px;
 }
 
 nav ul li a {
@@ -247,14 +249,33 @@ input, textarea {
   color: #ffffff;
   margin-top: 10px;
 }
-button {
-  background-color: #007bff;
+
+.artist-filter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 10px;
+  gap: 5px;
+}
+
+.artist-filter h2 {
+  font-size: 12pt;
+}
+
+.artist-filter button {
+  flex: 1 0 10%;
+  min-width: 20px;
+  text-align: center;
+  font-size: 12px;
+  background-color: #33333350;
   color: white;
   border: none;
-  padding: 10px 20px;
+  padding: 5px 10px;
+  margin: 5px;
   border-radius: 4px;
   cursor: pointer;
 }
-button:hover {
+
+.artist-filter button:hover {
   background-color: #0056b3;
 }
