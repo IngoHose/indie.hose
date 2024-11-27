@@ -109,14 +109,15 @@ document.addEventListener('DOMContentLoaded', async function () {
     // Seite erkennen (Hauptseite oder Archiv)
     const isIndexPage = document.body.classList.contains('index-page');
 
-    if (isIndexPage) {
-        // Hauptseite: Zeige nur die 3 neuesten Artikel
-        const latestArticles = articles
-            .sort((a, b) => new Date(b.date) - new Date(a.date))
-            .slice(0, 3);
-        renderArticles(latestArticles);
-    } else {
-        // Archiv: Zeige alle Artikel und erstelle Filter
-        renderArticles(articles);
-    }
+   if (isIndexPage) {
+    // Hauptseite: Zeige nur die 3 neuesten Artikel
+    const latestArticles = articles
+        .sort((a, b) => new Date(b.date) - new Date(a.date)) // Sortiere nach Datum (neueste zuerst)
+        .slice(0, 3); // Nimm die 3 neuesten
+    renderArticles(latestArticles);
+} else {
+    // Archiv: Zeige alle Artikel, sortiert nach Datum
+    const sortedArticles = articles.sort((a, b) => new Date(b.date) - new Date(a.date)); // Sortiere nach Datum (neueste zuerst)
+    renderArticles(sortedArticles);
+}
 });
