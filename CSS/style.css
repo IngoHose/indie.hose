@@ -130,47 +130,47 @@
     margin-top: 30px;
     display: flex;
     line-height: 1.5;
-  }
-   
-  .blog-area {
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    border-radius: 5px;
-    text-align: justify;
-    gap: 30px;
-    padding: 0 30px;
-    font-size: 0.9rem;
-  }
-  
-  .blog-area p {
-    margin: 16px 0;
-  }
-  
-  .blog-area h3 {
-    margin-bottom: 16px;
-  }
-  
-  .blog-area h4 {
-    text-align: end;
-    font-size: small;
-  }
-  
-  .blog-area article {
-    background-color: #33333350;
-    padding: 15px 20px;
-  }
-  
-  .blog-area ol {
-    padding-left: 30px;
-  }
-  
-  .image-caption {
+ }
+
+ .blog-area {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  text-align: justify;
+  gap: 30px;
+  padding: 0 30px;
+  font-size: 0.9rem;
+}
+
+.blog-area p {
+  margin: 16px 0;
+}
+
+.blog-area h3 {
+  margin-bottom: 16px;
+}
+
+.blog-area h4 {
+  text-align: end;
+  font-size: small;
+}
+
+.blog-area article {
+  background-color: #33333350;
+  padding: 15px 20px;
+}
+
+.blog-area ol {
+  padding-left: 30px;
+}
+
+.image-caption {
   float: right;
   margin-left: 20px;
   width: 200px;
   text-align: left;
- }
+}
 
 .image-caption img {
   width: 100%;
@@ -241,5 +241,36 @@
     padding: 100px 30px 30px;
     color: white;
     margin-top: 5px;
+  }
+
+  .artist-filter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 30px;
+    margin-bottom: 10px;
+    gap: 5px;
+  }
+  
+  .artist-filter h2 {
+    font-size: 18pt;
+  }
+  
+  .artist-filter button {
+    flex: 1 0 12%;
+    min-width: 50px;
+    text-align: center;
+    font-size: 14px;
+    background-color: #33333350;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .artist-filter button:hover {
+    background-color: #0056b3;
   }
 }
