@@ -273,4 +273,30 @@
   .artist-filter button:hover {
     background-color: #0056b3;
   }
+
+  .album {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .album:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+  
+  .album img {
+    max-height: 25%;
+    max-width: 25%;
+    object-fit: contain;
+    flex: 1;
+    padding-top: 1.5rem;
+  }
+  
+  .album-content {
+    flex: 2;
+    min-width: 250px;
+  }
 }
