@@ -282,11 +282,7 @@
     gap: 1rem;
     margin-bottom: 2rem;
   }
-  
-  .album:nth-child(odd) {
-    flex-direction: row-reverse;
-  }
-  
+    
   .album img {
     max-height: 25%;
     max-width: 25%;
