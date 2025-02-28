@@ -56,9 +56,7 @@ document.addEventListener('DOMContentLoaded', async function () {
             const articleDiv = document.createElement("div");
             articleDiv.className = "article";
 
-            articleDiv.innerHTML = `
-                <article>${article.content}</article> <!-- HTML-Content einfügen -->
-            `;
+            articleDiv.innerHTML = article.content;
 
             container.appendChild(articleDiv);
         });
@@ -105,21 +103,24 @@ document.addEventListener('DOMContentLoaded', async function () {
 
     // Artikel laden und verarbeiten
     const articles = await loadArticles();
-
+    
     // Seite erkennen (Hauptseite oder Archiv)
     const isIndexPage = document.body.classList.contains('index-page');
 
-   if (isIndexPage) {
-    // Hauptseite: Zeige nur die 3 neuesten Artikel
-    const latestArticles = articles
-        .sort((a, b) => new Date(b.date) - new Date(a.date)) // Sortiere nach Datum (neueste zuerst)
-        .slice(0, 3); // Nimm die 3 neuesten
-    renderArticles(latestArticles);
-} else {
-    // Archiv: Zeige alle Artikel, sortiert nach Datum
-    const sortedArticles = articles.sort((a, b) => new Date(b.date) - new Date(a.date)); // Sortiere nach Datum (neueste zuerst)
-    renderArticles(sortedArticles);
-}
+    if (isIndexPage) {
+        // Hauptseite: Zeige nur die 3 neuesten Artikel
+        console.log('Erkenne Hauptseite');
+        const latestArticles = articles
+            .sort((a, b) => new Date(b.date) - new Date(a.date)) // Sortiere nach Datum (neueste zuerst)
+            .slice(0, 3); // Nimm die 3 neuesten
+        console.log('Neueste Artikel:', latestArticles);
+        renderArticles(latestArticles);
+    } else {
+        // Archiv: Zeige alle Artikel, sortiert nach Datum
+        console.log('Erkenne Archivseite');
+        const sortedArticles = articles.sort((a, b) => new Date(b.date) - new Date(a.date)); // Sortiere nach Datum (neueste zuerst)
+        renderArticles(sortedArticles);
+    }
 });
 
 document.querySelectorAll(".entry").forEach((entry, index) => {
@@ -138,3 +139,7 @@ document.querySelectorAll(".entry").forEach((entry, index) => {
       }
     });
   });
+  
+
+
+
