@@ -125,7 +125,6 @@ document.addEventListener('DOMContentLoaded', async function () {
 
 document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll(".entry").forEach((entry, index) => {
-        if (index < 2) return; // Erste zwei Artikel bleiben vollständig sichtbar
 
         let button = entry.querySelector(".toggle-btn");
         let fullText = entry.querySelector(".full-text");
