@@ -123,22 +123,29 @@ document.addEventListener('DOMContentLoaded', async function () {
     }
 });
 
-document.querySelectorAll(".entry").forEach((entry, index) => {
-    if (index < 2) return; // Erste zwei Artikel bleiben vollständig sichtbar
-  
-    let button = entry.querySelector(".toggle-btn");
-    let fullText = entry.querySelector(".full-text");
-  
-    button.addEventListener("click", function () {
-      if (fullText.style.display === "none" || fullText.style.display === "") {
-        fullText.style.display = "block";
-        this.textContent = "Weniger anzeigen";
-      } else {
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".entry").forEach((entry, index) => {
+        if (index < 2) return; // Erste zwei Artikel bleiben vollständig sichtbar
+
+        let button = entry.querySelector(".toggle-btn");
+        let fullText = entry.querySelector(".full-text");
+
+        if (!button || !fullText) return; // Falls die Elemente fehlen, beende die Funktion
+
+        // Stelle sicher, dass der volle Text standardmäßig ausgeblendet ist
         fullText.style.display = "none";
-        this.textContent = "Mehr anzeigen";
-      }
+
+        button.addEventListener("click", function () {
+            if (fullText.style.display === "none") {
+                fullText.style.display = "block";
+                this.textContent = "Weniger anzeigen";
+            } else {
+                fullText.style.display = "none";
+                this.textContent = "Mehr anzeigen";
+            }
+        });
     });
-  });
+});
   
 
 
