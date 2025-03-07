@@ -125,7 +125,7 @@ document.addEventListener('DOMContentLoaded', async function () {
 
 document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll(".entry").forEach((entry, index) => {
-
+        
         let button = entry.querySelector(".toggle-btn");
         let fullText = entry.querySelector(".full-text");
 
