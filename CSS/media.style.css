@@ -40,7 +40,7 @@
   nav ul {
     display: none;
     position: absolute;
-    background-color: #333;
+    background-color: #333333;
     top: 3.7rem;
     left: 0;
     padding-bottom: 10px;
@@ -54,7 +54,6 @@
   }
 
   nav ul li {
-    margin-left: 20px;
     padding-bottom: 10px;
   }
 
@@ -138,6 +137,10 @@ main {
   flex-direction: column;
   line-height: 1.5;
   padding-bottom: 20px;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  overflow-wrap: break-word;
 }
 
 .archiv-area {
@@ -190,13 +193,18 @@ main {
   margin: 16px 0;
 }
 
+.blog-area h2 {
+  font-size: 1rem;
+}
+
 .blog-area h3 {
   margin-bottom: 16px;
+  font-size: 0.8rem;
 }
 
 .blog-area h4 {
   text-align: end;
-  font-size: 0.7rem;
+  font-size: 0.6rem;
 }
 
 .blog-area ol {
