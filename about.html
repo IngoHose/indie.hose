@@ -4,347 +4,113 @@
 <head>
   <meta charset="UTF-8">
   <meta name="author" content="Marco Puttkammer">
-  <meta name="description"
-    content="Dies ist die Blogseite des Radioprojekts indie.hose. Hier finden sich verschiedenste Artikel rund um Musik, Künstler, Alben, Konzerte, Playlists oder aktuelle Entwicklungen des Musikmarkts.">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>indie.hose</title>
-  <link rel="icon" href="logo.png" type="image/x-icon">
-  <link rel="stylesheet" href="CSS/media.style.css">
-  <link rel="stylesheet" href="CSS/style.css">
+  <meta name="description" content="Dies ist die Blogseite des Radioprojekts indie.hose. Hier finden sich verschiedenste Artikel rund um Musik, Künstler, Alben, Konzerte, Playlists oder aktuelle Entwicklungen des Musikmarkts.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Indie.Hose</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <header>
 
-    <div class="logo">
-      <h1><a href="index.html">indie<br>hose</a></h1>
+  <header id="main-header">
+    <div class="header-top">
+      <h1><a href="index.html">indie.hose</a></h1>
+      <div id="hamburger">&#9776;</div>
     </div>
 
-    <div class="menu-toggle" id="menuToggle">
-      <span class="menu-icon">≡</span>
-    </div>
+    <hr class="hr1">
 
-    <div class="player-desktop">
-      <div class="playbutton"><a href="https://laut.fm/indie-hose" target="_blank">▶</a></div>
-      <div class="info"><a href="https://laut.fm/indie-hose" target="_blank">
-          <div id="currentSong">Jetzt läuft: <span class="song-title">Lädt...</span></div>
-        </a>
-      </div>
-    </div>
-
-    <nav id="mobileNav">
-      <ul>
-
-        <li><a href="shorts.html">Shorts</a></li>
-        <li><a href="archiv.html">Archiv</a></li>
-        <li><a href="sendeplan.html">Sendeplan</a></li>
-        <li><a href="about.html">Über Uns</a></li>
-      </ul>
+    <nav id="main-nav">
+      <a href="hoeren.html">Hören</a>
+      <a href="archiv.html">Lesen</a>
+      <a href="sendeplan.html">Sendeplan</a>
+      <a href="about.html">Über uns</a>
     </nav>
-    </div>
+    
   </header>
 
-  <main>
+  <div id="overlay-nav" aria-hidden="true">
+    <button id="close-overlay" aria-label="Menü schließen">&times;</button>
+    <nav id="overlay-menu"></nav>
+  </div>
 
-    <div class="blog-area">
-      <article>
-        <h2>indie.hose bringt dir die beste Musik</h2>
-        <p>Mit <strong>indie.hose</strong> möchten wir dir in Form von Radio und Blog die Möglichkeit geben, spannende
-          Musik abseits des Mainstreams zu entdecken.</p>
-        <p>Egal ob in unserer Rotation oder den thematischen Playlists - der Fokus liegt immer darauf Musik auszuwählen,
-          die in der gängigen Radiolandschaft oder im algorithmischen Playlistsystem der Streamingdienste weniger
-          Beachtung finden. <strong>indie.hose</strong> soll eure Quelle für Neuheiten und geheimer Schätze sein.</p>
-        <p>Wir interpretieren das Wort <em>indie</em> insgesamt etwas freier. Weder müssen die Acts tatsächlich
-          Label-los sein, noch den gängigen, mit dem Wort indie konnotierten, Genres angehören. Wenn es passt, dann
-          passt es einfach.</p>
-        <p> Wir stehen noch am Anfang und probieren uns ein wenig aus. Daher freuen wir uns über dein Feedback und deine
-          Unterstützung. Weiter unten findest du Infos wie du uns auf unserer Reise supporten kannst.
-        <p>Danke fürs Einschalten!</p>
-      </article>
+  <div class="player">
+      <a class="play-button" href="https://laut.fm/indie-hose" target="_blank">▶</a>
+      <div class="now-playing-label">Jetzt läuft:</div>
+      <div class="song-scroll-container">
+          <div class="song-title" id="currentSong">Lädt...</div>
+      </div>
+  </div>
 
-      <article>
-        <h2>Spendiere uns einen Kaffee</h2>
-        <p><strong>indie.hose</strong> ist ein Herzensprojekt, doch es ist sehr zeitintensiv.</p>
-        <p>Wir kuratieren sämtliche Inhalte, pflegen Playlists, hören und selektieren Stunden über Stunden an Musik,
-          füllen den Blog mit Inhalt und coden den Webauftriff selbst. Wenn dir die Inhalte gefallen und du uns
-          unterstützen
-          möchtest, würden wir uns über einen symbolischen Kaffee freuen.</p>
-        <p>Mit deiner Hilfe kommen wir nicht nur unserem ambitionierten Ziel einer eigenen Sendelizenz näher, sondern du
-          hilfst auch aktiv mit das Songrepertoire zu vergrößern. Selbstverständlich erhoffen wir uns auch ein kleines
-          Taschengeld durch dieses Projekt, damit wir weiterhin so viel (Frei-)Zeit und Fleiß investieren können.</p>
-        <P>Wir freuen uns aber nicht nur über Kaffee, sondern auch über Weiterempfehlungen oder konstruktivem Feedback.
-        </P>
-        <p>Vielen Dank!</p>
-        <p><a class="link" id="buyMeACoffee" href="https://buymeacoffee.com/indie.hose" target="_blank">Buy Us A
-            Coffee!</a></p>
-      </article>
+  <main class="wrapper">    
 
-
-      <article>
-        <h2>Kontakt</h2>
-        <p>Schön, dass du Kontakt mit uns aufnehmen möchtest. Schreibe uns gerne bei Instagram
-          <strong>@radio_indie.hose</strong> oder nutze das Kontaktformular:
-        </p>
-
-        <p>
-        <div class="kontaktformular">
-          <form action="https://formspree.io/f/xnnqzvjo" method="post">
-            <div class="formulargruppe">
-              <label for="name">Name</label>
-              <input type="text" id="name" name="name" required>
-            </div>
-
-            <div class="formulargruppe">
-              <label for="email">E-Mail</label>
-              <input type="email" id="email" name="_replyto" required>
-            </div>
-
-            <div class="formulargruppe">
-              <label for="nachricht">Deine Nachricht</label>
-              <textarea name="message" id="nachricht" rows="5"></textarea>
-            </div>
-
-            <button type="submit">Senden</button>
-
-            <div class="datenschutz">
-              *Deine Daten werden ausschließlich zur Bearbeitung deiner Anfrage verwendet.
-            </div>
-          </form>
+        <div class="article-about">
+            <h2 class="headline">indie.hose bringt dir die beste Musik</h2>
+            <p>Mit <strong>indie.hose</strong> möchten wir dir in Form von Radio und Blog die Möglichkeit geben, spannende Musik abseits des Mainstreams zu entdecken.</p>
+            <p>Egal ob in unserer Rotation oder den thematischen Playlists - der Fokus liegt immer darauf Musik auszuwählen, die in der gängigen Radiolandschaft oder im algorithmischen Playlistsystem der Streamingdienste weniger Beachtung finden. <strong>indie.hose</strong> soll eure Quelle für Neuheiten und geheimer Schätze sein.</p>
+            <p>Wir interpretieren das Wort <em>indie</em> insgesamt etwas freier. Weder müssen die Acts tatsächlich Label-los sein, noch den gängigen, mit dem Wort indie konnotierten, Genres angehören. Wenn es passt, dann passt es einfach.</p>
+            <p> Wir stehen noch am Anfang und probieren uns ein wenig aus. Daher freuen wir uns über dein Feedback und deine Unterstützung. Weiter unten findest du Infos wie du uns auf unserer Reise supporten kannst.
+            <p>Danke fürs Einschalten!</p>
         </div>
-        </p>
-      </article>
 
+
+        <div class="article-about">
+            <h2 class="headline">Spendiere uns einen Kaffee</h2>
+            <p><strong>indie.hose</strong> ist ein Herzensprojekt, doch es ist sehr zeitintensiv.</p>
+            <p>Wir kuratieren sämtliche Inhalte, pflegen Playlists, hören und selektieren Stunden über Stunden an Musik, füllen den Blog mit Inhalt und coden den Webauftriff selbst. Wenn dir die Inhalte gefallen und du uns unterstützen möchtest, würden wir uns über einen symbolischen Kaffee freuen.</p>
+            <p>Mit deiner Hilfe kommen wir nicht nur unserem ambitionierten Ziel einer eigenen Sendelizenz näher, sondern du hilfst auch aktiv mit das Songrepertoire zu vergrößern. Selbstverständlich erhoffen wir uns auch ein kleines Taschengeld durch dieses Projekt, damit wir weiterhin so viel (Frei-)Zeit und Fleiß investieren können.</p>
+            <P>Wir freuen uns aber nicht nur über Kaffee, sondern auch über Weiterempfehlungen oder konstruktivem Feedback.</P>
+            <p>Vielen Dank!</p>
+            <p><a class="link" id="buyMeACoffee" href="https://buymeacoffee.com/indie.hose" target="_blank">Buy Us A Coffee!</a></p>
+        </div>
+
+
+        <div class="article-about">
+            <h2 class="headline">Kontakt</h2>
+            <p>Schön, dass du Kontakt mit uns aufnehmen möchtest. Schreibe uns gerne bei <a href="https://www.instagram.com/radio_indie.hose/">Instagram</a> oder nutze das Kontaktformular:
+            </p>
+
+            <p>
+                <div class="kontaktformular">
+                    <form action="https://formspree.io/f/xnnqzvjo" method="post">
+                        <div class="formulargruppe">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="formulargruppe">
+                            <label for="email">E-Mail</label>
+                            <input type="email" id="email" name="_replyto" required>
+                        </div>
+
+                        <div class="formulargruppe">
+                            <label for="nachricht">Deine Nachricht</label>
+                            <textarea name="message" id="nachricht" rows="10"></textarea>
+                        </div>
+                        
+                        <button id="submit" type="submit">Senden</button>
+
+                        <div class="datenschutz">*Deine Daten werden ausschließlich zur Bearbeitung deiner  Anfrage verwendet.
+                        </div>
+                    </form>
+                </div>
+            </p>
+        </div>
     </div>
-
-    <div class="aside-area">
-      <article>
-        <h2>Shorts - Aktuelles auf einen Blick</h2>
-      </article>
-
-      <article>
-        <div class="entry full">
-          <h3> Spannende aktuelle Releases</h3>
-          04.04. | <strong>Σtella</strong> - <em>Adagio</em><br>
-          11.04. | <strong>Bon Iver</strong> - <em>SABLE, fABLE</em><br>
-          18.04. | <strong>Beirut</strong> - <em>A Study of Losses</em><br>
-          18.04. | <strong>Tunde Adebimpe</strong> - <em>Thee Black Boltz</em><br>
-          25.04. | <strong>Viagra Boys</strong> - <em>Viagr Aboys</em><br>
-          02.05. | <strong>Press Club</strong> - <em>To All The Ones That I Love</em><br>
-          09.05. | <strong>The Amazons</strong> - <em>21st Century Fiction</em><br>
-          06.06. | <strong>Nick Mulvey</strong> - <em>Dark Harvest Pt. 1</em><br>
-          06.06. | <strong>Pulp</strong> - <em>More</em><br>
-          13.06. | <strong>Annahstasia</strong> - <em>Tether</em><br>
-          13.06. | <strong>George Houston</strong> - <em>TODC</em><br>
-          20.06. | <strong>HAIM</strong> - <em>I Quit</em><br>
-          11.07. | <strong>Wet Leg</strong> - <em>Moisturizer</em><br>
-          15.08. | <strong>Bret McKenzie</strong> - <em>Freakout City</em><br>
-          22.08. | <strong>TOPS</strong> - <em>Bury The Key</em><br>
-          29.08. | <strong>Balu Brigada</strong> - <em>Portal</em><br>
-          29.08. | <strong>The Hives</strong> - <em>The Hives Forever Forever The Hives</em><br>
-        </div>
-      </article>
-
-      <article>
-        <div class="entry full">
-          <h3>KW 23-25/25 Playlist-Update: Fresh Fit</h3>
-          <strong>Baxbys, The</strong> - Masses In Glasses<br>
-          <strong>Electric Guest</strong> - Play Your Guitar<br>
-          <strong>Hives, The</strong> - Paint A Picture<br>
-          <strong>Houston, George</strong> - The Orginal Death Card<br>
-          <strong>Little Comets</strong> - Cemeteries<br>
-          <strong>Pulp</strong> - Tina<br>
-        </div>
-      </article>
-
-      <article>
-        <div class="entry full">
-          <h3>KW 22/25 Playlist-Update: Fresh Fit</h3>
-          <strong>Balu Brigada</strong> - Backseat<br>
-          <strong>Jester, Jan & Fischer, Marti</strong> - Sauberina<br>
-          <strong>Mt. Joy & Perez, Gigi</strong> - In The Middle<br>
-          <strong>TOPS</strong> - Chlorine<br>
-          <strong>Wet Leg</strong> - CPR<br>
-        </div>
-      </article>
-
-      <article>
-        <div class="entry full">
-          <h3>KW 17-21/25 Playlist-Update: Fresh Fit</h3>
-          <strong>Balancing Act</strong> - Scar<br>
-          <strong>Chitra</strong> - Big Shot<br>
-          <strong>Franc Moody</strong> - Waiting For The Punchline (Swallertrip)<br>
-          <strong>HAIM</strong> - Down to be wrong<br>
-          <strong>Nation of Language</strong> - Inept Apollo<br>
-          <strong>NoSo</strong> - Sugar<br>
-          <strong>Sports Team</strong> - Boys These Days<br>
-          <strong>Stamey, Chris; The Lemon Twigs</strong> - Anything Is Possible<br>
-          <strong>TOPS</strong> - Chlorine<br>
-          <strong>Winston, Charlie</strong> - Never Enough<br>
-        </div>
-      </article>
-
-      <article>
-        <div class="entry full">
-          <h3>KW 16/25 Playlist-Update: Fresh Fit</h3>
-          <strong>Beirut</strong> - Ghost Train<br>
-          <strong>snuggle</strong> - Woman Lake<br>
-          <strong>Tunde Adembimpe</strong> - The Most<br>
-        </div>
-      </article>
-
-      <article>
-        <div class="entry full">
-          <h3>KW 15/25 Playlist-Update: Fresh Fit</h3>
-          <strong>Big Sleep</strong> - Pick a Cheek<br>
-          <strong>Bon Iver</strong> - There's A Rhythm<br>
-          <strong>Cassia</strong> - everyone, outside<br>
-          <strong>OK GO</strong> - Better Than This<br>
-          <strong>Toxhards, The</strong> - Sleep Talking<br>
-        </div>
-      </article>
-
-      <article>
-        <div class="entry full">
-          <h3>KW 14/25 Playlist-Update: Fresh Fit</h3>
-          <strong>Dekker</strong> - Familiar Beat<br>
-          <strong>JAWNY</strong> - Control<br>
-          <strong>Herrenmagazin</strong> - Mit halbleeren Worten<br>
-          <strong>Hives, The</strong> - Enough Is Enough<br>
-          <strong>Wet Leg</strong> - catch these fists<br>
-        </div>
-      </article>
-
-      <article>
-        <div class="entry full">
-          <h3>KW 11-13/25 Playlist-Update: Fresh Fit</h3>
-          <strong>Dirty Nice</strong> - What I Wanna Hear<br>
-          <strong>Dope Lemon</strong> - Sugar Cat<br>
-          <strong>Ezra Joseph</strong> - When You're Gone<br>
-          <strong>Little Comets</strong> - FUTURE IMPROVEMENT PLANS<br>
-          <strong>Press Club</strong> - I Am Everything<br>
-          <strong>Rions, The</strong> - Shut You Out<br>
-          <strong>Yukno</strong> - Kein Abschiedssong<br>
-        </div>
-      </article>
-
-      <article>
-        <div class="entry full">
-          <h3>KW 10/25 Playlist-Update: Fresh Fit</h3>
-          <strong>Franc Moody</strong> - Square Pegs in Round Holes<br>
-          <strong>Johann Zeijl</strong> - Follow The Moon<br>
-          <strong>Munan</strong> - Fake Love Friday Night<br>
-          <strong>Tullamarines, The</strong> - Running On Empty<br>
-          <strong>Vulfpeck</strong> - Big Dipper<br>
-        </div>
-      </article>
-
-      <article>
-        <div class="entry full">
-          <h3>KW 09/25 Playlist-Update: Fresh Fit</h3>
-          <strong>Blossoms</strong> - Mariah Carey Through Death Valley<br>
-          <strong>Little Comets</strong> - HIJKL<br>
-          <strong>Odd Couple</strong> - Allein In Berlin<br>
-          <strong>overpass</strong> - Slow<br>
-        </div>
-      </article>
-      
-      <article>
-        <div class="entry full">
-          <h3>KW 08/25 Playlist-Update: Fresh Fit</h3>
-          <strong>Cassia</strong> - miles out<br>
-          <strong>CVC</strong> - Bonnie & Clyde<br>
-          <strong>Destruction of the Cult of the Sun, The</strong> - Afterglow<br>
-          <strong>Sam Fender</strong> - Rein Me In<br>
-          <strong>Saya Gray</strong> - PUDDLE ( OF ME )<br>
-        </div>
-      </article>
-
-      <article>
-        <div class="entry full">
-          <h3>KW 07/25 Playlist-Update: Fresh Fit</h3>
-            <strong>Amazons, The</strong> - Love Is A Dog From Hell<br>
-          <strong>Beirut</strong> - Guericke's Unicorn<br>
-          <strong>Findlay</strong> - Fishbowl<br>
-          <strong>Saint Motel</strong> - Pick Me Up<br>
-          <strong>Wombats, The</strong> - Gut-Punch<br>
-        </div>
-      </article>
-
-     <!--  <article>
-        <div class="entry">
-          <h3>KW 06/25 Playlist-Update: Fresh Fit</h3>
-          <p class="preview">Diese Woche neu in der Fresh Fit:<br><br></p>
-          <p class="full-text">
-            <strong>Bambara</strong> - Letters Form Sing Sing<br>
-            <strong>Herrenmagazin</strong> - Alter Debütant<br>
-            <strong>Mid Drift</strong> - I Need Me Too (feat. V.Blvq)<br>
-            <strong>Σtella</strong> - Omorfo Mou<br>
-            <strong>Sharon Van Etten & The Attachment Theory</strong> - s/t
-          </p>
-          <button class="toggle-btn">Mehr anzeigen</button>
-        </div>
-      </article>
-
-      <article>
-        <div class="entry">
-          <h3>KW 05/25 Playlist-Update: Fresh Fit</h3>
-          <p class="preview">Diese Woche neu in der Fresh Fit:<br><br></p>
-          <p class="full-text">
-            <strong>Carter Vail</strong> - Bedsheet<br>
-            <strong>Circa Waves</strong> - Bad Guys Always Win<br>
-            <strong>DYLYN</strong> - Change Me<br>
-            <strong>KAWALA</strong> - Make A Differenc<br>
-            <strong>Tunde Adebimpe</strong> - Drop<br>
-          </p>
-          <button class="toggle-btn">Mehr anzeigen</button>
-        </div>
-      </article> -->
-
-      <!-- <article>
-        <div class="entry">
-          <h3>KW 04/25 Playlist-Update: Fresh Fit</h3>
-          <p class="preview">Diese Woche neu in der Fresh Fit:<br><br></p>
-          <p class="full-text">
-            <strong>Anteile, Die</strong> - Wie Geht Der Tanz<br>
-            <strong>Darkside</strong> - S.N.C.<br>
-            <strong>Distrust</strong> - Nid einfach<br>
-            <strong>IC3PEAK</strong> - Господи, прости меня<br>
-            <strong>Lambrini Girls</strong> - Cuntology 101<br>
-            <strong>Meatware</strong> - Howler<br>
-            <strong>Pigeon Dog</strong> - Wet Washing<br>
-            <strong>Press Club</strong> - Tightrope<br>
-          </p>
-          <button class="toggle-btn">Mehr anzeigen</button>
-        </div>
-      </article>
-
-      <article>
-        <div class="entry">
-          <h3>KW 03/25 Playlist-Update: Fresh Fit</h3>
-          <p class="preview">Diese Woche neu in der Fresh Fit:<br><br></p>
-          <p class="full-text">
-            <strong>Delights</strong> - Take A Picture<br>
-            <strong>Inhaler</strong> - A Question Of You<br>
-            <strong>Jelly Crystal</strong> - Apollo<br>
-            <strong>Mating Ritual</strong> - Shangri-blah<br>
-            <strong>Saya Gray</strong> - LIE DOWN<br>
-            <strong>Wombats, The</strong> - Can't Say No<br>
-          </p>
-          <button class="toggle-btn">Mehr anzeigen</button>
-        </div>
-      </article>
-    </div> -->
   </main>
 
-  <footer>
-    <h5>
-      © 2025 indie.hose &nbsp;&nbsp;&nbsp;
-      <a style="color: white;" href="impressum.html">Impressum</a>&nbsp;&nbsp;&nbsp;
-      <a style="color: white;" href="datenschutzerklärung.html">Datenschutz</a>
-    </h5>
-  </footer>
-
-  <script src="script.js"></script>
-
+<footer>
+  <ul>
+    <li>2025 indie.hose</li>
+    <li><a href="impressum.html">Impressum</a></li>
+    <li><a href="datenschutz.html">Datenschutz</a></li>
+  </ul>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script src="js/loadContent.js"></script>
+<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+  data-id="indie.hose" data-description="Support me on Buy me a coffee!" data-color="#BD5FFF" data-position="Right"
+  data-x_margin="10" data-y_margin="10"></script>
+<script src="js/script.js"></script>
 </body>
+
 </html>
