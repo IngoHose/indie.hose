@@ -85,11 +85,7 @@ function isReleases(file) {
 // --------------------
 async function loadIndex() {
   try {
-    const basePath = window.location.hostname.includes("github.io")
-  ? `${window.location.origin}/indie.hose/`
-  : `${window.location.origin}/`;
-
-const res = await fetch(`${basePath}content/index.json`);
+    const res = await fetch("content/index.json");
     if (!res.ok) throw new Error("Index.json konnte nicht geladen werden");
 
     const files = await res.json();
@@ -98,7 +94,7 @@ const res = await fetch(`${basePath}content/index.json`);
     // Metadaten aus jeder Datei holen
     for (const file of files) {
       try {
-        const resp = await fetch(`${basePath}${file}`);
+        const resp = await fetch(file);
         if (!resp.ok) {
           console.warn(`Datei nicht gefunden: ${file}`);
           continue;
@@ -511,6 +507,4 @@ document.addEventListener("DOMContentLoaded", () => {
     // Dann neue Inhalte laden
     loadIndex();
   }
-
 });
-
