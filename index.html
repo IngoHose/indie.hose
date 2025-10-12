@@ -4,670 +4,84 @@
 <head>
   <meta charset="UTF-8">
   <meta name="author" content="Marco Puttkammer">
-  <meta name="description"
-    content="Dies ist die Blogseite des Radioprojekts indie.hose. Hier finden sich verschiedenste Artikel rund um Musik, Künstler, Alben, Konzerte, Playlists oder aktuelle Entwicklungen des Musikmarkts.">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>indie.hose</title>
-  <link rel="icon" href="logo.png" type="image/x-icon">
-  <link rel="stylesheet" href="CSS/media.style.css">
-  <link rel="stylesheet" href="CSS/style.css">
+  <meta name="description" content="Dies ist die Blogseite des Radioprojekts indie.hose. Hier finden sich verschiedenste Artikel rund um Musik, Künstler, Alben, Konzerte, Playlists oder aktuelle Entwicklungen des Musikmarkts.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Indie.Hose</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <header>
 
-    
-
-    <div class="menu-toggle" id="menuToggle">
-      <span class="menu-icon">≡</span>
+  <header id="main-header">
+    <div class="header-top">
+      <h1><a href="index.html">indie.hose</a></h1>
+      <div id="hamburger">&#9776;</div>
     </div>
 
-    <div class="player-desktop">
-      <div class="playbutton"><a href="https://laut.fm/indie-hose" target="_blank">▶</a></div>
-      <div class="info"><a href="https://laut.fm/indie-hose" target="_blank">
-          <div id="currentSong">Jetzt läuft: <span class="song-title">Lädt...</span></div>
-        </a>
+    <hr class="hr1">
+
+    <nav id="main-nav">
+      <a href="hoeren.html">Hören</a>
+      <a href="archiv.html">Lesen</a>
+      <a href="sendeplan.html">Sendeplan</a>
+      <a href="about.html">Über uns</a>
+    </nav>
+    
+  </header>
+
+  <div id="overlay-nav" aria-hidden="true">
+    <button id="close-overlay" aria-label="Menü schließen">&times;</button>
+    <nav id="overlay-menu"></nav>
+  </div>
+
+  <div class="player">
+      <a class="play-button" href="https://laut.fm/indie-hose" target="_blank">▶</a>
+      <div class="now-playing-label">Jetzt läuft:</div>
+      <div class="song-scroll-container">
+          <div class="song-title" id="currentSong">Lädt...</div>
       </div>
     </div>
 
-    <div class="logo">
-      <h1><a href="index.html">indie<br>hose</a></h1>
-    </div>
-    
-    <nav id="mobileNav">
-      <ul>
-
-        <li><a href="shorts.html">Shorts</a></li>
-        <li><a href="archiv.html">Archiv</a></li>
-        <li><a href="sendeplan.html">Sendeplan</a></li>
-        <li><a href="about.html">Über Uns</a></li>
-      </ul>
-    </nav>
-    </div>
-  </header>
-
   <main>
+  
+  <div class="main-content">  
 
-    <div class="blog-area">
-
-      <article>
-        <div class="entry">
-          <h4>13.07.2025, Marco Puttkammer</h4>
-          <h2>Hörempfehlung:<br>Bret McKenzie - <em>Songs Without Jokes</em></h2><br>
-          <h3>Zwischen Ernsthaftigkeit und Klamauk</h3>
-          <div class="text-container">
-            <figure class="image-caption"><img src="img/Bret McKenzie - Songs Without Jokes.jpg"
-                alt="Coverartwork Songs Without Jokes">
-              <figcaption>
-                <h5>Coverartwork Songs Without Jokes</h5>
-              </figcaption>
-            </figure>
-
-            <p class="preview">
-              <strong>Bret McKenzie</strong> klingt erstmal nicht nach einem prominenten Namen in der hiesigen
-              Musiklandschaft. Das mag womöglich daran liegen, dass er erst ein Album veröffentlicht hat. Zumindest solo
-              und unter eigenem Namen. Denn zusammen mit dem primär als Schauspieler tätigen Jemaine Clement sind die
-              beiden als das Musik-Comedy-Duo <strong>Flight of the Conchords</strong> bekannt. Das Folk-Duo war nicht
-              nur auf Bühnen zu sehen, sondern auch in der begleitenden gleichnamigen Comedyserie "Flight of the
-              Conchords". Ebenfalls komödiantisch unterwegs war McKenzie als Komponist für den Kino-Film "Die Muppets",
-              für dessen Titelsong er sogar einen Oscar gewann.
-            </p>
-            <p class="full-text">
-              2022 veröffentlichte er dann sein Solo-Debütalbum unter eigenem Namen. Was erwartet man also von einem so
-              komödiantisch geprägtem Musiker? Weitere Songs im Stile der Conchords? Quietschigen Pop gesungen mit
-              Kermits Tenor? Dem Namen <em>Songs Without Jokes</em> nach schien es an der Zeit endlich mal ernste Töne
-              anzuschlagen. Oder zumindest ernste Texte:<br><br>
-
-              <em>A billion pieces of plastic floating in the ocean<br>
-                Look around the planet is bleeding <br>
-                A Child's crying the partents are weeping <br>
-                The air is filthy they don't recommend breathing</em> <br>
-              - <strong>This World</strong> <br> <br>
-
-              <em>And if all your love is done <br>
-                Call it a day, we go our separate ways <br>
-                Do us a favor and cut me loose</em> <br>
-              - <strong>If You Wanna Go</strong> <br> <br>
-
-              <em>I'm driving round blind my dear I can't see the road <br>
-                Wherever you wind up dear will you let me know <br>
-                I'm losing my mind out here I can't see the road <br>
-                Wherever I wind up dear well God only knows</em> <br>
-              - <strong>Carry On</strong><br><br>
-
-              Wer nun aber ein Fass theatralischer Balladen über entflohene Liebe oder "on-the-nose" Kommentare zum
-              Klimawandel erwartet soll wissen, dass sich kaum ein Song so anfühlt, wie man aufgrund der Lyrik meinen
-              würde. <strong>McKenzies</strong> Musik klingt handgemacht und ehrlich. Stets präsent ist das Klavier,
-              gespielt mit einer Leichtigkeit und ungebändigt als würde ein Flummi über die Tasten springen. Dazu der
-              häufige aber sich nicht abnutzende Einsatz verschiedenster Bläser. Mal akustisch, mal elektrisch gesellt
-              sich die Gitarre dazu. Vereinzelt unterstützen Synthesizer oder (E-)Orgel. <br><br>Stellenweise erinnert
-              es an Billy Joel oder Elton John und doch macht <strong>McKenzie</strong> sein ganz eigenes Ding. Es macht
-              einfach Spaß sich von ihm erklären zu lassen was den Charme von L.A. ausmacht, wie es um unsere Welt
-              steht, dass er mit einem schwierigen Abschied zu kämpfen hat oder dass er einfach an einen denkt und ein
-              kleines Liedchen da lassen wollte.<br><br>
-
-              <em>Here's a little song to let you know I love you <br>
-                Just a little tune to let you know I care <br>
-                A simple melody 'cause I've been thinking of you <br>
-                I wanted you to know I wish that I was there </em> <br>
-              - <strong>A Little Tune</strong> <br><br>
-
-              <em>Songs Without Jokes</em> klingt nicht wie <strong>Flight of the Conchords</strong>, es klingt auch
-              definitiv nicht wie die Muppets und doch erfindet sich <strong>Bret McKenzie</strong> hier nicht neu. Mal
-              fröhlich-ironisch, mal herrlich melancholisch - doch immer trifft er mit seinen <em>Songs Without
-                Jokes</em> den richtigen Ton. Wer ganz genau hinhört findet zwischen Bläsern und Klavier sogar doch die
-              eine oder andere Pointe. Und einen Ohrwurm nach dem anderen noch dazu. Herrlich! <br> <br>
-
-              Und glücklicherweise ist damit noch nicht Schluss, denn am 15. August erscheint bereits sein zweites
-              Soloalbum <em>Freak Out City</em>. Wenn es bei seinen Liedern ohne Witz schon so launisch zu ging, dann
-              vermag man sich kaum vorzustellen, wie das erst bei <em>Freak Out City</em> wird. <br><br>
-              Reinhören: <a href="https://www.youtube.com/watch?v=TUIQJmr6_b0&list=RDTUIQJmr6_b0&start_radio=1">If You
-                Wanna Go</a>
-            </p>
-
-            <button class="toggle-btn">Artikel ausklappen</button>
-          </div>
-      </article>
-
-      <article>
-        <div class="entry">
-          <h4>27.03.2025, Marco Puttkammer</h4>
-          <h2>Hörempfehlung:<br>Gengahr - <em>Red Sun Titans</em></h2><br>
-          <h3>Wenn Geister zum Träumen einladen</h3>
-          <div class="text-container">
-            <figure class="image-caption"><img src="img/Coverartwork_Gengahr_RedSunTitans.jpg"
-                alt="Alternatives Coverartwork Red Sun Titans">
-              <figcaption>
-                <h5>Alternatives Coverartwork Red Sun Titans</h5>
-              </figcaption>
-            </figure>
-
-            <p class="preview">
-              Als <strong>Gengahr</strong> bereits vor Erscheinen ihres Debüts <strong><em>A Dream Outside</em></strong>
-              für das Glastonbury '14 gebucht wurden, erhoben sich kühne Stimmen, die in der vierköpfigen Psychedelic
-              Pop-Gruppe die „Rettung der britischen Gitarrenmusik“ sahen. 8 Jahre später erschien ihr aktuelles Album
-              <strong><em>Red Sun Titans</em></strong> und zeigte deutlich, woher diese Stimmen kamen, auch wenn sich
-              die Band, die nach einem Geist-Pokémon der ersten Generation benannt ist, weiterentwickelt hat und heute
-              eher dem Dream-Pop zuzuschreiben ist.
-            </p>
-            <p class="full-text">
-              Natürlich findet sich auf <strong><em>Red Sun Titans</em></strong> wieder so manch feiner Saitenschlag,
-              doch verschwimmt die Grenze zwischen Gitarre und Synth. Für das ungeübte Ohr sind die grundsätzlich
-              verzerrten, entfremdeten und aller Regel nach unüblichen Klänge nur schwer einem Instrumententypus
-              zuzuordnen. Gitarrenmusikrettung ist das ganz sicher nicht, dafür aber phänomenal gut. Die Tracks auf
-              <strong><em>Red Sun Titans</em></strong> wollen eingängig sein, aber nicht langweilen. Sie mögen
-              stellenweise reizüberfluten und regen doch zum Träumen an. Wer sich nicht bereits in den teils ätherischen
-              Instrumentals verliert, wird spätestens durch die selten profanen Lyrics auf Reisen geschickt.<br><br>
-
-              <em>Outshone<br>
-                Heaven grieved<br>
-                Acces denied<br>
-                Unwound<br>
-                A jealous decree<br>
-                Unusually loud</em><br>
-              <strong> - Alkali</strong><br><br>
-
-              <em>In the light you say<br>
-                Here's to the one I don't wanna be<br>
-                For the righteous game<br>
-                Heels to the moon now</em><br>
-              <strong>- Heels To The Moon</strong><br><br>
-
-              <strong><em>Red Sun Titans</em></strong> bietet poppige Hits ebenso wie experimentelle Soundscapes,
-              regelmäßig durchbrochen durch Interludes, die teilweise irritieren sollen und die Brücke zur
-              angesprochenen Geist-Thematik schlagen. Nicht nur aufgrund Titel wie "<em>Haunted Spaces -
-                Interlude</em>". Über allem thront aber vor allem diese fragile Melancholie. Egal womit sich die Songs
-              nun beschäftigen, egal ob Upbeat oder Ballade - jeder Track vermag eine wohlige tröstende Wärme auszulösen
-              - trotz teilweise beunruhigender Lyrics.<br><br>
-
-              <em>Can't stop too long<br>
-                Out here they kill to belong<br>
-                Got cash to burn<br>
-                In a car they don't make anymore</em><br>
-              <strong>- Napoleon</strong><br><br>
-
-              Wer sich bis hier hin noch gewehrt hat und am Hier und Jetzt festhält, erhält mit dem Albumcloser
-              "<em>Collapse</em>" dann die finale Einladung, sich fallen zu lassen und den Trubel des Alltags für einen
-              Moment zu vergessen. Letztlich ist es doch genau das, was wir aktuell brauchen - im Gegensatz zur Rettung
-              britischer Gitarrenmusik.<br><br>
-            </p>
-
-            <button class="toggle-btn">Artikel ausklappen</button>
-          </div>
-      </article>
-
-      <article>
-        <div class="entry">
-          <h4>11.02.2025, Jacob Wölk</h4>
-          <h2>Hörempfehlung:<br>George Houston - <em>Vehicular Suicide</em></h2><br>
-          <h3>Eine energetisch-enigmatische alte Seele im Konflikt mit der Liebe und der Grenze zwischen Anbetung und
-            Aufopferung.</h3>
-          <div class="text-container">
-            <figure class="image-caption"><img src="img/GeorgeHouston_VehicularSuicide.png"
-                alt="Coverartwork Vehicular Suicide">
-              <figcaption>
-                <h5>Coverartwork Vehicular Suicide</h5>
-              </figcaption>
-            </figure>
-            <p class="preview">
-              Der junge Singer-Songwriter aus Donegal, Irland überzeugt mit beeindruckend ausgereiftem und informiert
-              klingendem Sound und erzählt dabei Geschichten von der Liebe und ihrem Talent das Individuum und die
-              Paare, die ihr verfallen durch sämtliche Ebenen des Fühlbaren zu katapultieren. Dass
-              <strong>Houston</strong> viel Zeit mit dem Studieren der elterlichen Plattensammlung verbracht hat, ist
-              etwas das man seiner Musik sehr genau anhören kann, denn aufmerksame HörerInnen merken schnell – dieser
-              Typ weiß genau, was er tut.
-            </p>
-            <p class="full-text">
-              Beschreiben könnte man das als eine Art „eklektischer Indie-Folk-Pop“ oder so ähnlich, ist aber ja auch
-              total nebensächlich. Denn wichtig ist, es funktioniert und weiß zu begeistern. Einflüsse bahnen sich an,
-              sowohl aus Strömungen von intelligent durchdachtem Folk-Songwriting, eingängigen, zum Bewegen anstiftenden
-              Pop-Elementen als auch einer Aura von amerikanischem Country à la Johnny Cash oder Hank Williams, verpackt
-              in einem modernen Gewand, welches dann trotzdem irgendwie so klingt als käme es aus den Sechzigern zu uns.
-              Mit dem titelgebenden Song „<em>Vehicular Suicide</em>“ und „<em>Pain</em>“ wirft <strong>Houston</strong>
-              uns zwischen Wahnsinn und Schmerz direkt sehr energetisch in medias res und fast wirkt es als würde seine
-              markant-volle Stimme über die Musik tanzen. Habe ich schon erwähnt dass seine Musik auch ganz schön weird
-              ist? Denn das ist gar nicht mal so unwichtig... wie entschuldigungslos und befreit der Ire musiziert und
-              seine Gedanken zum Ausdruck bringt ist einfach erfrischend ehrlich.<br><br>
-
-              <em>I bet life’s oh so pleasant<br>
-                Kicking back in your antidepressants<br>
-                Just wish they didn’t change the way<br>
-                You feel about me<br>
-                Wishful thinking<br>
-                That’s my thing...</em><br>
-              (In Aeternum Vive) <br><br>
-
-              Etwas melancholischer wird es darauf mit „<em>In Aeternum Vive</em>“, der Single, die mich damals
-              überhaupt erst auf <strong>George Houston</strong> aufmerksam gemacht hat. Es ist nicht immer so einfach
-              zu sagen, was genau einem an einem bestimmtem Song so gut gefällt, dass man ihn immer und immer wieder
-              hört, bis man zu vergessen scheint dass es eine Zeit im Leben gab, bevor er ein Teil davon wurde.
-              Wahrscheinlich habe ich mich damals einfach sehr verstanden gefühlt, von diesem Lied, in welchem die
-              Schwierigkeiten zweier sich liebender Menschen mit der Zuneigung füreinander kontrastieren und sie dazu
-              zwingen zu überdenken, wie gut beide wirklich füreinander sind. Welche Auswirkungen eine solche Beziehung
-              haben kann zeigen auch die nächsten Songs „<em>RedruM</em>“, der thematisch und stilistisch an eine
-              klassische Murder Ballad erinnert und „<em>White Fang</em>“, in dem versucht wird voneinander loszulassen,
-              um sich nicht noch mehr zu schaden.<br><br>
-
-              <em>Cause that’s all that I need –<br>
-                Another fucking love song<br>
-                And cherubs shitting on me...</em><br>
-              (Oh Happy Dagger)<br><br>
-
-              Dass auch Entscheidungen, die für das einvernehmlich Gute oder zumindest „Bessere“ getroffen werden
-              schmerzen können, hören wir in „<em>Oh Happy Dagger</em>“, bevor wir in „<em>Roots Grow Out</em>“ so
-              langsam wieder zu lernen beginnen, dass die Welt unter dem ganzen Schmerz immer noch ihre schöneren Seiten
-              hat, die einen fast dazu verleiten könnten wieder etwas optimistischer in die Zukunft zu blicken:<br><br>
-
-              <em>It’s still there – the sun is still shining...</em><br>
-              (Roots Grow Out)<br><br>
-
-              Insgesamt ist <strong>George Houstons</strong> „<em>Vehicular Suicide</em>“ ein weiteres Argument dafür
-              sich ab und zu die Zeit zu nehmen einem Album die Chance zu geben es in Gänze durchzuhören und sich im
-              Gesamtkontext zu entfalten.<br><br>
-              Am Ende noch ein Tipp: Die neue Single „<em>San Francisco</em>“ von <strong>George Houston</strong>
-              erscheint am 14. Februar.<br><br>
-            </p>
-            <button class="toggle-btn">Artikel ausklappen</button>
-          </div>
-      </article>
-
-      <article>
-        <div class="entry">
-          <h4>17.12.2024, Marco Puttkammer</h4>
-          <h2>Hörempfehlung:<br>Darwin Deez (Diskografie)</h2><br>
-          <h3>Eine ungewöhnliche Empfehlung für einen ungewöhnlichen Künstler</h3>
-          <div class="text-container">
-            <figure class="image-caption"><img src="img/DarwinDeez.png" alt="Coverartwork Of Course I Still Love You">
-              <figcaption>
-                <h5>Coverartwork Of Course I Still Love You</h5>
-              </figcaption>
-            </figure>
-            <ol>
-              <li>OK Bommerang</li>
-              <li>The Numbers</li>
-              <li>Caroline</li>
-              <li>Mush Machine</li>
-              <li>Wondermaker</li>
-              <li>Placeholder</li>
-              <li>Goldmine</li>
-              <li>Sophie Softly</li>
-              <li>Always There</li>
-              <li>You Never Know</li>
-            </ol>
-            <p class="preview">Musik ist Kunst, doch das vergisst man allzu oft. Zumeist dann, wenn man eine Reihe
-              belangloser und formelhaft geschriebener "Bloß-nicht-anecken-Pop-Songs" hören musste. Man erinnert sich
-              aber auch wieder daran, wenn man die musikalischen Ergüsse von Künstler*innen wie <strong>Darwin
-                Deez</strong> hört. Anlässlich seines neuen Albums <strong>Of Course I Still Love You</strong> ist es
-              doch höchste Zeit, mal genauer hinzuhören. Nicht nur in das inzwischen fünfte Album, sondern in die
-              gesamte Diskografie.</p>
-
-            <p class="full-text">Was also macht diese so besonders oder anders, dass ich hier das bedeutungsschwangere
-              Wort "Kunst" verwende? Zunächst halten wir fest: <strong>Darwin Deez</strong> trifft die ungewöhnlichen
-              Entscheidungen. Seine Songs verlangen viel Aufmerksamkeit und Toleranz gegenüber wilden Melodien und schon
-              fast anstrengenden Sounds. Vielleicht braucht es sogar 2-3 Hördurchgänge bis es klickt, aber wenn es das
-              tut, dann richtig. Das Hauptinstrument ist der Synthesizer, aber in einer selten zu hören Art. Er springt,
-              klimpert und hat so viel zu erzählen, doch leider darf er das gar nicht, denn die Inhaltsebene wird
-              restlos durch die Lyrics bespielt. Sätze wie <em>"I'm debating with the buzzer whether to buzz or
-                not"</em> (<em>The Numbers</em>) oder <em>"I'm orbiting your waist throughout the day, so maybe love is
-                orbital decay"</em> (<em>The World's Best Kisser</em>) erzeugen klare Bilder und sind doch so angenehm
-              selten gehört. Die Musik von <strong>Darwin Deez</strong> kitzelt das Gehirn in der genau richtigen Weise,
-              wenn man sie denn lässt.<br><br>
-
-              Naturgemäß lassen sie das aber die wenigsten und so kommt es, dass sich <strong>Darwin Deez</strong> mit
-              einer zwar treuen aber kleinen Fanbase begnügen muss. Für die Fans mag das vielleicht sogar eine gute
-              Sache sein, doch erscheint es wie so oft einfach ungerecht. Immerhin erzielte Deez mit seinem Erstling
-              "<strong>Darwin Deez</strong>" von 2010 einigermaßen beachtliche Erfolge und Songs wie
-              "<em>Constellations</em>" oder "<em>Radar Detector</em>" verlassen den Gehörgang nach dem Hören nur mit
-              Gewalt.<br><br>
-
-              <strong>Darwin Deez</strong> ist nischig und seine Musik wird bei einigen kaum gehört abprallen, doch es
-              lohnt sich wirklich einen zweiten Blick zu riskieren. Die Hörempfehlung soll also Diskografie-umfassend
-              sein, jedoch stelle ich hier mal das neue Werk in den Vordergrund, da es mit einem Releasedatum wie
-              Dienstag dem 17.12.2024 naturgemäß weniger Aufmerksamkeit erhält. Selbst hier trifft <strong>Darwin
-                Deez</strong> die ungewöhnlichen Entscheidungen.<br><br>
-            </p>
-            <button class="toggle-btn">Artikel ausklappen</button>
-          </div>
-      </article>
-
-      <article>
-        <div class="entry">
-          <h4>24.11.2024, Marco Puttkammer</h4>
-          <h2>Hörempfehlung:<br>Franc Moody - <em>Dream In Colour</em></h2><br>
-          <h3>Wie klingt modernfunkneodiscosoulpophouse? Großartig!</h3>
-          <div class="text-container">
-            <figure class="image-caption"><img src="img/Coverartwork Franc Moody - Dream In Colour.jpg"
-                alt="Coverartwork Dream In Colour">
-              <figcaption>
-                <h5>Coverartwork Dream In Colour © Emma Dudlyke</h5>
-              </figcaption>
-            </figure>
-            <ol>
-              <li>Dream in Colour</li>
-              <li>Terra Firma</li>
-              <li>Skin on Skin</li>
-              <li>Charge Me Up</li>
-              <li>Flesh and Blood</li>
-              <li>Night Flight</li>
-              <li>She’s Too Good for Me</li>
-              <li>Grin and Bear It</li>
-              <li>Night Flight Reprise</li>
-              <li>This is a Mood</li>
-              <li>A Little Something for the Weekend</li>
-            </ol>
-            <p class="preview">Mit den Genrebezeichnungen ist das ja immer so eine Sache. Gibt es überhaupt noch neue
-              Musik, die sich eindeutig einzelnen Genres zuschreiben lässt oder befinden wir uns nicht inzwischen
-              musikalisch in der absoluten Genrefluidität? Um die Musik der Briten <strong>Ned Franc</strong> und
-              <strong>Jon Moody</strong> exakt einordnen zu können bedarf es der Monsterkombination aus dem Titel und
-              selbst das fühlt sich noch nicht richtig an.
-            </p>
-
-            <p class="full-text">Aber verlieren wir uns nicht weiter in solch Unwichtigkeiten und befassen wir uns
-              lieber mit der Musik. Denn da gibt es einiges zu erzählen. Von dem unverschämten Groove, über die
-              Bassriffs und -Licks der Marke „sexy“ bis hin zu der mit „Flanger“-Effekt bearbeiteten Oboe, die den
-              <strong>Franc Moody</strong>-Sound so unverkennbar macht. Nicht nur auf ihrem Debutalbum, sondern
-              generell. Egal ob Club, Live oder in den eigenen vier Wänden, egal ob man einfach nur tanzen möchte oder
-              man sich in den dicht gelayerten Instrumentals verlieren möchte - <strong>Dream In Colour</strong> bietet
-              alles. Klar, man sollte eine Vorliebe für elektronische Musik haben und bei dem weiten Genre Disco nicht
-              sofort mit den Augen rollen, aber selbst für Andershörende bietet dieses Album beste Unterhaltung.<br><br>
-
-              Wenn ihr mit <strong>Dream In Colour</strong> durch seid und dadurch nicht sowieso schon tief in den
-              Groove gesogen wurdet, dann weiten wir diese Hörempfehlung gerne auf die vorangegangene EP <strong>Dance
-                Moves</strong> und das Folgealbum <strong>Into The Ether</strong> aus. Und um das Ganze abzurunden,
-              folgt noch die frohe Botschaft: das dritte Album <strong>Chewing The Fat</strong> erscheint bereits am
-              07.03.2025.
-            </p>
-            <button class="toggle-btn">Artikel ausklappen</button>
-          </div>
-      </article>
-
-      <article>
-        <h3><a href="archiv.html" target="_blank"><u>Ältere Artikel findest du im Archiv</u></a></h3>
-      </article>
-    </div>
-
-    <div class="aside-area">
-      <article>
-        <h2>Shorts - Aktuelles auf einen Blick</h2>
-      </article>
-
-      <article>
-        <div class="entry full">
-          <h3> Spannende aktuelle Releases</h3>
-          05.09. | <strong>Harding, Curtis</strong> - <em>Departures & Arrivals...</em><br>
-          05.09. | <strong>shame</strong> - <em>Cutthroats</em><br>
-          19.09. | <strong>Nation of Language</strong> - <em>Dance Called Memory</em><br>
-          26.09. | <strong>Pool Kids</strong> - <em>Easier Said Than Done</em><br>
-          26.09. | <strong>Patrick Watson</strong> - <em>Uh Oh</em><br>
-          03.10. | <strong>Say She She</strong> - <em>Cut & Rewind</em><br>
-          10.10. | <strong>Flock of Dimes</strong> - <em>The Life You Save</em><br>
-          17.10. | <strong>The Last Dinner Party</strong> - <em>From The Pyre</em><br>
-          24.10. | <strong>Circa Waves</strong> - <em>Death & Love Pt.2</em><br>
-          24.10. | <strong>Hannah Jadagu</strong> - <em>Describe</em><br>
-          07.11. | <strong>Del Water Gap</strong> - <em>Chasing The Chimera</em><br>
-          07.11. | <strong>Teen Jesus & The Jean Teasers</strong> - <em>Glory</em><br>
-          07.11. | <strong>Whitney</strong> - <em>Small Talk</em><br>
+    <section class="article-feature-section">
+      <div class="article-feature">
+        <div class="article-feature-meta">
+          <img src="" alt="">    
+          <h2 class="artist"></h2> 
+          <h2 class="title"></h2>
         </div>
-      </article>
+      <h3 class="headline"></h3>
+      <p class="intro-text"></p>
+      </div>
+    </section>
 
-      <article>
-        <div class="entry full">
-          <h3>KW 31-34/25 Playlist-Update: Fresh Fit</h3>
-          <strong>Balu Brigada</strong> - Politix<br>
-          <strong>McKenzie, Bret</strong> - Shouldna Come Here Tonight<br>
-          <strong>Powell, Mae</strong> - Linger<br>
-          <strong>Royel Otis</strong> - come on home<br>
-          <strong>Slater, Chloe</strong> - Harriet<br>
-          <strong>TOPS</strong> - Wheels At Night<br>
-          <strong>Wolf Alice</strong> - Thorns<br>
-        </div>
-      </article>
+    <section class="cards-container-section">
+      <div class="cards-container">
 
-      <article>
-        <div class="entry full">
-          <h3>KW 30/25 Playlist-Update: Fresh Fit</h3>
-          <strong>Balu Brigada</strong> - What Do We Ever Really Know?<br>
-          <strong>Nation Of Language</strong> - Under the Water<br>
-          <strong>NO CIGAR</strong> - Russian Roulette<br>
-          <strong>Royel Otis</strong> - say something<br>
-          <strong>TOPS</strong> - Annihilation<br>
-        </div>
-      </article>
+      </div>
+    </section>
 
-      <article>
-        <div class="entry full">
-          <h3>KW 27-29/25 Playlist-Update: Fresh Fit</h3>
-          <strong>Altai</strong> - Tell Me When<br>
-          <strong>Ghost Care</strong> - Waiting By The Phone<br>
-          <strong>LEISURE</strong> - Dominoes<br>
-          <strong>McKenze, Bret</strong> - Freak Out City<br>
-          <strong>Monster Rally, TOLEDO</strong> - Until the Sun Goes Down<br>
-          <strong>shame</strong> - Quiet Life<br>
-          <strong>Stolen Gin</strong> - Spoil My Night<br>
-          <strong>Wet Leg</strong> - mangetout<br>
-        </div>
-      </article>
+    <section class="shorts-section">
+    </section>
 
-      <article>
-        <div class="entry full">
-          <h3>KW 26/25 Playlist-Update: Fresh Fit</h3>
-          <strong>Beths, The</strong> - No Joy<br>
-          <strong>chanpan</strong> - endlessly<br>
-          <strong>DYLYN</strong> - Late Bloomer<br>
-          <strong>Foreign Air</strong> - Maniac<br>
-          <strong>Night Cap</strong> - Doctor Love<br>
-          <strong>Royel Otis</strong> - car<br>
-          <strong>TOPS</strong> - Falling On My Sword<br>
-        </div>
-      </article>
+  </div>   
+</main>
 
-      <article>
-        <div class="entry full">
-          <h3>KW 23-25/25 Playlist-Update: Fresh Fit</h3>
-          <strong>Baxbys, The</strong> - Masses In Glasses<br>
-          <strong>Electric Guest</strong> - Play Your Guitar<br>
-          <strong>Hives, The</strong> - Paint A Picture<br>
-          <strong>Houston, George</strong> - The Orginal Death Card<br>
-          <strong>Lewis, Mark William</strong> - Still Above<br>
-          <strong>Little Comets</strong> - Cemeteries<br>
-          <strong>Pulp</strong> - Tina<br>
-        </div>
-      </article>
-
-      <article>
-        <div class="entry full">
-          <h3>KW 22/25 Playlist-Update: Fresh Fit</h3>
-          <strong>Balu Brigada</strong> - Backseat<br>
-          <strong>Jester, Jan & Fischer, Marti</strong> - Sauberina<br>
-          <strong>Mt. Joy & Perez, Gigi</strong> - In The Middle<br>
-          <strong>TOPS</strong> - Chlorine<br>
-          <strong>Wet Leg</strong> - CPR<br>
-        </div>
-      </article>
-
-      <article>
-        <div class="entry full">
-          <h3>KW 17-21/25 Playlist-Update: Fresh Fit</h3>
-          <strong>Balancing Act</strong> - Scar<br>
-          <strong>Chitra</strong> - Big Shot<br>
-          <strong>Franc Moody</strong> - Waiting For The Punchline (Swallertrip)<br>
-          <strong>HAIM</strong> - Down to be wrong<br>
-          <strong>Nation of Language</strong> - Inept Apollo<br>
-          <strong>NoSo</strong> - Sugar<br>
-          <strong>Sports Team</strong> - Boys These Days<br>
-          <strong>Stamey, Chris; The Lemon Twigs</strong> - Anything Is Possible<br>
-          <strong>Winston, Charlie</strong> - Never Enough<br>
-        </div>
-      </article>
-
-      <!-- <article>
-        <div class="entry full">
-          <h3>KW 16/25 Playlist-Update: Fresh Fit</h3>
-          <strong>Beirut</strong> - Ghost Train<br>
-          <strong>snuggle</strong> - Woman Lake<br>
-          <strong>Tunde Adembimpe</strong> - The Most<br>
-        </div>
-      </article>
-
-      <article>
-        <div class="entry full">
-          <h3>KW 15/25 Playlist-Update: Fresh Fit</h3>
-          <strong>Big Sleep</strong> - Pick a Cheek<br>
-          <strong>Bon Iver</strong> - There's A Rhythm<br>
-          <strong>Cassia</strong> - everyone, outside<br>
-          <strong>OK GO</strong> - Better Than This<br>
-          <strong>Toxhards, The</strong> - Sleep Talking<br>
-        </div>
-      </article>
-
-      <article>
-        <div class="entry full">
-          <h3>KW 14/25 Playlist-Update: Fresh Fit</h3>
-          <strong>Dekker</strong> - Familiar Beat<br>
-          <strong>JAWNY</strong> - Control<br>
-          <strong>Herrenmagazin</strong> - Mit halbleeren Worten<br>
-          <strong>Hives, The</strong> - Enough Is Enough<br>
-          <strong>Wet Leg</strong> - catch these fists<br>
-        </div>
-      </article>
-
-      <article>
-        <div class="entry full">
-          <h3>KW 11-13/25 Playlist-Update: Fresh Fit</h3>
-          <strong>Dirty Nice</strong> - What I Wanna Hear<br>
-          <strong>Dope Lemon</strong> - Sugar Cat<br>
-          <strong>Ezra Joseph</strong> - When You're Gone<br>
-          <strong>Little Comets</strong> - FUTURE IMPROVEMENT PLANS<br>
-          <strong>Press Club</strong> - I Am Everything<br>
-          <strong>Rions, The</strong> - Shut You Out<br>
-          <strong>Yukno</strong> - Kein Abschiedssong<br>
-        </div>
-      </article> -->
-
-      <!-- <article>
-        <div class="entry full">
-          <h3>KW 10/25 Playlist-Update: Fresh Fit</h3>
-          <strong>Franc Moody</strong> - Square Pegs in Round Holes<br>
-          <strong>Johann Zeijl</strong> - Follow The Moon<br>
-          <strong>Munan</strong> - Fake Love Friday Night<br>
-          <strong>Tullamarines, The</strong> - Running On Empty<br>
-          <strong>Vulfpeck</strong> - Big Dipper<br>
-        </div>
-      </article> -->
-
-      <!-- <article>
-        <div class="entry full">
-          <h3>KW 09/25 Playlist-Update: Fresh Fit</h3>
-          <strong>Blossoms</strong> - Mariah Carey Through Death Valley<br>
-          <strong>Little Comets</strong> - HIJKL<br>
-          <strong>Odd Couple</strong> - Allein In Berlin<br>
-          <strong>overpass</strong> - Slow<br>
-        </div>
-      </article>
-
-      <article>
-        <div class="entry full">
-          <h3>KW 08/25 Playlist-Update: Fresh Fit</h3>
-          <strong>Cassia</strong> - miles out<br>
-          <strong>CVC</strong> - Bonnie & Clyde<br>
-          <strong>Destruction of the Cult of the Sun, The</strong> - Afterglow<br>
-          <strong>Sam Fender</strong> - Rein Me In<br>
-          <strong>Saya Gray</strong> - PUDDLE ( OF ME )<br>
-        </div>
-      </article> -->
-
-      <!--  <article>
-        <div class="entry full">
-          <h3>KW 07/25 Playlist-Update: Fresh Fit</h3>
-            <strong>Amazons, The</strong> - Love Is A Dog From Hell<br>
-          <strong>Beirut</strong> - Guericke's Unicorn<br>
-          <strong>Findlay</strong> - Fishbowl<br>
-          <strong>Saint Motel</strong> - Pick Me Up<br>
-          <strong>Wombats, The</strong> - Gut-Punch<br>
-        </div>
-      </article> -->
-
-      <!--  <article>
-        <div class="entry">
-          <h3>KW 06/25 Playlist-Update: Fresh Fit</h3>
-          <p class="preview">Diese Woche neu in der Fresh Fit:<br><br></p>
-          <p class="full-text">
-            <strong>Bambara</strong> - Letters Form Sing Sing<br>
-            <strong>Herrenmagazin</strong> - Alter Debütant<br>
-            <strong>Mid Drift</strong> - I Need Me Too (feat. V.Blvq)<br>
-            <strong>Σtella</strong> - Omorfo Mou<br>
-            <strong>Sharon Van Etten & The Attachment Theory</strong> - s/t
-          </p>
-          <button class="toggle-btn">Mehr anzeigen</button>
-        </div>
-      </article>
-
-      <article>
-        <div class="entry">
-          <h3>KW 05/25 Playlist-Update: Fresh Fit</h3>
-          <p class="preview">Diese Woche neu in der Fresh Fit:<br><br></p>
-          <p class="full-text">
-            <strong>Carter Vail</strong> - Bedsheet<br>
-            <strong>Circa Waves</strong> - Bad Guys Always Win<br>
-            <strong>DYLYN</strong> - Change Me<br>
-            <strong>KAWALA</strong> - Make A Differenc<br>
-            <strong>Tunde Adebimpe</strong> - Drop<br>
-          </p>
-          <button class="toggle-btn">Mehr anzeigen</button>
-        </div>
-      </article> -->
-
-      <!-- <article>
-        <div class="entry">
-          <h3>KW 04/25 Playlist-Update: Fresh Fit</h3>
-          <p class="preview">Diese Woche neu in der Fresh Fit:<br><br></p>
-          <p class="full-text">
-            <strong>Anteile, Die</strong> - Wie Geht Der Tanz<br>
-            <strong>Darkside</strong> - S.N.C.<br>
-            <strong>Distrust</strong> - Nid einfach<br>
-            <strong>IC3PEAK</strong> - Господи, прости меня<br>
-            <strong>Lambrini Girls</strong> - Cuntology 101<br>
-            <strong>Meatware</strong> - Howler<br>
-            <strong>Pigeon Dog</strong> - Wet Washing<br>
-            <strong>Press Club</strong> - Tightrope<br>
-          </p>
-          <button class="toggle-btn">Mehr anzeigen</button>
-        </div>
-      </article>
-
-      <article>
-        <div class="entry">
-          <h3>KW 03/25 Playlist-Update: Fresh Fit</h3>
-          <p class="preview">Diese Woche neu in der Fresh Fit:<br><br></p>
-          <p class="full-text">
-            <strong>Delights</strong> - Take A Picture<br>
-            <strong>Inhaler</strong> - A Question Of You<br>
-            <strong>Jelly Crystal</strong> - Apollo<br>
-            <strong>Mating Ritual</strong> - Shangri-blah<br>
-            <strong>Saya Gray</strong> - LIE DOWN<br>
-            <strong>Wombats, The</strong> - Can't Say No<br>
-          </p>
-          <button class="toggle-btn">Mehr anzeigen</button>
-        </div>
-      </article>
-    </div> -->
-
-  </main>
-
-  <footer>
-    <h5>
-      © 2025 indie.hose &nbsp;&nbsp;&nbsp;
-      <a style="color: white;" href="impressum.html">Impressum</a>&nbsp;&nbsp;&nbsp;
-      <a style="color: white;" href="datenschutzerklärung.html">Datenschutz</a>
-    </h5>
-  </footer>
-
-  <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
-    data-id="indie.hose" data-description="Support me on Buy me a coffee!" data-color="#BD5FFF" data-position="Right"
-    data-x_margin="10" data-y_margin="10"></script>
-  <script src="script.js"></script>
+<footer>
+  <ul>
+    <li>2025 indie.hose</li>
+    <li><a href="impressum.html">Impressum</a></li>
+    <li><a href="datenschutz.html">Datenschutz</a></li>
+  </ul>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script src="js/loadContent.js"></script>
+<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+  data-id="indie.hose" data-description="Support me on Buy me a coffee!" data-color="#BD5FFF" data-position="Right"
+  data-x_margin="10" data-y_margin="10"></script>
+<script src="js/script.js"></script>
 </body>
 
 </html>
-
-
