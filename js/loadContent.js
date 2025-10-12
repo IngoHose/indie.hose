@@ -85,7 +85,7 @@ function isReleases(file) {
 // --------------------
 async function loadIndex() {
   try {
-    const res = await fetch("content/index.json");
+    const res = await fetch("./content/index.json");
     if (!res.ok) throw new Error("Index.json konnte nicht geladen werden");
 
     const files = await res.json();
@@ -507,4 +507,5 @@ document.addEventListener("DOMContentLoaded", () => {
     // Dann neue Inhalte laden
     loadIndex();
   }
+
 });
