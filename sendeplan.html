@@ -1,153 +1,63 @@
 <!DOCTYPE html>
 <html lang="de">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="author" content="Marco Puttkammer">
-        <meta name="description"
-          content="Dies ist die Blogseite des Radioprojekts indie.hose. Hier finden sich verschiedenste Artikel rund um Musik, Künstler, Alben, Konzerte, Playlists oder aktuelle Entwicklungen des Musikmarkts.">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>indie.hose</title>
-        <link rel="icon" href="logo.png" type="image/x-icon">
-        <link rel="stylesheet" href="CSS/media.style.css">
-        <link rel="stylesheet" href="CSS/style.css">
-    </head>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Marco Puttkammer">
+  <meta name="description" content="Dies ist die Blogseite des Radioprojekts indie.hose. Hier finden sich verschiedenste Artikel rund um Musik, Künstler, Alben, Konzerte, Playlists oder aktuelle Entwicklungen des Musikmarkts.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Indie.Hose</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
-  <header>
 
-    <div class="logo">
-      <h1><a href="index.html">indie<br>hose</a></h1>
+  <header id="main-header">
+    <div class="header-top">
+      <h1><a href="index.html">indie.hose</a></h1>
+      <div id="hamburger">&#9776;</div>
     </div>
 
-    <div class="menu-toggle" id="menuToggle">
-      <span class="menu-icon">≡</span>
-    </div>
+    <hr class="hr1">
+
+    <nav id="main-nav">
+      <a href="hoeren.html">Hören</a>
+      <a href="archiv.html">Lesen</a>
+      <a href="sendeplan.html">Sendeplan</a>
+      <a href="about.html">Über uns</a>
+    </nav>
     
-    <div class="player-desktop">
-      <div class="playbutton"><a href="https://laut.fm/indie-hose" target="_blank">▶</a></div>
-      <div class="info"><a href="https://laut.fm/indie-hose" target="_blank">
-          <div id="currentSong">Jetzt läuft: <span class="song-title">Lädt...</span></div>
-        </a>
+  </header>
+
+  <div id="overlay-nav" aria-hidden="true">
+    <button id="close-overlay" aria-label="Menü schließen">&times;</button>
+    <nav id="overlay-menu"></nav>
+  </div>
+
+  <div class="player">
+      <a class="play-button" href="https://laut.fm/indie-hose" target="_blank">▶</a>
+      <div class="now-playing-label">Jetzt läuft:</div>
+      <div class="song-scroll-container">
+          <div class="song-title" id="currentSong">Lädt...</div>
       </div>
     </div>
 
-    <nav id="mobileNav">
-      <ul>
-
-        <li><a href="index.html">Home</a></li>
-        <li><a href="archiv.html">Archiv</a></li>
-        <li><a href="sendeplan.html">Sendeplan</a></li>
-        <li><a href="about.html">Über Uns</a></li>
-        <li><a href="kontakt.html">Kontakt</a></li>
-      </ul>
-    </nav>
-    </div>
-  </header>
-
 <main>
+    <h2>Coming soon!</h2>
+</main>
 
-  
-<div class="blog-area">
-        <section class="sendeplan">
-            <img src="img/sendeplan.png" alt="Eine Visualisierung des Sendeplans mit allen Sendungen und Uhrzeiten" width="1570px" height="667px">
-          </section>
+<footer>
+  <ul>
+    <li>2025 indie.hose</li>
+    <li><a href="impressum.html">Impressum</a></li>
+    <li><a href="datenschutz.html">Datenschutz</a></li>
+  </ul>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script src="js/loadContent.js"></script>
+<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+  data-id="indie.hose" data-description="Support me on Buy me a coffee!" data-color="#BD5FFF" data-position="Right"
+  data-x_margin="10" data-y_margin="10"></script>
+<script src="js/script.js"></script>
+</body>
 
-          <article>
-            <h3> Alle Sendungen auf einen Blick</h3>
-            <strong>Fresh Fit:</strong> Neue Releases<br>
-            <strong>D-A-CH:</strong> Deutsche Texte<br>
-            <strong>Vintage:</strong> Oldies & Klassiker<br>
-            <strong>Morning Jacket:</strong> Musik zum Frühstücken<br>
-            <strong>INDIE-PARTY:</strong> Spricht für sich selbst!
-            <p>Wenn keine ausgewiesene Sendung läuft hörst du unsere Rotation</p>
-        </article>
-    
-</div>
- <div class="aside-area">
-      <article>
-        <h2>Shorts - Aktuelles auf einen Blick</h2>
-      </article>
-
-            <article>
-        <div class="entry full">
-          <h3> Spannende aktuelle Releases</h3>
-          05.09. | <strong>Harding, Curtis</strong> - <em>Departures & Arrivals...</em><br>
-          05.09. | <strong>shame</strong> - <em>Cutthroats</em><br>
-          19.09. | <strong>Nation of Language</strong> - <em>Dance Called Memory</em><br>
-          26.09. | <strong>Pool Kids</strong> - <em>Easier Said Than Done</em><br>
-          26.09. | <strong>Patrick Watson</strong> - <em>Uh Oh</em><br>
-          03.10. | <strong>Say She She</strong> - <em>Cut & Rewind</em><br>
-          10.10. | <strong>Flock of Dimes</strong> - <em>The Life You Save</em><br>
-          17.10. | <strong>The Last Dinner Party</strong> - <em>From The Pyre</em><br>
-          24.10. | <strong>Circa Waves</strong> - <em>Death & Love Pt.2</em><br>
-          24.10. | <strong>Hannah Jadagu</strong> - <em>Describe</em><br>
-          07.11. | <strong>Del Water Gap</strong> - <em>Chasing The Chimera</em><br>
-          07.11. | <strong>Teen Jesus & The Jean Teasers</strong> - <em>Glory</em><br>
-          07.11. | <strong>Whitney</strong> - <em>Small Talk</em><br>
-        </div>
-      </article>
-
-      <article>
-        <div class="entry full">
-          <h3>KW 31-34/25 Playlist-Update: Fresh Fit</h3>
-          <strong>Balu Brigada</strong> - Politix<br>
-          <strong>McKenzie, Bret</strong> - Shouldna Come Here Tonight<br>
-          <strong>Powell, Mae</strong> - Linger<br>
-          <strong>Royel Otis</strong> - come on home<br>
-          <strong>Slater, Chloe</strong> - Harriet<br>
-          <strong>TOPS</strong> - Wheels At Night<br>
-          <strong>Wolf Alice</strong> - Thorns<br>
-        </div>
-      </article>
-
-      <article>
-        <div class="entry full">
-          <h3>KW 30/25 Playlist-Update: Fresh Fit</h3>
-          <strong>Balu Brigada</strong> - What Do We Ever Really Know?<br>
-          <strong>Nation Of Language</strong> - Under the Water<br>
-          <strong>NO CIGAR</strong> - Russian Roulette<br>
-          <strong>Royel Otis</strong> - say something<br>
-          <strong>TOPS</strong> - Annihilation<br>
-        </div>
-      </article>
-
-      <article>
-        <div class="entry full">
-          <h3>KW 27-29/25 Playlist-Update: Fresh Fit</h3>
-          <strong>Altai</strong> - Tell Me When<br>
-          <strong>Ghost Care</strong> - Waiting By The Phone<br>
-          <strong>LEISURE</strong> - Dominoes<br>
-          <strong>McKenze, Bret</strong> - Freak Out City<br>
-          <strong>Monster Rally, TOLEDO</strong> - Until the Sun Goes Down<br>
-          <strong>shame</strong> - Quiet Life<br>
-          <strong>Stolen Gin</strong> - Spoil My Night<br>
-          <strong>Wet Leg</strong> - mangetout<br>
-        </div>
-      </article>
-
-      <article>
-        <div class="entry full">
-          <h3>KW 26/25 Playlist-Update: Fresh Fit</h3>
-          <strong>Beths, The</strong> - No Joy<br>
-          <strong>chanpan</strong> - endlessly<br>
-          <strong>DYLYN</strong> - Late Bloomer<br>
-          <strong>Foreign Air</strong> - Maniac<br>
-          <strong>Night Cap</strong> - Doctor Love<br>
-          <strong>Royel Otis</strong> - car<br>
-          <strong>TOPS</strong> - Falling On My Sword<br>
-        </div>
-      </article>
-
-  </main>
-
-    <footer>
-      <h5>
-         © 2025 indie.hose &nbsp;&nbsp;&nbsp;
-      <a style="color: white;" href="impressum.html">Impressum</a>&nbsp;&nbsp;&nbsp;
-         <a style="color: white;" href="datenschutzerklärung.html">Datenschutz</a>
-         </h5>
-      </footer>
-
-        <script src="script.js"></script>
-        
-        </body>
-        </html>
+</html>
