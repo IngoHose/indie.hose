@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Marco Puttkammer">
+  <meta name="description" content="Dies ist die Blogseite des Radioprojekts indie.hose. Hier finden sich verschiedenste Artikel rund um Musik, Künstler, Alben, Konzerte, Playlists oder aktuelle Entwicklungen des Musikmarkts.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Indie.Hose light</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header id="main-header">
+    <div class="header-top">
+      <h1><a href="index.html">indie.hose</a></h1>
+      <div id="hamburger">&#9776;</div>
+    </div>
+
+    <hr class="hr1">
+
+    <nav id="main-nav">
+      <a href="hoeren.html">Hören</a>
+      <a href="archiv.html">Lesen</a>
+      <a href="sendeplan.html">Sendeplan</a>
+      <a href="about.html">Über uns</a>
+    </nav>
+    
+  </header>
+
+  <div id="overlay-nav" aria-hidden="true">
+    <button id="close-overlay" aria-label="Menü schließen">&times;</button>
+    <nav id="overlay-menu"></nav>
+  </div>
+
+  <div class="player">
+      <a class="play-button" href="https://laut.fm/indie-hose" target="_blank">▶</a>
+      <div class="now-playing-label">Jetzt läuft:</div>
+      <div class="song-scroll-container">
+          <div class="song-title" id="currentSong">Lädt...</div>
+      </div>
+    </div>
+
+  <main>
+  
+  <div class="main-content">  
+
+    <section class="article-feature-section">
+      <div class="article-feature">
+        <div class="article-feature-meta">
+          <img src="" alt="">    
+          <h2 class="artist"></h2> 
+          <h2 class="title"></h2>
+        </div>
+      <h3 class="headline"></h3>
+      <p class="intro-text"></p>
+      </div>
+    </section>
+
+    <section class="cards-container-section">
+      <div class="cards-container">
+
+      </div>
+    </section>
+
+    <section class="shorts-section">
+    </section>
+
+  </div>   
+</main>
+
+<footer>
+  <ul>
+    <li>2025 indie.hose</li>
+    <li><a href="impressum.html">Impressum</a></li>
+    <li><a href="datenschutz.html">Datenschutz</a></li>
+  </ul>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script src="js/loadContent.js"></script>
+<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+  data-id="indie.hose" data-description="Support me on Buy me a coffee!" data-color="#BD5FFF" data-position="Right"
+  data-x_margin="10" data-y_margin="10"></script>
+<script src="js/script.js"></script>
+</body>
+
+</html>
