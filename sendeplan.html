@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Marco Puttkammer">
+  <meta name="description" content="Sendeplan von indie.hose - Übersicht aller Shows, aktuelle Sendung und Playlist">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Sendeplan - Indie.Hose</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/sendeplan.css">
+</head>
+<body>
+
+  <header id="main-header">
+    <div class="header-top">
+      <h1><a href="index.html">indie.hose</a></h1>
+      <div id="hamburger">&#9776;</div>
+    </div>
+
+    <hr class="hr1">
+
+    <nav id="main-nav">
+      <a href="hoeren.html">Hören</a>
+      <a href="archiv.html">Lesen</a>
+      <a href="sendeplan.html">Sendeplan</a>
+      <a href="about.html">Über uns</a>
+    </nav>
+    
+  </header>
+
+  <div id="overlay-nav" aria-hidden="true">
+    <button id="close-overlay" aria-label="Menü schließen">&times;</button>
+    <nav id="overlay-menu"></nav>
+  </div>
+
+  <div class="player">
+      <a class="play-button" href="https://laut.fm/indie-hose" target="_blank">▶</a>
+      <div class="now-playing-label">Jetzt läuft:</div>
+      <div class="song-scroll-container">
+          <div class="song-title" id="currentSong">Lädt...</div>
+      </div>
+  </div>
+
+  <main class="sendeplan-wrapper">
+    
+    <!-- Bereich 2: Aktuelle Shows (Letzte, Jetzt, Nächste) -->
+    <section class="current-shows-section">
+      <h2>Auf Sendung</h2>
+      
+      <div class="shows-timeline">
+        <div class="show-card show-previous">
+          <div class="show-time-label">Letzte Show</div>
+          <div class="show-content" id="previous-show">
+            <div class="loading">Lädt...</div>
+          </div>
+        </div>
+
+        <div class="show-card show-current">
+          <div class="show-time-label">Jetzt live</div>
+          <div class="show-content" id="current-show">
+            <div class="loading">Lädt...</div>
+          </div>
+        </div>
+
+        <div class="show-card show-next">
+          <div class="show-time-label">Als Nächstes</div>
+          <div class="show-content" id="next-show">
+            <div class="loading">Lädt...</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bereich 3: Playlist (Letzte Songs) -->
+    <section class="playlist-section">
+      <div class="playlist-container">
+        
+        <div class="playlist-column last-played">
+          <h3>🎵 Zuletzt gespielt</h3>
+          <div id="last-songs" class="song-list">
+            <div class="loading">Lädt...</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Bereich 1: Wochenübersicht -->
+    <section class="schedule-section">
+      <h2>Wochenübersicht</h2>
+
+      <div id="schedule-grid" class="schedule-grid">
+        <div class="loading">Lädt Sendeplan...</div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <ul>
+      <li>2025 indie.hose</li>
+      <li><a href="impressum.html">Impressum</a></li>
+      <li><a href="datenschutz.html">Datenschutz</a></li>
+    </ul>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="js/loadContent.js"></script>
+  <script src="js/sendeplan.js"></script>
+  <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+    data-id="indie.hose" data-description="Support me on Buy me a coffee!" data-color="#BD5FFF" data-position="Right"
+    data-x_margin="10" data-y_margin="10"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

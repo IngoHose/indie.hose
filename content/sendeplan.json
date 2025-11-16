@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Morning Jacket",
+    "description": "Songs für einen guten Start in den Tag",
+    "slots": [
+      { "day": "Montag", "start": "09:00", "end": "11:00" },
+      { "day": "Dienstag", "start": "09:00", "end": "11:00" },
+      { "day": "Mittwoch", "start": "09:00", "end": "11:00" },
+      { "day": "Donnerstag", "start": "09:00", "end": "11:00" },
+      { "day": "Freitag", "start": "09:00", "end": "11:00" },
+      { "day": "Samstag", "start": "09:00", "end": "12:00" },
+      { "day": "Sonntag", "start": "09:00", "end": "12:00" }
+    ]
+  },
+  {
+    "name": "Fresh Fit",
+    "description": "Ausschließlich Neuheiten, regelmäßig aktualisiert",
+    "slots": [
+      { "day": "Montag", "start": "18:00", "end": "20:00" },
+      { "day": "Dienstag", "start": "14:00", "end": "16:00" },
+      { "day": "Mittwoch", "start": "18:00", "end": "20:00" },
+      { "day": "Donnerstag", "start": "14:00", "end": "16:00" },
+      { "day": "Freitag", "start": "20:00", "end": "22:00" },
+      { "day": "Samstag", "start": "12:00", "end": "14:00" },
+      { "day": "Sonntag", "start": "12:00", "end": "14:00" }
+    ]
+  },
+  {
+    "name": "D-A-CH",
+    "description": "Musik mit deutschen Texten",
+    "slots": [
+      { "day": "Dienstag", "start": "16:00", "end": "18:00" },
+      { "day": "Freitag", "start": "16:00", "end": "18:00" },
+      { "day": "Sonntag", "start": "16:00", "end": "18:00" }
+    ]
+  },
+  {
+    "name": "Vintage",
+    "description": "Das Beste vergangener Jahrzehnte, abseits der üblichen \"Evergreens\"",
+    "slots": [
+      { "day": "Mittwoch", "start": "16:00", "end": "18:00" },
+      { "day": "Samstag", "start": "16:00", "end": "18:00" }
+    ]
+  },
+  {
+    "name": "Indie-Party!",
+    "description": "I bet you look good on the dance floor",
+    "slots": [
+      { "day": "Freitag", "start": "22:00", "end": "02:00" },
+      { "day": "Samstag", "start": "22:00", "end": "02:00" }
+    ]
+  },
+  {
+    "name": "Rotation",
+    "description": "Unsere Auswahl an Perlen unter dem Radar",
+    "isDefault": true
+  }
+]
