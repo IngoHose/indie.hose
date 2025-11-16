@@ -33,6 +33,7 @@ header {
   transition: all 0.3s ease;
   position: sticky;
   top: 0;
+  z-index: 9999;
 }
 
 header.shrink { padding: 5px 10px; }
