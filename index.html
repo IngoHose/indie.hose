@@ -8,7 +8,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   <title>indie.hose</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="css/cards-modern.css">
 </head>
 <body>
 
@@ -64,8 +63,28 @@
       </div>
     </section>
 
-    <section class="shorts-section">
-    </section>
+  <section class="release-calendar-section">
+  <div class="release-calendar">
+    
+    <h2 class="calendar-title">Release-Kalender</h2>
+    
+    <!-- Monat-Navigation -->
+    <div class="calendar-nav">
+      <button class="nav-btn" id="prev-month" aria-label="Vorheriger Monat">‹</button>
+      <div class="current-month" id="current-month-display">November 2024</div>
+      <button class="nav-btn" id="next-month" aria-label="Nächster Monat">›</button>
+    </div>
+
+    <!-- Release-Liste -->
+    <div id="release-list" class="release-list">
+      <div class="loading">Lädt Releases...</div>
+    </div>
+    
+  </div>
+</section>
+
+    <!-- <section class="shorts-section">
+    </section> -->
 
   </div>   
 </main>
@@ -79,6 +98,7 @@
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 <script src="js/loadContent.js"></script>
+<script src="js/release-calendar-list.js"></script>
 <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
   data-id="indie.hose" data-description="Support me on Buy me a coffee!" data-color="#BD5FFF" data-position="Right"
   data-x_margin="10" data-y_margin="10"></script>

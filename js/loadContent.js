@@ -255,7 +255,7 @@ async function loadFeatureArticle(articleEntry) {
 
 // --------------------
 // Artikel-Cards laden (OHNE Badges)
-// --------------------
+// -------------------- 
 async function loadArticleCards(articles) {
   try {
     const cardsContainer = document.querySelector(".cards-container");
@@ -268,8 +268,8 @@ async function loadArticleCards(articles) {
     const existingCards = cardsContainer.querySelectorAll(".card-article.dynamic");
     existingCards.forEach(card => card.remove());
 
-    // Neue Artikel-Cards hinzufügen
-    for (const articleEntry of articles.slice(0, 8)) { // Maximal 8 zusätzliche Cards
+    // Neue Artikel-Cards hinzufügen (maximal 4)
+    for (const articleEntry of articles.slice(0, 4)) {
       const html = marked.parse(articleEntry.mdText);
       const wrapper = document.createElement("div");
       wrapper.innerHTML = html.trim();
