@@ -503,6 +503,7 @@ main { flex: 1; }
   @media (width > 1200px) {grid-template-columns: repeat(1, 1fr); }
 }
 
+/* Base card styles */
 .card-article {
   background: #fcf8d76b;
   display: flex;
@@ -797,6 +798,107 @@ footer ul {
   padding: 1rem;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Archive Page Specific Styles - Mobile First */
+.archive-cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.archive-card {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.archive-card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+}
+
+/* Tablet - 2 columns */
+@media (min-width: 600px) {
+  .archive-cards-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Desktop - 3 columns */
+@media (min-width: 900px) {
+  .archive-cards-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Large Desktop - 4 columns */
+@media (min-width: 1200px) {
+  .archive-cards-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Hover effects only on non-touch devices */
+@media (hover: hover) and (pointer: fine) {
+  .archive-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(118, 75, 162, 0.15);
+  }
+}
+
+.archive-card-content {
+  padding: 1rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.archive-card-title {
+  font-size: 1.1rem;
+  margin: 0 0 0.5rem 0;
+  color: #333;
+}
+
+.archive-card-date {
+  color: #666;
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.archive-card-excerpt {
+  font-size: 0.9rem;
+  color: #444;
+  margin-bottom: 1rem;
+  flex-grow: 1;
+}
+
+.archive-card-link {
+  display: inline-block;
+  color: #764ba2;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: auto;
+  align-self: flex-start;
+  transition: color 0.2s ease;
+}
+
+.archive-card-link:hover {
+  color: #5c3a7f;
+  text-decoration: underline;
 }
 
 .nav-btn {
