@@ -443,6 +443,7 @@ main { flex: 1; }
 .preview {
   display: flex;
   flex-direction: column;
+  max-width: 100%;
 }
 
 /* Badge-System für Featured Article und Article.html */
@@ -501,9 +502,10 @@ main { flex: 1; }
   box-sizing: border-box;
   gap: 1rem;
   max-width: 1400px;
+  margin-block-end: 1rem;
 
   @media (width > 300px) { grid-template-columns: repeat(2, 1fr); }
-  @media (width > 900px) { grid-template-columns: repeat(4, 1fr); }
+  @media (width > 768px) { grid-template-columns: repeat(4, 1fr); }
   @media (width > 1200px) {grid-template-columns: repeat(1, 1fr); }
 }
 
@@ -615,6 +617,7 @@ main { flex: 1; }
     max-width: 120px;
     margin-right: 0;
     margin-bottom: 1rem;
+    border-radius: 8px;
   }
 
   .card-meta {
@@ -639,17 +642,15 @@ main { flex: 1; }
 
 p { margin-bottom: 12px; }
 
+/* Image styles */
 img {
-  max-width: 60%;
-  max-height: 60%;
-  width: auto;
+  max-width: 80%;
+  width: 100%;
   height: auto;
-  margin: 5%;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 8px;
 }
-
-@media (width > 800px) { img { max-width: 40%; } }
-@media (width > 1200px) { img { max-width: 50%; } }
-
 
 .lyrics {
   font-family: 'Courier New', monospace;
@@ -812,11 +813,11 @@ footer ul {
 
 /* archive-cards */
 .archive-cards-container {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  padding: 1rem;
-  max-width: 1400px;
+  display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+  padding: 0.5rem;
+  max-width: 400px;
   margin: 0 auto;
   width: 100%;
   box-sizing: border-box;
@@ -831,35 +832,61 @@ footer ul {
   display: flex;
   flex-direction: column;
   width: 100%;
+  height: 100%;
+}
+
+.archive-card-image-container {
+  display: flex;
+  flex-direction: column;
+  
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: #f5f5f5;
+  border-bottom: 1px solid #eee;
 }
 
 .archive-card-image {
   width: 100%;
-  height: 200px;
+  height: 100%;
   object-fit: cover;
-  border-bottom: 1px solid #eee;
+  object-position: center;
+  transition: transform 0.3s ease;
 }
 
-/* Tablet - 2 columns */
-@media (min-width: 600px) {
-  .archive-cards-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
+.archive-card:hover .archive-card-image {
+  transform: scale(1.03);
 }
 
-/* Desktop - 3 columns */
-@media (min-width: 900px) {
-  .archive-cards-container {
+/* Tablet - 3 columns */
+@media (min-width: 768px) {
+ .archive-cards-container {
+  display: grid;
     grid-template-columns: repeat(3, 1fr);
-  }
+  gap: 1rem;
+  padding: 1rem;
+  max-width: 700px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
 }
 
-/* Large Desktop - 4 columns */
+/* Desktop - 4 columns */
 @media (min-width: 1200px) {
-  .archive-cards-container {
+.archive-cards-container {
+  display: grid;
     grid-template-columns: repeat(4, 1fr);
-  }
+  gap: 1rem;
+  padding: 1rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
 }
 
 /* Hover effects only on non-touch devices */

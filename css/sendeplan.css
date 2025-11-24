@@ -224,12 +224,6 @@ header {
   gap: 1rem;
 }
 
-@media (width > 800px) {
-  .schedule-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
 @media (width > 1200px) {
   .schedule-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -352,3 +346,34 @@ header {
     grid-row: 2 / 4;
   }
   }
+
+  @media (width > 768px) {
+  .sendeplan-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto auto;
+    gap: 2rem;
+  }
+
+  .current-shows-section {
+    order: 1;
+    grid-column: 1 / -1;
+  }
+
+  .playlist-section {
+    order: 2;
+    grid-column: 1;
+  }
+
+  .schedule-section {
+    order: 3;
+    grid-column: 2;
+    grid-row: 2 / 4;
+  }
+}
+
+@media (width > 500px) {
+  .schedule-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
