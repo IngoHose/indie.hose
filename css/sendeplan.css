@@ -232,7 +232,13 @@ header {
 
 @media (width > 1200px) {
   .schedule-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .day-schedule {
+    min-height: 100%;
+    box-sizing: border-box;
   }
 }
 
@@ -325,7 +331,7 @@ header {
 @media (width > 1200px) {
   .sendeplan-wrapper {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 2fr;
     grid-template-rows: auto auto;
     gap: 2rem;
   }
@@ -345,8 +351,4 @@ header {
     grid-column: 2;
     grid-row: 2 / 4;
   }
-
-  .schedule-grid {
-    grid-template-columns: 1fr;
   }
-}

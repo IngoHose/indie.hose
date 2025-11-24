@@ -278,13 +278,18 @@ main { flex: 1; }
 
 .cards-container-section {
   order: 3;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  box-sizing: border-box;
 
   @media (width > 1200px) {
-    padding-inline: 0;
+    padding: 0 2rem;  
     order: 1;
-     padding-block-start: 0;
+    padding-block-start: 0;
   }
 }
+
 .shorts-section {
   order: 2;
 
@@ -311,13 +316,10 @@ main { flex: 1; }
   display: flex;
   flex-direction: column;
   padding: 12px;
-  margin-block: 1rem;
   background-color:#fcf8d76b;
-  margin-block: 1rem;
   line-height: 1rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   padding: 0.5rem;
-  margin: 1rem 0;
   line-height: 1.2;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   overflow: hidden;
@@ -492,18 +494,20 @@ main { flex: 1; }
 
 .cards-container {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);  
-  margin-block: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
   gap: 1rem;
   max-width: 1400px;
 
   @media (width > 300px) { grid-template-columns: repeat(2, 1fr); }
-  @media (width > 600px) { grid-template-columns: repeat(3, 1fr); }
   @media (width > 900px) { grid-template-columns: repeat(4, 1fr); }
   @media (width > 1200px) {grid-template-columns: repeat(1, 1fr); }
 }
 
-/* Base card styles */
+/* index card styles */
 .card-article {
   background: #fcf8d76b;
   display: flex;
@@ -756,6 +760,10 @@ footer ul {
 
 .release-calendar-section {
   order: 2;
+  width: 100%;
+  max-width: 1400px;
+  /* padding-inline: 10%; */
+  margin: 0 auto;
 }
 
 @media (width > 1200px) {
@@ -769,10 +777,12 @@ footer ul {
 /* Inneres Kalender-Element (wie article-feature) */
 .release-calendar {
   width: 100%;
+  max-width: 100%;
   background: #fcf8d76b;
   padding: 1.5rem;
-  margin-block: 1rem;
-  border-radius: 8px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
 }
 
 @media (width > 1200px) {
@@ -800,7 +810,7 @@ footer ul {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
-/* Archive Page Specific Styles - Mobile First */
+/* archive-cards */
 .archive-cards-container {
   display: flex;
   flex-direction: column;
