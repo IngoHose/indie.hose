@@ -1,0 +1,324 @@
+/* ============================================
+   ADVENTSKALENDER - TÜRCHEN SEITE
+   Instastory-optimiert (9:16)
+   ============================================ */
+
+.advent-body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #1a1a2e 0%, #16213e 100%);
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+}
+
+.advent-container {
+  max-width: 540px;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1.5rem;
+  box-sizing: border-box;
+}
+
+/* ============================================
+   HEADER
+   ============================================ */
+
+.advent-story-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  animation: fadeInDown 0.6s ease-out;
+}
+
+.door-number-big {
+  font-size: 4rem;
+  font-weight: bold;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
+}
+
+.advent-story-header h1 {
+  font-size: 2rem;
+  margin: 1rem 0 0.5rem;
+  font-weight: bold;
+}
+
+.advent-date {
+  font-size: 1rem;
+  opacity: 0.8;
+  margin: 0;
+}
+
+/* ============================================
+   SONG INFO
+   ============================================ */
+
+.song-info {
+  text-align: center;
+  margin-bottom: 2rem;
+  animation: fadeIn 0.8s ease-out 0.2s both;
+}
+
+.song-cover {
+  width: 280px;
+  height: 280px;
+  border-radius: 20px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.song-cover:hover {
+  transform: scale(1.05);
+}
+
+.song-artist {
+  font-size: 1.8rem;
+  margin: 0 0 0.5rem;
+  font-weight: bold;
+}
+
+.song-title {
+  font-size: 1.3rem;
+  font-style: italic;
+  opacity: 0.9;
+  font-weight: normal;
+  margin: 0;
+}
+
+
+
+
+/* ============================================
+   LYRICS / QUOTE STYLING
+   ============================================ */
+
+.lyrics-container {
+  margin: 2.5rem 0;
+  padding: 1rem;
+  background: linear-gradient(145deg, rgba(40, 42, 54, 0.7), rgba(60, 62, 80, 0.5));
+  border-radius: 0 8px 8px 0;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.lyrics-content {
+  position: relative;
+  z-index: 1;
+}
+
+.lyrics-line {
+  font-size: 1rem;
+  font-style: italic;
+  font-family: 'Courier New', Courier, monospace;
+  line-height: 1.25;
+  color: #f8f8f2;
+  margin: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeInUp 0.6s ease forwards;
+  
+}
+
+.lyrics-line:nth-child(1) { animation-delay: 0.2s; }
+.lyrics-line:nth-child(2) { animation-delay: 0.4s; }
+.lyrics-line:nth-child(3) { animation-delay: 0.6s; }
+.lyrics-line:nth-child(4) { animation-delay: 0.8s; }
+
+.lyrics-author {
+  margin-top: 1.5rem;
+  text-align: right;
+  font-style: italic;
+  color: #bd93f9;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  opacity: 0;
+  animation: fadeIn 0.6s ease 1s forwards;
+  position: relative;
+  padding-right: 2rem;
+}
+
+.lyrics-author::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 1.5rem;
+  height: 1px;
+  background: rgba(189, 147, 249, 0.5);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+
+.advent-footer {
+  margin-top: auto;
+  text-align: center;
+  animation: fadeIn 1s ease-out 0.8s both;
+}
+
+.back-button {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: 0.8rem 1.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 25px;
+  margin-bottom: 1rem;
+  transition: all 0.3s;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.back-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.share-buttons {
+  margin-top: 1rem;
+}
+
+.share-instagram {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(188, 24, 136, 0.4);
+  transition: all 0.3s;
+}
+
+.share-instagram:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(188, 24, 136, 0.6);
+}
+
+.share-instagram:active {
+  transform: translateY(0);
+}
+
+/* ============================================
+   LOADING STATE
+   ============================================ */
+
+.loading-state {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 4px solid rgba(255, 255, 255, 0.2);
+  border-top-color: #667eea;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 1rem;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* ============================================
+   ERROR STATE
+   ============================================ */
+
+.error-state {
+  background: rgba(220, 38, 38, 0.1);
+  border: 2px solid rgba(220, 38, 38, 0.3);
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.error-state h2 {
+  color: #fca5a5;
+  margin-top: 0;
+}
+
+/* ============================================
+   ANIMATIONS
+   ============================================ */
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+@media (width < 540px) {
+  .advent-container {
+    padding: 1.5rem 1rem;
+  }
+  
+  .song-cover {
+    width: 240px;
+    height: 240px;
+  }
+  
+  .door-number-big {
+    font-size: 3rem;
+  }
+  
+  .advent-story-header h1 {
+    font-size: 1.5rem;
+  }
+  
+  .song-artist {
+    font-size: 1.5rem;
+  }
+  
+  .song-title {
+    font-size: 1.1rem;
+  }
+}
+
+@media (width > 768px) {
+  .advent-container {
+    padding: 3rem 2rem;
+  }
+}

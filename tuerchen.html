@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Türchen - indie.hose Adventskalender 2025</title>
+  
+  <!-- Deine normale Styles (optional) -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Türchen-spezifische Styles -->
+  <link rel="stylesheet" href="css/advent-tuerchen.css">
+  
+  <!-- Marked.js für Markdown → HTML -->
+  <script src="https://cdn.jsdelivr.net/npm/marked@11.1.0/marked.min.js"></script>
+</head>
+
+<body class="advent-body">
+  
+  <div class="advent-container">
+    
+    <!-- Loading State -->
+    <div class="loading-state" id="loading">
+      <div class="spinner"></div>
+      <p>Türchen wird geöffnet...</p>
+    </div>
+    
+    <!-- Content (wird dynamisch gefüllt) -->
+    <div id="content" style="display: none;">
+      
+      <!-- Header mit Türchen-Nummer -->
+      <div class="advent-story-header">
+        <div class="door-number-big" id="door-number">?</div>
+      </div>
+      
+      <!-- Song Info -->
+      <div class="song-info">
+        <img id="song-cover" src="" alt="Cover" class="song-cover">
+        <h2 class="song-artist" id="song-artist">Artist</h2>
+        <h3 class="song-title" id="song-title">Title</h3>
+      </div>
+      
+      <!-- Markdown Content -->
+      <div class="markdown-content" id="markdown-content">
+        <!-- Wird aus MD generiert -->
+      </div>
+      
+      <!-- Footer -->
+      <div class="advent-footer">
+        <a href="index.html" class="back-button">← Zurück zur Homepage</a>
+        <!-- <div class="share-buttons">
+          <button class="share-instagram" id="shareBtn">📸 In Story teilen</button>
+        </div> -->
+      </div>
+      
+    </div>
+    
+    <!-- Error State -->
+    <div id="error" style="display: none;">
+      <div class="error-state">
+        <h2>🎄 Ups!</h2>
+        <p id="error-message">Dieses Türchen konnte nicht geöffnet werden.</p>
+        <a href="index.html" class="back-button">← Zurück zur Homepage</a>
+      </div>
+    </div>
+    
+  </div>
+  
+  <!-- Türchen-Logik -->
+  <script src="js/advent-tuerchen.js"></script>
+  
+</body>
+</html>

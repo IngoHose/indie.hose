@@ -1,0 +1,293 @@
+/* ============================================
+   ADVENTSKALENDER BLOCK - index.html
+   ============================================ */
+
+.advent-takeover {
+  width: 100%;
+  border-radius: 8px;
+  animation: fadeIn 0.6s ease-out;
+  max-width: 1000px;
+  background-color: #fcf8d76b;
+}
+
+.advent-block {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.advent-header {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+}
+
+.advent-description {
+  font-size: 0.95rem;
+  opacity: 0.9;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+/* Das Türchen */
+.advent-door {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 2rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: block;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(118, 75, 162, 0.3);
+}
+
+.advent-door::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+  transform: rotate(45deg);
+  transition: all 0.6s ease;
+}
+
+.advent-door:hover::before {
+  transform: rotate(45deg) translate(20%, 20%);
+}
+
+.advent-door:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(118, 75, 162, 0.5);
+}
+
+.advent-door:active {
+  transform: translateY(-2px);
+}
+
+.door-content {
+  position: relative;
+  z-index: 1;
+}
+
+.door-number {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  line-height: 1;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.door-date {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.door-status {
+  font-size: 1rem;
+  opacity: 0.95;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Locked State */
+.advent-door.locked {
+  background: linear-gradient(135deg, #4a4a5c 0%, #2d2d3a 100%);
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.advent-door.locked:hover {
+  transform: none;
+  box-shadow: 0 8px 25px rgba(118, 75, 162, 0.3);
+}
+
+/* Versteckt außerhalb Dezember */
+.advent-takeover.hidden {
+  display: none;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (width > 600px) {
+  .advent-header {
+    font-size: 2rem;
+  }
+  
+  .advent-description {
+    font-size: 1.05rem;
+  }
+  
+  .door-number {
+    font-size: 5rem;
+  }
+  
+  .door-date {
+    font-size: 1.4rem;
+  }
+  
+  .door-status {
+    font-size: 1.1rem;
+  }
+}
+
+/* ============================================
+   ADVENT CALENDAR GRID STYLES
+   ============================================ */
+
+
+.advent-header {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #2d3748;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.advent-description {
+  text-align: center;
+  color: #4a5568;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.advent-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.door {
+  aspect-ratio: 1;
+  background: linear-gradient(135deg, #4a90e2 0%, #2d3748 100%);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+}
+
+.door:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.door.opened {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.door.opened::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 2.5rem;
+  transition: all 0.3s ease;
+}
+
+.door.opened:hover::before {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.door.locked {
+  background: #e2e8f0;
+  color: #a0aec0;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.door.locked:hover {
+  transform: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.door .door-number {
+  position: relative;
+  z-index: 2;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.door.opened .door-number {
+  display: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .advent-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .advent-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem;
+  }
+  
+  .door {
+    font-size: 1.5rem;
+  }
+  
+  .advent-block {
+    padding: 1rem;
+  }
+  
+  .advent-header {
+    font-size: 1.5rem;
+  }
+  
+  .advent-description {
+    font-size: 1rem;
+  }
+}
+
+/* Animation for door opening */
+@keyframes doorOpen {
+  0% { transform: rotateY(0); }
+  50% { transform: rotateY(90deg); }
+  100% { transform: rotateY(0); }
+}
+
+.door.opened {
+  animation: doorOpen 0.8s ease-in-out;
+}
+
