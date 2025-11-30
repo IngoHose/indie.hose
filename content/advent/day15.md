@@ -4,7 +4,7 @@ date: 15.12.2025
 artist: Electric Guest
 title: 24-7
 cover: covers/advent15.jpg
-youtube: https://www.youtube.com/PLACEHOLDER
+youtube: ""
 ---
 
 <div class="lyrics-container">
@@ -14,4 +14,10 @@ youtube: https://www.youtube.com/PLACEHOLDER
     <p class="lyrics-line">But you've shown me there's a hope</p>
   </div>
   <div class="lyrics-author">- Electric Guest, 24-7</div>
+</div>
+<div class="youtube-placeholder">
+  <a href="https://www.youtube.com/watch?v=HebA_ttA1lg" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.youtube.com/vi/HebA_ttA1lg/hqdefault.jpg" alt="Video Placeholder">
+    <div class="play-button">▶</div>
+  </a>
 </div>

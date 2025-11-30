@@ -35,15 +35,14 @@ document.addEventListener('DOMContentLoaded', function() {
   const grid = document.getElementById('advent-grid');
   if (!grid) return;
 
-  // Get current date to determine which doors should be unlocked
+  // Get current date
   const currentDate = new Date();
   const currentYear = currentDate.getFullYear();
   const currentMonth = currentDate.getMonth() + 1; // 1-12
   const currentDay = currentDate.getDate();
   
-  // Check if we're in December and the current year is 2025
-  const isDecember2025 = currentYear === 2025 && currentMonth === 12;
-  /* const isDecember2025 = true; */
+  // Check if we're in December of the current year
+  const isDecember = currentMonth === 12;
   
   // Create 24 doors in random order
   const doorNumbers = Array.from({length: 24}, (_, i) => i + 1);
@@ -62,12 +61,12 @@ document.addEventListener('DOMContentLoaded', function() {
     door.appendChild(doorNumber);
     
     // Check if the door should be locked or opened
-    if (!isDecember2025 || number > currentDay) {
+    if (!isDecember || number >= currentDay) {
       door.classList.add('locked');
       door.removeAttribute('href');
       door.style.cursor = 'not-allowed';
     } else {
-      // For opened doors, we'll fetch the cover image
+      // For opened doors, fetch the cover image
       fetchDoorCover(door, number);
     }
     

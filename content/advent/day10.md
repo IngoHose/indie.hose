@@ -4,5 +4,18 @@ date: 10.12.2025
 artist: Foals
 title: London Thunder
 cover: covers/advent10.jpg
-youtube: https://www.youtube.com/PLACEHOLDER
+youtube: ""
 ---
+<div class="lyrics-container">
+  <div class="lyrics-content">
+    <p class="lyrics-line">I'm on the red eye flight to nowhere good;</p>
+    <p class="lyrics-line">How about you?</p>
+  </div>
+  <div class="lyrics-author">- Foals - London Thunder</div>
+</div>
+<div class="youtube-placeholder">
+  <a href="https://www.youtube.com/watch?v=UAiYLEsJNpY" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.youtube.com/vi/UAiYLEsJNpY/maxresdefault.jpg" alt="Video Placeholder">
+    <div class="play-button">▶</div>
+  </a>
+</div>
