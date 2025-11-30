@@ -1,32 +1,4 @@
 // ============================================
-// ADVENTSKALENDER BLOCK - SIMPLE VERSION
-// Zeigt immer nur Türchen 1 - Kein Datum-Check
-// ============================================
-
-window.addEventListener('DOMContentLoaded', function() {
-  // DOM Elemente
-  const adventDoor = document.getElementById('advent-door');
-  const doorNumber = document.getElementById('door-number');
-  const doorDate = document.getElementById('door-date');
-  const doorStatus = document.getElementById('door-status');
-  
-  // Setze einfach Türchen 1
-  const day = 1;
-  
-  // Link setzen
-  adventDoor.href = `tuerchen.html?day=${day}`;
-  
-  // Anzeige aktualisieren
-  doorNumber.textContent = day;
-  doorDate.textContent = `1. Dezember 2025`;
-  doorStatus.textContent = 'Klick zum Öffnen! 🎁';
-  
-  console.log(`✅ Türchen ${day} bereit`);
-  console.log(`✅ Link: tuerchen.html?day=${day}`);
-  
-});
-
-// ============================================
 // ADVENT CALENDAR GRID FUNCTIONALITY
 // Creates and manages the interactive advent calendar grid
 // ============================================
@@ -61,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
     door.appendChild(doorNumber);
     
     // Check if the door should be locked or opened
-    if (!isDecember || number >= currentDay) {
+    if (!isDecember || number > currentDay) {
       door.classList.add('locked');
       door.removeAttribute('href');
       door.style.cursor = 'not-allowed';
