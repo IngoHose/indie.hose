@@ -4,7 +4,7 @@ date: 02.12.2025
 artist: Jonathan Bree feat. Princess Chelsea
 title: Live To Dance
 cover: covers/advent02.jpg
-youtube: ""
+youtube: "https://www.youtube.com/watch?v=SZaUxoS1H-o"
 ---
 <div class="lyrics-container">
   <div class="lyrics-content">
@@ -17,8 +17,8 @@ youtube: ""
 </div>
 
 <div class="youtube-placeholder">
-  <a href="https://www.youtube.com/watch?v=SZaUxoS1H-o&list=RDSZaUxoS1H-o&start_radio=1" target="_blank" rel="noopener noreferrer">
-    <img src="https://img.youtube.com/vi/SZaUxoS1H-o/maxresdefault.jpg" alt="Video Placeholder">
+  <a href="https://www.youtube.com/watch?v=SZaUxoS1H-o" target="_blank" rel="noopener noreferrer" class="youtube-link">
+    <img src="https://img.youtube.com/vi/SZaUxoS1H-o/maxresdefault.jpg" alt="Video Placeholder" class="youtube-thumbnail">
     <div class="play-button">▶</div>
   </a>
 </div>
