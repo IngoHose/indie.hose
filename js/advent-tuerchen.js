@@ -46,25 +46,17 @@ async function loadTuerchen() {
     const html = marked.parse(mdContent);
     document.getElementById('markdown-content').innerHTML = html;
     
-    // Update YouTube
+    // Update YouTube Link
     if (metadata.youtube) {
-      const youtubeContainer = document.createElement('div');
-      youtubeContainer.className = 'youtube-container';
-      const youtubeIframe = document.createElement('iframe');
-      
-      // Extract video ID from URL
-      const youtubeId = metadata.youtube.includes('youtube.com') 
-        ? new URL(metadata.youtube).searchParams.get('v') 
-        : metadata.youtube;
-      
-      if (youtubeId) {
-        youtubeIframe.src = `https://www.youtube.com/embed/${youtubeId}?rel=0&modestbranding=1`;
-        youtubeIframe.allowFullscreen = true;
-        youtubeContainer.appendChild(youtubeIframe);
-        
-        // Insert after markdown content
-        const markdownContent = document.getElementById('markdown-content');
-        markdownContent.parentNode.insertBefore(youtubeContainer, markdownContent.nextSibling);
+      // Finde das vorhandene YouTube-Placeholder-Element
+      const youtubePlaceholder = document.querySelector('.youtube-placeholder');
+      if (youtubePlaceholder && youtubePlaceholder.querySelector('a')) {
+        const youtubeLink = youtubePlaceholder.querySelector('a');
+        // Aktualisiere den Link mit der URL aus den Metadaten
+        youtubeLink.href = metadata.youtube;
+        // Stelle sicher, dass der Link in einem neuen Tab geöffnet wird
+        youtubeLink.target = '_blank';
+        youtubeLink.rel = 'noopener noreferrer';
       }
     }
     

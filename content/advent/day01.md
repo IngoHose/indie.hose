@@ -14,7 +14,7 @@ youtube: ""
   <div class="lyrics-author">- Animat, Cherry Blossom</div>
 </div>
 <div class="youtube-placeholder">
-  <a href="https://www.youtube.com/watch?v=youtube: https://www.youtube.com/watch?v=8e1Ynl0S0bs" target="_blank" rel="noopener noreferrer">
+  <a href="https://www.youtube.com/watch?v=8e1Ynl0S0bs" target="_blank" rel="noopener noreferrer">
     <img src="https://img.youtube.com/vi/8e1Ynl0S0bs/maxresdefault.jpg" alt="Video Placeholder">
     <div class="play-button">▶</div>
   </a>
