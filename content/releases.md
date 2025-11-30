@@ -53,6 +53,8 @@ date: 16.11.2024
 - **Teen Jesus & The Jean Teasers** - *Glory* (07.11.2025)
 - **Whitney** - *Small Talk* (07.11.2025)
 - **Westerman** - *A Jackal's Wedding* (07.11.2025)
+
+- **Von Wegen Lisbeth** - *Strandbad Eldena* (12.12.2025)
 </div>
 
        
