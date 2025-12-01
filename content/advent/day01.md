@@ -9,7 +9,7 @@ youtube: "https://www.youtube.com/watch?v=8e1Ynl0S0bs"
 <div class="lyrics-container">
   <div class="lyrics-content">
     <p class="lyrics-line">Don't you bother me no more</p>
-    <p class="lyrics-line">Tie my hands and let me go</p>
+    <p class="lyrics-line">Untie my hands and let me grow</p>
   </div>
   <div class="lyrics-author">- animat - Cherry Blossom</div>
 </div>

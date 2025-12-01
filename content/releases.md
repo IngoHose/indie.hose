@@ -8,7 +8,10 @@ date: 16.11.2024
 <div class="short">
 
 ## Release-Kalender
-    
+
+
+- **Ya Tseen** - *Stand On My Shoulders* (16.01.2026)
+
 - **The Wombats** - *Oh! The Ocean* (14.02.2025)
 - **Saint Motel** - *Saint Motel & the Symphony in the Sky* (14.02.2025)
 - **Findlay** - *Stay Kinky* (14.02.2025)
