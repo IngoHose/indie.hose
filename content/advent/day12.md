@@ -4,7 +4,7 @@ date: 12.12.2025
 artist: Lucius
 title: Second Nature
 cover: covers/advent12.jpg
-youtube: ""
+youtube: "https://www.youtube.com/watch?v=AyFmNk2aKT8"
 ---
 <div class="lyrics-container">
   <div class="lyrics-content">
@@ -16,8 +16,8 @@ youtube: ""
   <div class="lyrics-author">- Lucius - Second Nature</div>
 </div>
 <div class="youtube-placeholder">
-  <a href="https://www.youtube.com/watch?v=AyFmNk2aKT8" target="_blank" rel="noopener noreferrer">
-    <img src="https://img.youtube.com/vi/AyFmNk2aKT8/maxresdefault.jpg" alt="Video Placeholder">
+  <a href="https://www.youtube.com/watch?v=AyFmNk2aKT8" target="_blank" rel="noopener noreferrer" class="youtube-link">
+    <img src="https://img.youtube.com/vi/AyFmNk2aKT8/maxresdefault.jpg" alt="Video Placeholder" class="youtube-thumbnail">
     <div class="play-button">▶</div>
   </a>
 </div>

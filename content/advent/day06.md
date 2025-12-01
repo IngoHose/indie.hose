@@ -4,7 +4,7 @@ date: 06.12.2025
 artist: Westerman
 title: Easy Money
 cover: covers/advent06.jpg
-youtube: ""
+youtube: "https://www.youtube.com/watch?v=WHmhBsdOwpM"
 ---
 <div class="lyrics-container">
   <div class="lyrics-content">
@@ -16,8 +16,8 @@ youtube: ""
   <div class="lyrics-author">- Westerman - Easy Money</div>
 </div>
 <div class="youtube-placeholder">
-  <a href="https://www.youtube.com/watch?v=WHmhBsdOwpM" target="_blank" rel="noopener noreferrer">
-    <img src="https://img.youtube.com/vi/WHmhBsdOwpM/maxresdefault.jpg" alt="Video Placeholder">
+  <a href="https://www.youtube.com/watch?v=WHmhBsdOwpM" target="_blank" rel="noopener noreferrer" class="youtube-link">
+    <img src="https://img.youtube.com/vi/WHmhBsdOwpM/maxresdefault.jpg" alt="Video Placeholder" class="youtube-thumbnail">
     <div class="play-button">▶</div>
   </a>
 </div>

@@ -4,7 +4,7 @@ date: 13.12.2025
 artist: jasmine.4.t
 title: Guy Fawkes Tesco Dissociation
 cover: covers/advent13.jpg
-youtube: ""
+youtube: "https://www.youtube.com/watch?v=efGW4BL-bWc"
 ---
 <div class="lyrics-container">
   <div class="lyrics-content">
@@ -16,8 +16,8 @@ youtube: ""
   <div class="lyrics-author">- jasmine.4.t - Guy Fawkes Tesco Dissociation</div>
 </div>
 <div class="youtube-placeholder">
-  <a href="https://www.youtube.com/watch?v=efGW4BL-bWc" target="_blank" rel="noopener noreferrer">
-    <img src="https://img.youtube.com/vi/efGW4BL-bWc/maxresdefault.jpg" alt="Video Placeholder">
+  <a href="https://www.youtube.com/watch?v=efGW4BL-bWc" target="_blank" rel="noopener noreferrer" class="youtube-link">
+    <img src="https://img.youtube.com/vi/efGW4BL-bWc/maxresdefault.jpg" alt="Video Placeholder" class="youtube-thumbnail">
     <div class="play-button">▶</div>
   </a>
 </div>

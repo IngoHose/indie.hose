@@ -4,7 +4,7 @@ date: 24.12.2025
 artist: Mark William Lewis
 title: Tomorrow Is Perfect
 cover: covers/advent24.jpg
-youtube: ""
+youtube: "https://www.youtube.com/watch?v=9XHhWIUcBZw"
 ---
 <div class="lyrics-container">
   <div class="lyrics-content">
@@ -16,8 +16,8 @@ youtube: ""
   <div class="lyrics-author">- Mark William Lewis - Tomorrow Is Perfect</div>
 </div>
 <div class="youtube-placeholder">
-  <a href="https://www.youtube.com/watch?v=9XHhWIUcBZw" target="_blank" rel="noopener noreferrer">
-    <img src="https://img.youtube.com/vi/9XHhWIUcBZw/maxresdefault.jpg" alt="Video Placeholder">
+  <a href="https://www.youtube.com/watch?v=9XHhWIUcBZw" target="_blank" rel="noopener noreferrer" class="youtube-link">
+    <img src="https://img.youtube.com/vi/9XHhWIUcBZw/maxresdefault.jpg" alt="Video Placeholder" class="youtube-thumbnail">
     <div class="play-button">▶</div>
   </a>
 </div>

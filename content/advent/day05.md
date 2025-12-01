@@ -4,7 +4,7 @@ date: 05.12.2025
 artist: Juan Wauters
 title: Dime Agima
 cover: covers/advent05.jpg
-youtube: ""
+youtube: "https://www.youtube.com/watch?v=4dEAq9zD5wM"
 ---
 
 <div class="lyrics-container">
@@ -22,8 +22,8 @@ youtube: ""
   <div class="lyrics-author">- Juan Wauters - Dime Agima</div>
 </div>
 <div class="youtube-placeholder">
-  <a href="https://www.youtube.com/watch?v=4dEAq9zD5wM" target="_blank" rel="noopener noreferrer">
-    <img src="https://img.youtube.com/vi/4dEAq9zD5wM/maxresdefault.jpg" alt="Video Placeholder">
+  <a href="https://www.youtube.com/watch?v=4dEAq9zD5wM" target="_blank" rel="noopener noreferrer" class="youtube-link">
+    <img src="https://img.youtube.com/vi/4dEAq9zD5wM/maxresdefault.jpg" alt="Video Placeholder" class="youtube-thumbnail">
     <div class="play-button">▶</div>
   </a>
 </div>

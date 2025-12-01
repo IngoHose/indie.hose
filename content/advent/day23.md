@@ -4,7 +4,7 @@ date: 23.12.2025
 artist: Darwin Deez
 title: DNA
 cover: covers/advent23.jpg
-youtube: ""
+youtube: "https://www.youtube.com/watch?v=jQNJgVKE9UY"
 ---
 <div class="lyrics-container">
   <div class="lyrics-content">
@@ -15,8 +15,8 @@ youtube: ""
   <div class="lyrics-author">- Darwin Deez - DNA</div>
 </div>
 <div class="youtube-placeholder">
-  <a href="https://www.youtube.com/watch?v=jQNJgVKE9UY" target="_blank" rel="noopener noreferrer">
-    <img src="https://img.youtube.com/vi/jQNJgVKE9UY/maxresdefault.jpg" alt="Video Placeholder">
+  <a href="https://www.youtube.com/watch?v=jQNJgVKE9UY" target="_blank" rel="noopener noreferrer" class="youtube-link">
+    <img src="https://img.youtube.com/vi/jQNJgVKE9UY/maxresdefault.jpg" alt="Video Placeholder" class="youtube-thumbnail">
     <div class="play-button">▶</div>
   </a>
 </div>

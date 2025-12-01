@@ -4,7 +4,7 @@ date: 16.12.2025
 artist: Aminé, Leon Thomas
 title: New Flower! (feat. Leon Thomas)
 cover: covers/advent16.jpg
-youtube: ""
+youtube: "https://www.youtube.com/watch?v=oSiBYbUtryo"
 ---
 <div class="lyrics-container">
   <div class="lyrics-content">
@@ -16,8 +16,8 @@ youtube: ""
   <div class="lyrics-author">- Aminé, Leon Thomas - New Flower!</div>
 </div>
 <div class="youtube-placeholder">
-  <a href="https://www.youtube.com/watch?v=oSiBYbUtryo" target="_blank" rel="noopener noreferrer">
-    <img src="https://img.youtube.com/vi/oSiBYbUtryo/maxresdefault.jpg" alt="Video Placeholder">
+  <a href="https://www.youtube.com/watch?v=oSiBYbUtryo" target="_blank" rel="noopener noreferrer" class="youtube-link">
+    <img src="https://img.youtube.com/vi/oSiBYbUtryo/maxresdefault.jpg" alt="Video Placeholder" class="youtube-thumbnail">
     <div class="play-button">▶</div>
   </a>
 </div>

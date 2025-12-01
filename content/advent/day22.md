@@ -4,7 +4,7 @@ date: 22.12.2025
 artist: fyne
 title: Mephisto
 cover: covers/advent22.jpg
-youtube: ""
+youtube: "https://www.youtube.com/watch?v=We44KBcczEI"
 ---
 <div class="lyrics-container">
   <div class="lyrics-content">
@@ -16,8 +16,8 @@ youtube: ""
   <div class="lyrics-author">- fyne - Mephisto</div>
 </div>
 <div class="youtube-placeholder">
-  <a href="https://www.youtube.com/watch?v=We44KBcczEI" target="_blank" rel="noopener noreferrer">
-    <img src="https://img.youtube.com/vi/We44KBcczEI/maxresdefault.jpg" alt="Video Placeholder">
+  <a href="https://www.youtube.com/watch?v=We44KBcczEI" target="_blank" rel="noopener noreferrer" class="youtube-link">
+    <img src="https://img.youtube.com/vi/We44KBcczEI/maxresdefault.jpg" alt="Video Placeholder" class="youtube-thumbnail">
     <div class="play-button">▶</div>
   </a>
 </div>

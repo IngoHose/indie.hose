@@ -4,7 +4,7 @@ date: 04.12.2025
 artist: TOPS
 title: Colder & Closer
 cover: covers/advent04.jpg
-youtube: ""
+youtube: "https://www.youtube.com/watch?v=RT5pYfOavkA"
 ---
 
 <div class="lyrics-container">
@@ -18,8 +18,8 @@ youtube: ""
 </div>
 
 <div class="youtube-placeholder">
-  <a href="https://www.youtube.com/watch?v=RT5pYfOavkA&list=RDRT5pYfOavkA&start_radio=1" target="_blank" rel="noopener noreferrer">
-    <img src="https://img.youtube.com/vi/RT5pYfOavkA/maxresdefault.jpg" alt="Video Placeholder">
+  <a href="https://www.youtube.com/watch?v=RT5pYfOavkA" target="_blank" rel="noopener noreferrer" class="youtube-link">
+    <img src="https://img.youtube.com/vi/RT5pYfOavkA/maxresdefault.jpg" alt="Video Placeholder" class="youtube-thumbnail">
     <div class="play-button">▶</div>
   </a>
 </div>

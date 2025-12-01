@@ -4,7 +4,7 @@ date: 09.12.2025
 artist: Telenova
 title: The Deep
 cover: covers/advent09.jpg
-youtube: ""
+youtube: "https://www.youtube.com/watch?v=ROxhYA2B1Pw"
 ---
 <div class="lyrics-container">
   <div class="lyrics-content">
@@ -17,8 +17,8 @@ youtube: ""
 </div>
 
 <div class="youtube-placeholder">
-  <a href="https://www.youtube.com/watch?v=ROxhYA2B1Pw" target="_blank" rel="noopener noreferrer">
-    <img src="https://img.youtube.com/vi/ROxhYA2B1Pw/maxresdefault.jpg" alt="Video Placeholder">
+  <a href="https://www.youtube.com/watch?v=ROxhYA2B1Pw" target="_blank" rel="noopener noreferrer" class="youtube-link">
+    <img src="https://img.youtube.com/vi/ROxhYA2B1Pw/maxresdefault.jpg" alt="Video Placeholder" class="youtube-thumbnail">
     <div class="play-button">▶</div>
   </a>
 </div>

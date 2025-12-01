@@ -4,7 +4,7 @@ date: 14.12.2025
 artist: Blossoms
 title: Your Girlfriend
 cover: covers/advent14.jpg
-youtube: ""
+youtube: "https://www.youtube.com/watch?v=U73Qn-NCQIU"
 ---
 <div class="lyrics-container">
   <div class="lyrics-content">
@@ -15,8 +15,8 @@ youtube: ""
   <div class="lyrics-author">- Blossoms - Your Girlfriend</div>
 </div>
 <div class="youtube-placeholder">
-  <a href="https://www.youtube.com/watch?v=U73Qn-NCQIU" target="_blank" rel="noopener noreferrer">
-    <img src="https://img.youtube.com/vi/U73Qn-NCQIU/maxresdefault.jpg" alt="Video Placeholder">
+  <a href="https://www.youtube.com/watch?v=U73Qn-NCQIU" target="_blank" rel="noopener noreferrer" class="youtube-link">
+    <img src="https://img.youtube.com/vi/U73Qn-NCQIU/maxresdefault.jpg" alt="Video Placeholder" class="youtube-thumbnail">
     <div class="play-button">▶</div>
   </a>
 </div>
