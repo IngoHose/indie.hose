@@ -10,7 +10,16 @@ date: 16.11.2024
 ## Release-Kalender
 
 
+- **Gorillaz** - *The Mountain* (20.03.2026)
+
+- **Ásgeir** - *Julia* (13.02.2026)
+- **Telenova** - *The Warning* (27.02.2026)
+
+- **Demob Happy** - *The Grown Ups Are Talking* (30.01.2026)
+- **Cavetown** - *Running With Scissors* (16.01.2026)
+- **Sleaford Mods** - *The Demise Of Planet X* (16.01.2026)
 - **Ya Tseen** - *Stand On My Shoulders* (16.01.2026)
+- **Dry Cleaning** - *Secret Love* (09.01.2026)
 
 - **The Wombats** - *Oh! The Ocean* (14.02.2025)
 - **Saint Motel** - *Saint Motel & the Symphony in the Sky* (14.02.2025)
