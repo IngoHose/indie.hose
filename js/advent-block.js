@@ -16,12 +16,11 @@ document.addEventListener('DOMContentLoaded', function() {
   // Check if we're in December of the current year
   const isDecember = currentMonth === 12;
   
-  // Create 24 doors in random order
+  // Create 24 doors in numeric order
   const doorNumbers = Array.from({length: 24}, (_, i) => i + 1);
-  const shuffledDoors = shuffleArray(doorNumbers);
   
   // Create door elements
-  shuffledDoors.forEach(number => {
+  doorNumbers.forEach(number => {
     const door = document.createElement('a');
     door.className = 'door';
     door.href = `tuerchen.html?day=${number}`;
