@@ -114,7 +114,7 @@ async function loadIndex() {
       }
     }
 
-    // Artikel und Shorts trennen
+    // Artikel und Shorts trennen (case-insensitive comparison)
     const articles = entries.filter(e => (e.meta.type || "").toLowerCase() === "article");
     const shorts = entries.filter(e => (e.meta.type || "").toLowerCase() !== "article");
     
