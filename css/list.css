@@ -24,8 +24,7 @@
 
 .top-list-intro {
   font-size: 1.1rem;
-  color: #fff;
-  margin-bottom: 3rem;
+  margin-block: 1rem;
   line-height: 1.8;
     font-size: 0.8rem;
 
@@ -34,8 +33,7 @@
 
 /* --- Honorable Mentions --- */
 .honorable-mentions {
-  background: #f8f9fa;
-  padding: 2rem;
+  padding-inline: 2rem;
   border-radius: 8px;
   margin-bottom: 4rem;
 }
@@ -137,10 +135,10 @@
 
 /* --- Meta Information (Blockquote) --- */
 .album-meta {
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  background: #e0eaf5;
   border-left: 4px solid #c090f7;
   padding: 1rem 1.5rem;
-  margin: 1.5rem 0;
+  margin: 2rem;
   border-radius: 4px;
   font-size: 0.95rem;
   color: #495057;
@@ -159,14 +157,14 @@
 }
 
 .listen-link {
-  color: #1db954;
+  color: #570179;
   text-decoration: none;
   font-weight: 600;
   transition: color 0.2s ease;
 }
 
 .listen-link:hover {
-  color: #148a3c;
+  color: #c090f7;
   text-decoration: underline;
 }
 
@@ -191,29 +189,8 @@
 
 .album-text em {
   font-style: italic;
-  color: #666;
-}
-
-/* --- Lyrics / Zitate --- */
-.lyrics {
-  background: #f9f9f9;
-  /* border-left: 3px solid #ddd; */
-  padding: 1rem 1.5rem;
-  margin: 1.5rem 0;
-  font-size: 1rem;
-  line-height: 1.6;
-}
-
-.lyrics em {
-  color: #666;
-  font-style: italic;
-}
-
-.lyrics strong {
-  color: #1a1a1a;
-  font-weight: 600;
-  display: block;
-  margin-top: 0.5rem;
+  color: #570179;
+  
 }
 
 /* --- Links allgemein --- */
@@ -312,73 +289,4 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-}
-
-/* --- Print Styles --- */
-@media print {
-  .album-entry {
-    page-break-inside: avoid;
-    margin: 2rem 0;
-  }
-  
-  .album-cover {
-    max-width: 250px;
-    box-shadow: none;
-  }
-  
-  .album-meta {
-    background: #f5f5f5;
-  }
-  
-  .lyrics {
-    background: #fafafa;
-  }
-}
-
-/* --- Optional: Dark Mode --- */
-@media (prefers-color-scheme: dark) {
-  .top-list {
-    background: #1a1a1a;
-    color: #e0e0e0;
-  }
-  
-  .album-rank,
-  .album-artist,
-  .album-text strong {
-    color: #c090f7;
-  }
-  
-  .album-title,
-  .top-list-header h1 {
-    color: #ffffff;
-  }
-  
-  .album-name,
-  .album-text,
-  .album-text em {
-    color: #b0b0b0;
-  }
-  
-  .album-meta {
-    background: linear-gradient(135deg, #2a2a2a 0%, #333333 100%);
-    color: #b0b0b0;
-  }
-  
-  .lyrics {
-    background: #2a2a2a;
-    border-left-color: #444;
-  }
-  
-  .album-entry {
-    border-bottom-color: #333;
-  }
-  
-  .honorable-mentions {
-    background: #2a2a2a;
-  }
-  
-  .honorable-mentions th,
-  .honorable-mentions td {
-    border-bottom-color: #444;
-  }
 }
