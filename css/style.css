@@ -273,6 +273,7 @@ main { flex: 1; }
     padding: 0;
     padding-block-start: 0;
     order: 2;
+    grid-area: article;
   }
 }
 
@@ -284,20 +285,21 @@ main { flex: 1; }
   box-sizing: border-box;
 
   @media (width > 1200px) {
-    padding: 0 2rem;  
+    padding: 0 1rem;
     order: 1;
     padding-block-start: 0;
+    grid-area: cards;
   }
 }
 
-.shorts-section {
+/* .shorts-section {
   order: 2;
 
     @media (width > 1200px) {
       padding-inline: 0;
       order: 3;
     }
-}
+} */
 
 #article-container {
   display: flex;
@@ -492,8 +494,7 @@ main { flex: 1; }
   margin-inline-start: 5%;
 }
 
-
-.cards-container {
+ .cards-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 1.5rem;
@@ -534,7 +535,7 @@ main { flex: 1; }
 @media (min-width: 1200px) {
   .main-content {
     display: grid;
-    grid-template-columns: 300px 1fr 300px;
+    grid-template-columns: 400px 1fr;
     grid-template-areas:
       "calendar article instagram"
       "cards cards cards";
@@ -678,13 +679,13 @@ main { flex: 1; }
   }
 }
 
-.shorts-section {
+/* .shorts-section {
   font-size: 0.6rem;
 
   @media (width > 400px) {font-size: 0.6rem; }
   @media (width > 800px) { font-size: 0.8rem; }
   @media (width > 1200px) { font-size: 0.7rem; }
-}
+} */
 
 .short ul {
   text-decoration: none;
@@ -824,6 +825,7 @@ footer ul {
     order: 3;
     padding-inline: 0;
     padding-block-start: 0;
+    grid-area: calendar;
   }
 }
 
@@ -1077,22 +1079,14 @@ footer ul {
   grid-area: badge;
   /* background-color: var(--primary-color); */
   color: #333;
-  padding: 0.4rem 0.8rem;
   margin-bottom: 0.2rem;
   border-radius: 20px;
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   font-weight: 600;
   font-family: monospace;
   white-space: nowrap;
   align-self: start;
   margin-top: 0.1rem;
-}
-
-@media (width > 600px) {
-  .release-date-badge {
-    font-size: 0.85rem;
-    padding: 0.5rem 0.5rem;
-  }
 }
 
 /* Artist Name */

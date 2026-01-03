@@ -343,7 +343,7 @@ async function loadArticleCards(articles) {
 // Shorts in die Shorts-Section laden (OHNE Badges)
 // releases.md immer an erster Stelle
 // --------------------
-async function loadShortsToSection(shortsEntries) {
+/* async function loadShortsToSection(shortsEntries) {
   try {
     const shortsSection = document.querySelector(".shorts-section");
     if (!shortsSection) {
@@ -403,7 +403,7 @@ async function loadSingleShort(shortEntry, shortsSection) {
   // KEINE Badges bei Shorts!
 
   shortsSection.appendChild(shortEl);
-}
+} */
 
 // --------------------
 // Artikel laden (für article.html - MIT Badges)
