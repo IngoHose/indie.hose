@@ -150,7 +150,7 @@ main { flex: 1; }
 .player {
   overflow: hidden;
   display: flex;
-  justify-content: center; /* Zentriert den Inhalt horizontal */
+  justify-content: flex-start; /* Align items to the start */
   align-items: center;
   height: 2rem;
   font-family: monospace;
@@ -163,7 +163,8 @@ main { flex: 1; }
   color: white;
   width: 100%;
   min-width: 0;
-  padding: 0 5%  ; /* Etwas Abstand an den Seiten */
+  padding: 0 5%;
+  gap: 0.5rem;
 
   @media (min-width: 400px) {
     position: sticky;
@@ -223,14 +224,16 @@ main { flex: 1; }
     background: inherit;
 }
 
-.song-scroll-container {
+/* Player song title container */
+.player .song-scroll-container {
     flex: 1;
-    height: 100%;
     position: relative;
     overflow: hidden;
+    height: 100%;
 }
 
-.song-title {
+/* Player song title */
+.player .song-title {
     position: absolute;
     white-space: nowrap;
     height: 100%;
@@ -238,6 +241,24 @@ main { flex: 1; }
     align-items: center;
     animation: scroll-left 15s linear infinite;
     min-width: 0;
+    padding-right: 20px; /* Add some space at the end of the scrolling text */
+}
+
+/* Pause animation on hover */
+.player .song-scroll-container:hover .song-title {
+    animation-play-state: paused;
+}
+
+/* Playlist song title */
+.song-item .song-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    width: 100%;
+    position: static;
+    min-width: 0;
+    animation: none !important;
 }
 
 @keyframes scroll-left {

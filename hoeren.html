@@ -41,9 +41,264 @@
       </div>
     </div>
 
-<main>
-    <h2>Coming soon!</h2>
-</main>
+ <style>
+
+        .container {
+            max-width: 1200px;
+            margin: 1rem auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+            gap: 2rem;
+            padding: 0 1rem;
+        }
+        
+        @media (max-width: 1100px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .tagline {
+            color: #aaa;
+            font-size: 1.1em;
+            letter-spacing: 1px;
+        }
+
+        .playlists {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .playlist-card {
+            background: #1a1a1a;
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            min-width: 0; /* Prevents flex items from overflowing */
+        }
+
+        .playlist-header {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            gap: 20px;
+            position: relative;
+        }
+
+        .playlist-thumbnail {
+            width: 140px;
+            height: 100px;
+            border-radius: 12px;
+            overflow: hidden;
+            flex-shrink: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            position: relative;
+        }
+
+        .playlist-thumbnail img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .playlist-info {
+            flex: 1;
+        }
+
+        .playlist-title {
+            font-size: 1.5em;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: #fff;
+        }
+
+        .playlist-description {
+            color: #999;
+            font-size: 0.95em;
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+
+        .playlist-meta {
+            color: #666;
+            font-size: 0.85em;
+        }
+
+        .expand-button {
+            width: 30px;
+            height: 30px;
+            background: rgb(255, 254, 254);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            flex-shrink: 0;
+        }
+
+        .expand-button:hover {
+            background: #c00;
+        }
+
+        .expand-button.rotated {
+            transform: rotate(180deg);
+        }
+
+        .youtube-button {
+            position: absolute;
+            top: 20px;
+            right: 0;
+            padding: 8px 16px;
+            background: #ffffff;
+            border-radius: 20px;
+            font-size: 0.85em;
+            color: rgb(0, 0, 0);
+            font-weight: 600;
+            text-decoration: none;
+            transition: background 0.3s ease;
+            z-index: 10;
+        }
+
+        .youtube-button:hover {
+            background: #cc0000;
+        }
+
+        .songs-container {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease;
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        .songs-container.expanded {
+            max-height: 10000px;
+        }
+
+        .song-item {
+            display: flex;
+            align-items: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            cursor: pointer;
+            transition: background 0.2s ease;
+            text-decoration: none;
+            color: inherit;
+            gap: 15px;
+            padding: 20px;
+        }
+
+        .song-item:hover {
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .song-number {
+            width: 10px;
+            text-align: center;
+            color: #666;
+            font-size: 0.9em;
+            flex-shrink: 0;
+        }
+
+        .song-thumbnail {
+            width: 120px;
+            height: 100px;
+            flex-shrink: 0;
+            margin-block-end: 1rem;
+        }
+
+        .song-thumbnail img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .song-info {
+            flex: 1;
+            min-width: 0;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .song-title {
+            font-weight: 600;
+            margin-bottom: 4px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 100%;
+            display: block;
+            position: relative;
+        }
+
+        .song-channel {
+            color: #999;
+            font-size: 0.85em;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 100%;
+            display: block;
+            position: relative;
+        }
+
+        .loading {
+            padding: 40px 20px;
+            text-align: center;
+            color: #666;
+            font-size: 1.1em;
+        }
+
+        .error {
+            padding: 20px;
+            text-align: center;
+            color: #ff6b6b;
+            background: rgba(255, 107, 107, 0.1);
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5em;
+            }
+
+            .playlist-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .playlist-thumbnail {
+                width: 100%;
+                height: 180px;
+            }
+
+            .youtube-button {
+                position: static;
+                margin-top: 10px;
+                display: inline-block;
+            }
+
+            .expand-button {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+            }
+
+            .song-thumbnail {
+                width: 80px;
+                height: 45px;
+            }
+        }
+    </style>
+    <div class="container">
+
+        <div class="playlists" id="playlistsContainer">
+            <div class="loading">Lade Playlists von YouTube...</div>
+        </div>
+    </div>
 
 <footer>
   <ul>
@@ -58,6 +313,136 @@
   data-id="indie.hose" data-description="Support me on Buy me a coffee!" data-color="#BD5FFF" data-position="Right"
   data-x_margin="10" data-y_margin="10"></script>
 <script src="js/script.js"></script>
+    <script>
+        const API_KEY = 'AIzaSyBcy1DQQHI9Rm0HkUNcpHq7I9tHj22kIuU';
+        
+        const playlistIds = [
+            'PLfanxREFYylNUxDl08PcDYOwcgzDS-Q95',
+            'PLfanxREFYylPmP2Da5eAwj-YFJ22Tn3zW'
+        ];
+
+        let expandedPlaylists = {};
+
+        async function fetchPlaylistInfo(playlistId) {
+            const url = `https://www.googleapis.com/youtube/v3/playlists?part=snippet,contentDetails&id=${playlistId}&key=${API_KEY}`;
+            const response = await fetch(url);
+            const data = await response.json();
+            return data.items[0];
+        }
+
+        async function fetchPlaylistVideos(playlistId) {
+            let videos = [];
+            let pageToken = '';
+            
+            do {
+                const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=${playlistId}&maxResults=50&pageToken=${pageToken}&key=${API_KEY}`;
+                const response = await fetch(url);
+                const data = await response.json();
+                
+                if (data.items) {
+                    videos = videos.concat(data.items);
+                }
+                
+                pageToken = data.nextPageToken || '';
+            } while (pageToken);
+            
+            return videos;
+        }
+
+        function createPlaylistCard(playlistInfo, videos, index) {
+            const card = document.createElement('div');
+            card.className = 'playlist-card';
+            card.id = `playlist-${index}`;
+            
+            const snippet = playlistInfo.snippet;
+            const playlistUrl = `https://youtube.com/playlist?list=${playlistInfo.id}`;
+            const thumbnailUrl = snippet.thumbnails.medium.url;
+            
+            card.innerHTML = `
+                <div class="playlist-header">
+                    <div class="playlist-thumbnail">
+                        <img src="${thumbnailUrl}" alt="${snippet.title}">
+                        <div class="play-icon-small">▶</div>
+                    </div>
+                    <div class="playlist-info">
+                        <div class="playlist-title">${snippet.title}</div>
+                        <div class="playlist-description">${snippet.description || 'Keine Beschreibung verfügbar'}</div>
+                        <div class="playlist-meta">${videos.length} Videos</div>
+                    </div>
+                    <a href="${playlistUrl}" target="_blank" class="youtube-button" onclick="event.stopPropagation()">
+                        YouTube öffnen
+                    </a>
+                    <div class="expand-button" onclick="togglePlaylist(${index})">
+                        ▼
+                    </div>
+                </div>
+                <div class="songs-container" id="songs-${index}">
+                    ${videos.map((video, i) => createSongItem(video, i + 1, playlistInfo.id)).join('')}
+                </div>
+            `;
+            
+            return card;
+        }
+
+        function createSongItem(item, number, playlistId) {
+            const snippet = item.snippet;
+            const videoId = snippet.resourceId.videoId;
+            const videoUrl = `https://www.youtube.com/watch?v=${videoId}&list=${playlistId}`;
+            const thumbnailUrl = snippet.thumbnails.medium.url;
+            
+            return `
+                <a href="${videoUrl}" target="_blank" class="song-item" onclick="event.stopPropagation()">
+                    <div class="song-number">${number}</div>
+                    <div class="song-thumbnail">
+                        <img src="${thumbnailUrl}" alt="${snippet.title}">
+                    </div>
+                    <div class="song-info">
+                        <div class="song-title">${snippet.title}</div>
+                        <div class="song-channel">${snippet.videoOwnerChannelTitle || snippet.channelTitle}</div>
+                    </div>
+                </a>
+            `;
+        }
+
+        function togglePlaylist(index) {
+            const card = document.getElementById(`playlist-${index}`);
+            const songsContainer = document.getElementById(`songs-${index}`);
+            const expandButton = card.querySelector('.expand-button');
+            
+            const isExpanded = expandedPlaylists[index];
+            expandedPlaylists[index] = !isExpanded;
+            
+            card.classList.toggle('expanded');
+            songsContainer.classList.toggle('expanded');
+            expandButton.classList.toggle('rotated');
+        }
+
+        async function loadPlaylists() {
+            const container = document.getElementById('playlistsContainer');
+            container.innerHTML = '<div class="loading">Lade Playlists von YouTube...</div>';
+            
+            try {
+                for (let i = 0; i < playlistIds.length; i++) {
+                    const playlistId = playlistIds[i];
+                    
+                    const playlistInfo = await fetchPlaylistInfo(playlistId);
+                    const videos = await fetchPlaylistVideos(playlistId);
+                    
+                    if (i === 0) {
+                        container.innerHTML = '';
+                    }
+                    
+                    const card = createPlaylistCard(playlistInfo, videos, i);
+                    container.appendChild(card);
+                }
+            } catch (error) {
+                console.error('Fehler beim Laden der Playlists:', error);
+                container.innerHTML = '<div class="error">Fehler beim Laden der Playlists. Bitte überprüfe deinen API Key und stelle sicher, dass die YouTube Data API aktiviert ist.</div>';
+            }
+        }
+
+        loadPlaylists();
+    </script>
 </body>
 
 </html>
