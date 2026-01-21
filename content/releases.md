@@ -11,9 +11,13 @@ date: 16.11.2024
 
 
 - **Gorillaz** - *The Mountain* (20.03.2026)
+- **Avalon Emerson** - *Written Into Changes* (20.03.2026)
 
-- **Ásgeir** - *Julia* (13.02.2026)
 - **Telenova** - *The Warning* (27.02.2026)
+- **MITSKI** - *Nothing's About To Happen To Me* (27.02.2026)
+- **Iron and Wine** - *Hen's Theeth* (27.02.2026)
+- **Ásgeir** - *Julia* (13.02.2026)
+- **Ratboys** - *Singing To An Empty Chair* (06.02.2026)
 
 - **Demob Happy** - *The Grown Ups Are Talking* (30.01.2026)
 - **Cavetown** - *Running With Scissors* (16.01.2026)
