@@ -20,6 +20,7 @@ date: 16.11.2024
 - **Ratboys** - *Singing To An Empty Chair* (06.02.2026)
 
 - **Demob Happy** - *The Grown Ups Are Talking* (30.01.2026)
+- **Tyler Ballgame** - *For The First Time, Again* (30.01.2026)
 - **Cavetown** - *Running With Scissors* (16.01.2026)
 - **Sleaford Mods** - *The Demise Of Planet X* (16.01.2026)
 - **Ya Tseen** - *Stand On My Shoulders* (16.01.2026)
