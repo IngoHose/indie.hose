@@ -1,0 +1,275 @@
+.container {
+            max-width: 1200px;
+            margin: 1rem auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+            gap: 2rem;
+            padding: 0 1rem;
+            box-sizing: border-box;
+            width: 100%;
+            overflow-x: hidden;
+        }
+        
+@media (max-width: 1100px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.tagline {
+    color: #aaa;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+}
+
+.playlists {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.playlist-card {
+    background: #1a1a1a;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    min-width: 0; /* Prevents flex items from overflowing */
+    max-width: 100%;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.playlist-header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+    position: relative;
+    box-sizing: border-box;
+    min-width: 0;
+}
+
+.playlist-thumbnail {
+    width: 100px;
+    height: 100px;
+    border-radius: 12px;
+    overflow: hidden;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.playlist-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.playlist-info {
+    flex: 1;
+}
+
+.playlist-title {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #fff;
+}
+
+.playlist-description {
+    color: #999;
+    font-size: 0.95em;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.playlist-meta {
+    color: #666;
+    font-size: 0.85em;
+}
+
+.expand-button {
+    width: 30px;
+    height: 30px;
+    background: rgb(255, 254, 254);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+}
+
+.expand-button:hover {
+    background: #c00;
+}
+
+.expand-button.rotated {
+    transform: rotate(180deg);
+}
+
+.youtube-button {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    padding: 8px 16px;
+    background: #ffffff;
+    border-radius: 20px;
+    font-size: 0.85em;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.3s ease;
+    z-index: 10;
+}
+
+.youtube-button:hover {
+    background: #cc0000;
+}
+
+.songs-container {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.songs-container.expanded {
+    max-height: 10000px;
+}
+
+.song-item {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    cursor: pointer;
+    transition: background 0.2s ease;
+    text-decoration: none;
+    color: inherit;
+    gap: 15px;
+    padding: 20px;
+    box-sizing: border-box;
+    min-width: 0;
+    overflow: hidden;
+}
+
+.song-item:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.song-number {
+    width: 10px;
+    text-align: center;
+    color: #666;
+    font-size: 0.9em;
+    flex-shrink: 0;
+}
+
+.song-thumbnail {
+    width: 120px;
+    height: 100px;
+    flex-shrink: 0;
+    margin-block-end: 1rem;
+}
+
+.song-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.song-info {
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.song-title {
+    font-weight: 600;
+    margin-bottom: 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    display: block;
+    position: relative;
+}
+
+.song-channel {
+    color: #999;
+    font-size: 0.85em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    display: block;
+    position: relative;
+}
+
+.loading {
+    padding: 40px 20px;
+    text-align: center;
+    color: #666;
+    font-size: 1.1em;
+}
+
+.error {
+    padding: 20px;
+    text-align: center;
+    color: #ff6b6b;
+    background: rgba(255, 107, 107, 0.1);
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    .container {
+        padding: 0 0.5rem;
+        gap: 1rem;
+    }
+
+    .playlist-card {
+        margin-bottom: 1rem;
+    }
+
+    .playlist-header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+    }
+
+    .playlist-thumbnail {
+        width: 100%;
+        height: 180px;
+    }
+
+    .youtube-button {
+        position: static;
+        margin-top: 10px;
+        display: inline-block;
+    }
+
+    .expand-button {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    .song-item {
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .song-thumbnail {
+        width: 80px;
+        height: 45px;
+    }
+}

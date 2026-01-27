@@ -9,6 +9,7 @@ date: 16.11.2024
 
 ## Release-Kalender
 
+<!-- 2026 -->
 
 - **Gorillaz** - *The Mountain* (20.03.2026)
 - **Avalon Emerson** - *Written Into Changes* (20.03.2026)
@@ -25,6 +26,8 @@ date: 16.11.2024
 - **Sleaford Mods** - *The Demise Of Planet X* (16.01.2026)
 - **Ya Tseen** - *Stand On My Shoulders* (16.01.2026)
 - **Dry Cleaning** - *Secret Love* (09.01.2026)
+
+<!-- 2025 -->
 
 - **The Wombats** - *Oh! The Ocean* (14.02.2025)
 - **Saint Motel** - *Saint Motel & the Symphony in the Sky* (14.02.2025)
