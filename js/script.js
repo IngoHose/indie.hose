@@ -143,9 +143,6 @@ window.addEventListener("touchmove", () => {
                         <div class="playlist-description">${snippet.description || 'Keine Beschreibung verfügbar'}</div>
                         <div class="playlist-meta">${videos.length} Videos</div>
                     </div>
-                    <a href="${playlistUrl}" target="_blank" class="youtube-button" onclick="event.stopPropagation()">
-                        YouTube öffnen
-                    </a>
                     <div class="expand-button" onclick="togglePlaylist(${index})">
                         ▼
                     </div>
