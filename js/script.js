@@ -92,7 +92,8 @@ window.addEventListener("touchmove", () => {
         const API_KEY = 'AIzaSyBcy1DQQHI9Rm0HkUNcpHq7I9tHj22kIuU';
         
         const playlistIds = [
-            'PLTYzuzCviO5XjVfh06XTt_Hzr4Y9nTyBi'
+            'PLTYzuzCviO5XjVfh06XTt_Hzr4Y9nTyBi',
+            'PLTYzuzCviO5VBB5oXNrV6nf8ksHyzjYRw'
         ];
 
         let expandedPlaylists = {};
