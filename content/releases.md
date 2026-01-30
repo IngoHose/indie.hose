@@ -14,6 +14,7 @@ date: 16.11.2024
 - **Gorillaz** - *The Mountain* (20.03.2026)
 - **Avalon Emerson** - *Written Into Changes* (20.03.2026)
 
+- **Vona Vella** - *Carnival* (27.02.2026)
 - **Telenova** - *The Warning* (27.02.2026)
 - **MITSKI** - *Nothing's About To Happen To Me* (27.02.2026)
 - **Iron and Wine** - *Hen's Theeth* (27.02.2026)
