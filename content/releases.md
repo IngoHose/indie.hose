@@ -11,6 +11,10 @@ date: 16.11.2024
 
 <!-- 2026 -->
 
+- **Kevin Morby** - *Little Wide Open* (15.05.2026)
+
+
+- **Snail Mail** - *Ricochet* (27.03.2026)
 - **Gorillaz** - *The Mountain* (20.03.2026)
 - **Avalon Emerson** - *Written Into Changes* (20.03.2026)
 
