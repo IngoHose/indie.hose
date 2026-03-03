@@ -15,13 +15,13 @@ date: 16.11.2024
 
 
 - **Snail Mail** - *Ricochet* (27.03.2026)
-- **Gorillaz** - *The Mountain* (20.03.2026)
 - **Avalon Emerson** - *Written Into Changes* (20.03.2026)
 - **Cut Worms** - *Transmitter* (13.03.2026)
 - **Kim Gordon** - *Play Me* (13.03.2026)
 - **Ora Cogan** - *Hard Hearted Woman* (13.03.2026)
 - **Hater** - *Mosquito* (06.03.2026)
 
+- **Gorillaz** - *The Mountain* (27.02.2026)
 - **Vona Vella** - *Carnival* (27.02.2026)
 - **Telenova** - *The Warning* (27.02.2026)
 - **MITSKI** - *Nothing's About To Happen To Me* (27.02.2026)
