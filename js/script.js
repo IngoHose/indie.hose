@@ -72,13 +72,11 @@ window.addEventListener("touchmove", () => {
     const songTitle = data.title;
     const artist = data.artist.name;
     
-    // HIER IST DIE ÄNDERUNG:
     document.getElementById('currentSong').textContent = `${artist} - ${songTitle}`;
     
   } catch (error) {
     console.error('Es gab ein Problem mit der Fetch-Operation:', error);
     
-    // HIER AUCH ÄNDERN:
     document.getElementById('currentSong').textContent = 'Fehler beim Laden der Songdaten';
   }
 }

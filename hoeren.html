@@ -42,6 +42,41 @@
       </div>
     </div>
 
+    <div class="radio-player-container">
+  <div class="rp">
+    <div class="rp-glow"></div>
+    <div style="display:flex; align-items:center; justify-content:space-between;">
+      <span class="rp-label">indie.hose radio</span>
+      <div class="rp-live">
+        <div class="rp-live-dot"></div>
+        <span class="rp-live-text">LIVE</span>
+      </div>
+    </div>
+    <div class="rp-now">Jetzt läuft</div>
+    <div class="rp-song" id="rpSongTitle">Lädt...</div>
+    <div class="rp-artist" id="rpSongArtist">&nbsp;</div>
+    <div class="rp-wave">
+      <!-- 16x -->
+      <div class="rp-bar"></div><div class="rp-bar"></div><div class="rp-bar"></div>
+      <div class="rp-bar"></div><div class="rp-bar"></div><div class="rp-bar"></div>
+      <div class="rp-bar"></div><div class="rp-bar"></div><div class="rp-bar"></div>
+      <div class="rp-bar"></div><div class="rp-bar"></div><div class="rp-bar"></div>
+      <div class="rp-bar"></div><div class="rp-bar"></div><div class="rp-bar"></div>
+      <div class="rp-bar"></div>
+    </div>
+    <a class="rp-link" href="https://laut.fm/indie-hose" target="_blank" rel="noopener">
+      <div class="rp-link-left">
+        <span class="rp-link-label">Jetzt reinhören auf</span>
+        <span class="rp-link-text">laut.fm/indie-hose ↗</span>
+      </div>
+    </a>
+  </div>
+</div>
+
+    <div class="tagline">
+      <p>Radio ist cool, aber du möchtest mehr Kontrolle? Dann hör doch direkt unsere Auswahl an Playlists über YouTube.</p>
+    </div>
+
     <div class="container">
 
         <div class="playlists" id="playlistsContainer">
@@ -62,6 +97,20 @@
   data-id="indie.hose" data-description="Support me on Buy me a coffee!" data-color="#BD5FFF" data-position="Right"
   data-x_margin="10" data-y_margin="10"></script>
 <script src="js/script.js"></script>
+<script>    
+async function fetchCurrentSong() {
+      try {
+        const response = await fetch('https://api.laut.fm/station/indie-hose/current_song');
+        if (!response.ok) throw new Error();
+        const data = await response.json();
+        document.getElementById('rpSongTitle').textContent = `${data.artist.name} – ${data.title}`;
+      } catch {
+        document.getElementById('rpSongTitle').textContent = 'Fehler beim Laden';
+      }
+    }
+    fetchCurrentSong();
+    setInterval(fetchCurrentSong, 30000);
+    </script>
 </body>
 
 </html>
