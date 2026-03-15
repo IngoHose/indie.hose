@@ -126,46 +126,32 @@ window.addEventListener("touchmove", () => {
             const card = document.createElement('div');
             card.className = 'playlist-card';
             card.id = `playlist-${index}`;
-            
+
             const snippet = playlistInfo.snippet;
-            const playlistUrl = `https://youtube.com/playlist?list=${playlistInfo.id}`;
-            
-            // Debug: Log the actual playlist ID
-            console.log('Playlist ID:', playlistInfo.id);
-            console.log('Playlist Title:', snippet.title);
-            
-            // Custom image mapping for different playlists
+
             const playlistImages = {
-                'PLTYzuzCviO5XjVfh06XTt_Hzr4Y9nTyBi': 'img/Playlist-Cover/Cover_Indie-Party_v.2.jpg',
-                'PLTYzuzCviO5VBB5oXNrV6nf8ksHyzjYRw': 'img/Playlist-Cover/cover_top2024.png',
+                'PLTYzuzCviO5XjVfh06XTt_Hzr4Y9nTyBi': 'img/Playlist-Cover/Cover Indie Party.png',
+                'PLTYzuzCviO5VBB5oXNrV6nf8ksHyzjYRw': 'img/Playlist-Cover/Cover Top2024.png',
                 'default': 'img/GeorgeHouston_VehicularSuicide.png'
             };
-            
+
             const thumbnailUrl = playlistImages[playlistInfo.id] || playlistImages['default'];
-            
-            // Debug: Log which image is being used
-            console.log('Using image:', thumbnailUrl);
-            
+
             card.innerHTML = `
-                <div class="playlist-header">
-                    <div class="playlist-thumbnail">
-                        <img src="${thumbnailUrl}" alt="${snippet.title}">
-                        <div class="play-icon-small">▶</div>
-                    </div>
-                    <div class="playlist-info">
+                <div class="playlist-cover">
+                    <img src="${thumbnailUrl}" alt="${snippet.title}">
+                    <div class="playlist-cover-gradient"></div>
+                    <div class="playlist-cover-info">
                         <div class="playlist-title">${snippet.title}</div>
-                        <div class="playlist-description">${snippet.description || 'Keine Beschreibung verfügbar'}</div>
                         <div class="playlist-meta">${videos.length} Videos</div>
                     </div>
-                    <div class="expand-button" onclick="togglePlaylist(${index})">
-                        ▼
-                    </div>
+                    <div class="expand-button" onclick="togglePlaylist(${index})">▼</div>
                 </div>
                 <div class="songs-container" id="songs-${index}">
                     ${videos.map((video, i) => createSongItem(video, i + 1, playlistInfo.id)).join('')}
                 </div>
             `;
-            
+
             return card;
         }
 
@@ -173,17 +159,17 @@ window.addEventListener("touchmove", () => {
             const snippet = item.snippet;
             const videoId = snippet.resourceId.videoId;
             const videoUrl = `https://www.youtube.com/watch?v=${videoId}&list=${playlistId}`;
-            const thumbnailUrl = snippet.thumbnails.medium.url;
-            
+            const thumbUrl = snippet.thumbnails?.medium?.url || snippet.thumbnails?.default?.url || '';
+
             return `
                 <a href="${videoUrl}" target="_blank" class="song-item" onclick="event.stopPropagation()">
                     <div class="song-number">${number}</div>
                     <div class="song-thumbnail">
-                        <img src="${thumbnailUrl}" alt="${snippet.title}">
+                        ${thumbUrl ? `<img src="${thumbUrl}" alt="">` : ''}
                     </div>
                     <div class="song-info">
-                        <div class="song-title">${snippet.title}</div>
-                        <div class="song-channel">${snippet.videoOwnerChannelTitle || snippet.channelTitle}</div>
+                        <span class="song-title">${snippet.title}</span>
+                        <span class="song-channel">${snippet.videoOwnerChannelTitle || snippet.channelTitle || ''}</span>
                     </div>
                 </a>
             `;
