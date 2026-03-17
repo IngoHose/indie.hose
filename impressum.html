@@ -12,21 +12,48 @@
 <body>
 
   <header id="main-header">
-    <div class="header-top">
-      <h1><a href="index.html">indie.hose</a></h1>
-      <div id="hamburger">&#9776;</div>
-    </div>
-
-    <hr class="hr1">
-
-    <nav id="main-nav">
-      <a href="hoeren.html">Hören</a>
-      <a href="archiv.html">Lesen</a>
-      <a href="sendeplan.html">Sendeplan</a>
-      <a href="about.html">Über uns</a>
-    </nav>
-    
-  </header>
+ 
+  <div class="header-top">
+ 
+    <!-- Hamburger -->
+    <div id="hamburger">&#9776;</div>
+ 
+    <!-- Logo: wordmark + waves -->
+    <a href="index.html" class="logo-wrap" aria-label="indie.hose – Startseite">
+ 
+      <div class="logo-wordmark">
+        <span class="indie">indie</span>
+        <span class="hose"> hose</span>
+      </div>
+ 
+      <!-- Animated radio waves -->
+      <svg class="logo-waves" width="90" height="48" viewBox="0 0 90 48" aria-hidden="true">
+        <!-- Emit dot -->
+        <circle class="wave-dot" cx="4" cy="24" r="3"/>
+ 
+        <!-- 5 semicircles, right-facing arcs, anchored at (4,24) -->
+        <!-- radius 14 -->
+        <path class="wave w1" d="M4,10 A14,14 0 0 1 4,38"/>
+        <!-- radius 20 -->
+        <path class="wave w2" d="M4,4  A20,20 0 0 1 4,44"/>
+        <!-- radius 26 -->
+        <path class="wave w3" d="M4,-2 A26,26 0 0 1 4,50"/>
+      </svg>
+ 
+    </a>
+ 
+  </div>
+ 
+  <hr class="hr1">
+ 
+  <nav id="main-nav">
+    <a href="hoeren.html">Hören</a>
+    <a href="archiv.html">Lesen</a>
+    <a href="sendeplan.html">Sendeplan</a>
+    <a href="about.html">Über uns</a>
+  </nav>
+ 
+</header>
 
   <div id="overlay-nav" aria-hidden="true">
     <button id="close-overlay" aria-label="Menü schließen">&times;</button>

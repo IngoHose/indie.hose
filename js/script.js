@@ -45,24 +45,17 @@ document.addEventListener("DOMContentLoaded", () => {
     if (e.key === "Escape") closeOverlayFn();
   });
 
-  // --- Header schrumpfen beim Scrollen (Nav blendet aus) ---
-  // Erweitere dein bestehendes Script um Touch-Support:
-window.addEventListener("scroll", () => {
-    if (window.scrollY > 50) {
-        header.classList.add("shrink");
-    } else {
-        header.classList.remove("shrink");
-    }
-}, { passive: true }); // passive: true für bessere Touch-Performance
-
-// Zusätzlich für Touch-Geräte:
-window.addEventListener("touchmove", () => {
-    if (window.scrollY > 50) {
-        header.classList.add("shrink");
-    } else {
-        header.classList.remove("shrink");
-    }
-}, { passive: true });
+  function updateHeaderHeight() {
+    const h = document.getElementById('main-header').getBoundingClientRect().height;
+    document.documentElement.style.setProperty('--header-h', h + 'px');
+  }
+  window.addEventListener('scroll', () => {
+    const header = document.getElementById('main-header');
+    header.classList.toggle('shrink', window.scrollY > 50);
+    updateHeaderHeight();
+  }, { passive: true });
+  updateHeaderHeight();
+  setTimeout(updateHeaderHeight, 350);
 
   async function fetchCurrentSong() {
   try {
