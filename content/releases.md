@@ -12,6 +12,8 @@ date: 16.11.2024
 <!-- 2026 -->
 
 
+- **Widowspeak** - *Roses* (05.06.2026)
+
 - **The Lemon Twigs** - *Look For Your Mind!* (08.05.2026)
 - **Kevin Morby** - *Little Wide Open* (15.05.2026)
 - **Madsen** - *Smile* (29.05.2026)

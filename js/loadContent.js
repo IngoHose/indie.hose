@@ -36,7 +36,7 @@ function parseGermanDate(dateString) {
 // Badge-HTML generieren (nur für Featured Article und Article.html)
 // --------------------
 function createBadges(meta) {
-  const row1 = []; // Kategorie, Autor, Datum
+  const row1 = []; // Kategorie, Autor, Datum, Artist
   const row2 = []; // Artist
   
   // Reihe 1
@@ -338,72 +338,6 @@ async function loadArticleCards(articles) {
     console.error("Fehler beim Laden der Artikel-Cards:", err);
   }
 }
-
-// --------------------
-// Shorts in die Shorts-Section laden (OHNE Badges)
-// releases.md immer an erster Stelle
-// --------------------
-/* async function loadShortsToSection(shortsEntries) {
-  try {
-    const shortsSection = document.querySelector(".shorts-section");
-    if (!shortsSection) {
-      console.error("Shorts-Section nicht gefunden");
-      return;
-    }
-
-    // releases.md finden und separieren
-    const releasesIndex = shortsEntries.findIndex(e => isReleases(e.file));
-    let releasesEntry = null;
-    let otherShorts = shortsEntries;
-    
-    if (releasesIndex !== -1) {
-      releasesEntry = shortsEntries[releasesIndex];
-      otherShorts = shortsEntries.filter((e, i) => i !== releasesIndex);
-    }
-
-    // Andere Shorts nach Datum sortieren (neueste zuerst)
-    otherShorts.sort((a, b) => parseGermanDate(b.meta.date) - parseGermanDate(a.meta.date));
-
-    // releases.md als erstes laden
-    if (releasesEntry) {
-      await loadSingleShort(releasesEntry, shortsSection);
-    }
-
-    // Dann die anderen Shorts laden
-    for (const shortEntry of otherShorts) {
-      await loadSingleShort(shortEntry, shortsSection);
-    }
-
-  } catch (err) {
-    console.error("Fehler beim Laden der Shorts:", err);
-  }
-}
-
-// Hilfsfunktion zum Laden eines einzelnen Shorts
-async function loadSingleShort(shortEntry, shortsSection) {
-  const html = marked.parse(shortEntry.mdText);
-  const wrapper = document.createElement("div");
-  wrapper.innerHTML = html.trim();
-  
-  // Prüfen ob bereits ein .short Container vorhanden ist
-  let shortEl = wrapper.querySelector(".short");
-  
-  if (!shortEl) {
-    // Wenn kein .short Container da ist, einen erstellen
-    const contentOnly = shortEntry.mdText.replace(/^---[\s\S]*?---/, "").trim();
-    const contentHtml = marked.parse(contentOnly).trim();
-    
-    shortEl = document.createElement("div");
-    shortEl.className = "short dynamic";
-    shortEl.innerHTML = contentHtml;
-  } else {
-    shortEl.classList.add("dynamic");
-  }
-  
-  // KEINE Badges bei Shorts!
-
-  shortsSection.appendChild(shortEl);
-} */
 
 // --------------------
 // Artikel laden (für article.html - MIT Badges)
