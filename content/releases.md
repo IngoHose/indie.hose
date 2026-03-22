@@ -14,11 +14,16 @@ date: 16.11.2024
 
 - **Widowspeak** - *Roses* (05.06.2026)
 
+- **Young The Giant** - *Victory Garden* (01.05.2026)
 - **The Lemon Twigs** - *Look For Your Mind!* (08.05.2026)
 - **Kevin Morby** - *Little Wide Open* (15.05.2026)
+- **Bleachers** - *Everyone For Ten Minutes* (22.05.2026)
 - **Madsen** - *Smile* (29.05.2026)
 
+- **Metric** - *Romanticize the Dive* (24.04.2026)
 - **Carla Dal Forno** - *Confession* (24.04.2026)
+- **Holly Humberstone** - *Cruel World* (10.04.2026)
+- **Arlo Parks** - *Ambiguous Desire* (03.04.2026)
 
 - **Snail Mail** - *Ricochet* (27.03.2026)
 - **Avalon Emerson** - *Written Into Changes* (20.03.2026)
