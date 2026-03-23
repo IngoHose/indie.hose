@@ -754,13 +754,16 @@ img {
 
 .lyrics {
   font-family: 'Courier New', monospace;
-  font-size: 1rem;
+  font-size: 0.6rem;
   text-align: start;
   margin-inline: 5%;
   margin-block-end: 2rem;
   padding: 1rem 1.5rem;
   margin: 1.5rem 0;
   line-height: 1.6;
+
+  @media (width > 800px) { font-size: 0.7rem; }
+  @media (width > 1200px) { font-size: 0.9rem; }
 }
 
 .lyrics em     { color: #666; font-style: italic; }
@@ -768,12 +771,12 @@ img {
 
 .strophe { margin-bottom: 10px; }
 
-.verse {
+.verse, .title {
   display: block;
   margin-bottom: 0;
-  line-height: 1.2rem;
+  line-height: 1rem;
 
-  @media (width < 800px) { line-height: 1rem; }
+  @media (width >= 800px) { line-height: 1.2rem; text-indent: 10%; }
 }
 
 .video {

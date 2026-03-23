@@ -16,6 +16,7 @@ date: 16.11.2024
 
 - **Young The Giant** - *Victory Garden* (01.05.2026)
 - **The Lemon Twigs** - *Look For Your Mind!* (08.05.2026)
+- **Ray Bull** - *Please Stop Laughing* (08.05.2026)
 - **Kevin Morby** - *Little Wide Open* (15.05.2026)
 - **Bleachers** - *Everyone For Ten Minutes* (22.05.2026)
 - **Madsen** - *Smile* (29.05.2026)

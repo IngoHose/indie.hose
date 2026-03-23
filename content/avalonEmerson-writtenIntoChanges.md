@@ -22,7 +22,7 @@ kategorie: Hörempfehlung
     <span class="verse">You're still my favourite place in Eden;</span>
     <span class="verse">You're still my favourite piece of me</span>
   </div>
-  - Eden
+  <span class="title">- Eden</span>
 </div>
 
 <p>Wem wird da nicht warm ums Herz, vor allem, wenn es in so angenehm treibenden aber nie überfordernden Funk-Pop gehüllt ist? Generell ist <em>Written Into Changes</em> überwiegend tanzbar - so ganz bekommt man die DJ dann doch nicht aus <strong>Emerson</strong> heraus - vereinzelt nimmt sie sich jedoch auch bewusst den Raum für leise Töne und Verschnaufpausen. Insgesamt handelt es sich beim Folgealbum also immer noch um Dream Pop, doch nimmt der Psychedelic- und Dance-Faktor deutlich zu. Das wird vor allem durch den Wandel ab der zweiten Albumhälfte deutlich. Während sich die radiotauglichen Singles alle auf den vorderen Plätzen des Albums tummeln, finden wir uns spätestens mit <em>Wooden Star</em> und <em>God Damn (Finito)</em> vollends auf dem Dancefloor wieder. Einen großen Anteil daran hat wohl auch die Erkenntnis <strong>Emersons</strong>, dass ihr deutlich ruhigeres Debütwerk live zu glatt daher kam und es künftig auf und vor der Bühne etwas dynamischer zugehen soll. Dieser Kompromiss aus Pop und Party funktioniert hervorragend.
