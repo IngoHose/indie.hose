@@ -14,6 +14,15 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+} 
+
+p, li, figcaption, h3.headline, a.weiterlesen-button {
+max-width: 70ch;
+align-self: center;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -771,7 +780,7 @@ img {
 
 .strophe { margin-bottom: 10px; }
 
-.verse, .title {
+.verse, .lyrics-title {
   display: block;
   margin-bottom: 0;
   line-height: 1rem;
