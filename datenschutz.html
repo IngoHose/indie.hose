@@ -11,7 +11,7 @@
 </head>
 <body>
 
-  <header id="main-header">
+<header id="main-header">
  
   <div class="header-top">
  
@@ -31,7 +31,7 @@
         <!-- Emit dot -->
         <circle class="wave-dot" cx="4" cy="24" r="3"/>
  
-        <!-- 5 semicircles, right-facing arcs, anchored at (4,24) -->
+        <!-- 3 semicircles, right-facing arcs, anchored at (4,24) -->
         <!-- radius 14 -->
         <path class="wave w1" d="M4,10 A14,14 0 0 1 4,38"/>
         <!-- radius 20 -->
@@ -43,29 +43,29 @@
     </a>
  
   </div>
- 
+  
   <hr class="hr1">
- 
+  
   <nav id="main-nav">
     <a href="hoeren.html">Hören</a>
     <a href="archiv.html">Lesen</a>
     <a href="sendeplan.html">Sendeplan</a>
     <a href="about.html">Über uns</a>
   </nav>
+
+    <div class="player">
+      <a class="play-button" href="https://laut.fm/indie-hose" target="_blank">▶</a>
+      <div class="now-playing-label">Jetzt läuft:</div>
+      <div class="song-scroll-container">
+          <div class="song-title" id="currentSong">Lädt...</div>
+      </div>
+    </div>
  
 </header>
 
   <div id="overlay-nav" aria-hidden="true">
     <button id="close-overlay" aria-label="Menü schließen">&times;</button>
     <nav id="overlay-menu"></nav>
-  </div>
-
-  <div class="player">
-      <a class="play-button" href="https://laut.fm/indie-hose" target="_blank">▶</a>
-      <div class="now-playing-label">Jetzt läuft:</div>
-      <div class="song-scroll-container">
-          <div class="song-title" id="currentSong">Lädt...</div>
-      </div>
   </div>
 
   <main class="wrapper"> 

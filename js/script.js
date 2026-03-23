@@ -45,17 +45,6 @@ document.addEventListener("DOMContentLoaded", () => {
     if (e.key === "Escape") closeOverlayFn();
   });
 
-  function updateHeaderHeight() {
-    const h = document.getElementById('main-header').getBoundingClientRect().height;
-    document.documentElement.style.setProperty('--header-h', h + 'px');
-  }
-  window.addEventListener('scroll', () => {
-    const header = document.getElementById('main-header');
-    header.classList.toggle('shrink', window.scrollY > 50);
-    updateHeaderHeight();
-  }, { passive: true });
-  updateHeaderHeight();
-  setTimeout(updateHeaderHeight, 350);
 
   async function fetchCurrentSong() {
   try {

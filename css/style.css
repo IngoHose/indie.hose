@@ -45,50 +45,19 @@ body.no-scroll { overflow: hidden; }
 /* ============================================
    HEADER
    ============================================ */
-
+   
 header {
   background: var(--header-bg);
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: all 0.3s ease;
+  transition: padding 0.3s ease;
   position: sticky;
   top: 0;
-  will-change: transform;
-  backface-visibility: hidden;
   z-index: 1000;
   padding: 10px 20px 0;
 }
-
-header.shrink {
-  padding: 5px 10px;
-  min-height: 40px;
-}
-
-header.shrink #main-nav,
-header.shrink .hr1,
-header.shrink .hr2 {
-  opacity: 0;
-  height: 0;
-  overflow: hidden;
-  pointer-events: none;
-  margin: 0;
-  padding: 0;
-}
-
-header.shrink .logo-wordmark .indie,
-header.shrink .logo-wordmark .hose {
-  font-size: 15px;
-  transition: font-size 0.3s ease;
-}
-
-header.shrink .logo-waves {
-  width: 40px;
-  height: 30px;
-  transition: width 0.3s ease, height 0.3s ease;
-}
-
 
 /* ── Header top row ── */
 .header-top {
@@ -99,8 +68,7 @@ header.shrink .logo-waves {
   position: relative;
   padding-bottom: 8px;
 }
-
-
+ 
 /* ============================================
    LOGO
    ============================================ */
@@ -217,6 +185,9 @@ header.shrink .logo-waves {
   #hamburger { font-size: 20px; }
 }
 
+@media (min-width: 1200px) {
+  #hamburger { display: none; }
+}
 
 /* ============================================
    H1 (Fallback falls kein .logo-wrap genutzt)
@@ -237,10 +208,14 @@ h1 {
    ============================================ */
 
 #main-nav {
-  display: flex;
+  display: none;
   justify-content: center;
   width: 100%;
   gap: 0.5rem;
+}
+
+@media (min-width: 1200px) {
+  #main-nav { display: flex; }
 }
 
 header a, footer a { color: white; text-decoration: none; }
@@ -311,10 +286,6 @@ header a, footer a { color: white; text-decoration: none; }
   height: 2rem;
   font-family: monospace;
   font-size: 0.7rem;
-  position: sticky;
-  top: var(--header-h, 60px);  /* dynamisch per JS gesetzt */
-  transition: top 0.3s ease;
-  z-index: 1000;
   background-color: var(--header-bg);
   margin: 0;
   color: white;
@@ -346,8 +317,6 @@ header a, footer a { color: white; text-decoration: none; }
   border-radius: 0;
   transition: background-color 0.3s ease, transform 0.2s ease;
   min-width: 0;
-  will-change: transform, background-color;
-  backface-visibility: hidden;
 }
 
 .play-button:hover {
@@ -514,7 +483,7 @@ main { flex: 1; }
 }
 
 .article-feature-meta img {
-  max-width: 200px;
+ max-width: 200px;
   height: auto;
   border-radius: 8px;
   margin-bottom: 1rem;
@@ -598,7 +567,7 @@ main { flex: 1; }
 /* Badge-System */
 .meta-badges {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 0.5rem;
   align-items: flex-start;
 }
@@ -608,15 +577,6 @@ main { flex: 1; }
   flex-wrap: wrap;
   gap: 1rem;
   align-items: center;
-}
-
-.badge-row + .badge-row::before {
-  content: '';
-  display: inline-block;
-  width: 1px;
-  height: 1em;
-  background: #333;
-  flex-shrink: 0;
 }
 
 .badge {
@@ -960,6 +920,7 @@ footer ul {
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  /* Nur transform und box-shadow animieren, kein 'all' */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
