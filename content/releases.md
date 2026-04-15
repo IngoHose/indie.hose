@@ -12,6 +12,8 @@ date: 16.11.2024
 <!-- 2026 -->
 
 
+- **The Temper Trap** - *Sungazer* (10.07.2026)
+
 - **Widowspeak** - *Roses* (05.06.2026)
 
 - **Young The Giant** - *Victory Garden* (01.05.2026)
@@ -24,6 +26,7 @@ date: 16.11.2024
 - **Metric** - *Romanticize the Dive* (24.04.2026)
 - **Carla Dal Forno** - *Confession* (24.04.2026)
 - **Holly Humberstone** - *Cruel World* (10.04.2026)
+- **Lime Garden** - *Maybe Not Tonight* (10.04.2026)
 - **Arlo Parks** - *Ambiguous Desire* (03.04.2026)
 
 - **Snail Mail** - *Ricochet* (27.03.2026)
