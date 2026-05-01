@@ -73,7 +73,8 @@ document.addEventListener("DOMContentLoaded", () => {
         
         const playlistIds = [
             'PLTYzuzCviO5XjVfh06XTt_Hzr4Y9nTyBi',
-            'PLTYzuzCviO5VBB5oXNrV6nf8ksHyzjYRw'
+            'PLTYzuzCviO5VBB5oXNrV6nf8ksHyzjYRw',
+            'PLTYzuzCviO5V8r79i7SC0NUWz_b6XIM86&si'
         ];
 
         let expandedPlaylists = {};
@@ -111,13 +112,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const snippet = playlistInfo.snippet;
 
+            // Debug: Log the actual playlist ID
+            console.log('Playlist ID:', playlistInfo.id);
+            console.log('Playlist Title:', snippet.title);
+
             const playlistImages = {
                 'PLTYzuzCviO5XjVfh06XTt_Hzr4Y9nTyBi': 'img/Playlist-Cover/Cover Indie Party.png',
                 'PLTYzuzCviO5VBB5oXNrV6nf8ksHyzjYRw': 'img/Playlist-Cover/Cover Top2024.png',
+                'PLTYzuzCviO5V8r79i7SC0NUWz_b6XIM86': 'img/Playlist-Cover/Cover Top2025.png',
                 'default': 'img/GeorgeHouston_VehicularSuicide.png'
             };
 
             const thumbnailUrl = playlistImages[playlistInfo.id] || playlistImages['default'];
+            
+            // Debug: Log which image is being used
+            console.log('Using image:', thumbnailUrl);
 
             card.innerHTML = `
                 <div class="playlist-cover">
