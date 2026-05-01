@@ -14,9 +14,11 @@ date: 16.11.2024
 
 - **The Temper Trap** - *Sungazer* (10.07.2026)
 
+- **Bye Parula** - *Something Out Of Nothing* (05.06.2026)
 - **Widowspeak** - *Roses* (05.06.2026)
 
 - **Young The Giant** - *Victory Garden* (01.05.2026)
+- **Aldous Harding** - *Train On The Island* (08.05.2026)
 - **The Lemon Twigs** - *Look For Your Mind!* (08.05.2026)
 - **Ray Bull** - *Please Stop Laughing* (08.05.2026)
 - **Kevin Morby** - *Little Wide Open* (15.05.2026)
