@@ -11,9 +11,13 @@ date: 16.11.2024
 
 <!-- 2026 -->
 
+- **La Roux** - *Old Flames* (06.11.2026)
+
+- **Jonathan Bree** - *Don't Call It Love* (27.08.2026)
 
 - **The Temper Trap** - *Sungazer* (10.07.2026)
 
+- **Brockhoff** - *Easy Peeler* (05.06.2026)
 - **Bye Parula** - *Something Out Of Nothing* (05.06.2026)
 - **Widowspeak** - *Roses* (05.06.2026)
 
@@ -22,6 +26,7 @@ date: 16.11.2024
 - **The Lemon Twigs** - *Look For Your Mind!* (08.05.2026)
 - **Ray Bull** - *Please Stop Laughing* (08.05.2026)
 - **Kevin Morby** - *Little Wide Open* (15.05.2026)
+- **Rostam** - *American Stories* (15.05.2026)
 - **Bleachers** - *Everyone For Ten Minutes* (22.05.2026)
 - **Madsen** - *Smile* (29.05.2026)
 
