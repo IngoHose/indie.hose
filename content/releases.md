@@ -13,10 +13,20 @@ date: 16.11.2024
 
 - **La Roux** - *Old Flames* (06.11.2026)
 
-- **Jonathan Bree** - *Don't Call It Love* (27.08.2026)
+- **Nothing But Thieves** - *Stray Dogs* (25.09.2026)
 
+- **Jonathan Bree** - *Don't Call It Love* (27.08.2026)
+- **Jungle** - *Sunshine* (14.08.2026)
+
+- **Yard Act** - *You're Gonna Need A Little Music* (17.07.2026)
+- **Kasabian** - *Act III* (17.07.2026)
+- **Jack White** - *Frozen Charlotte* (10.07.2026)
 - **The Temper Trap** - *Sungazer* (10.07.2026)
 
+- **The Strokes** - *Reality Awaits* (24.06.2026)
+- **Fruit Bats** - *The Landfill* (05.06.2026)
+- **Zoh Amba** - *Eyes Full* (05.06.2026)
+- **Death Cab For Cutie** - *I Built You A Tower* (05.06.2026)
 - **Brockhoff** - *Easy Peeler* (05.06.2026)
 - **Bye Parula** - *Something Out Of Nothing* (05.06.2026)
 - **Widowspeak** - *Roses* (05.06.2026)
@@ -29,9 +39,11 @@ date: 16.11.2024
 - **Rostam** - *American Stories* (15.05.2026)
 - **Bleachers** - *Everyone For Ten Minutes* (22.05.2026)
 - **Madsen** - *Smile* (29.05.2026)
+- **Kurt Vile** - *Philadelphia's Been Good To Me* (29.05.2026)
 
 - **Metric** - *Romanticize the Dive* (24.04.2026)
 - **Carla Dal Forno** - *Confession* (24.04.2026)
+- **Eaves Wilder** - *Little Miss Sunshine* (17.04.2026)
 - **Holly Humberstone** - *Cruel World* (10.04.2026)
 - **Lime Garden** - *Maybe Not Tonight* (10.04.2026)
 - **Arlo Parks** - *Ambiguous Desire* (03.04.2026)
