@@ -26,6 +26,7 @@ date: 16.11.2024
 - **The Temper Trap** - *Sungazer* (10.07.2026)
 
 - **The Strokes** - *Reality Awaits* (24.06.2026)
+- **Meltt** - *Pathways* (12.06.2026)
 - **Fruit Bats** - *The Landfill* (05.06.2026)
 - **Zoh Amba** - *Eyes Full* (05.06.2026)
 - **Death Cab For Cutie** - *I Built You A Tower* (05.06.2026)
