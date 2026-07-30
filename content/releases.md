@@ -16,6 +16,7 @@ date: 16.11.2024
 - **Nothing But Thieves** - *Stray Dogs* (25.09.2026)
 - **Post Sex Nachos** - *Big Bad* (18.09.2026)
 - **Babehoven** - *I See Them, I See Me* (18.09.2026)
+- **Kasabian** - *Act III* (04.09.2026)
 
 - **Jonathan Bree** - *Don't Call It Love* (27.08.2026)
 - **Jungle** - *Sunshine* (14.08.2026)
@@ -23,7 +24,6 @@ date: 16.11.2024
 
 - **Love Spells** - *Love Is The Law* (24.07.2026)
 - **Yard Act** - *You're Gonna Need A Little Music* (17.07.2026)
-- **Kasabian** - *Act III* (17.07.2026)
 - **Baby Rose** - *Let Me Go* (10.07.2026)
 - **Jack White** - *Frozen Charlotte* (10.07.2026)
 - **The Temper Trap** - *Sungazer* (10.07.2026)
