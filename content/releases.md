@@ -26,7 +26,7 @@ date: 16.11.2024
 
 - **Love Spells** - *Love Is The Law* (24.07.2026)
 - **Yard Act** - *You're Gonna Need A Little Music* (17.07.2026)
-- **Baby Rose** - *Let Me Go* (10.07.2026)
+- **Baby Rose** - *Yearnalism* (10.07.2026)
 - **Jack White** - *Frozen Charlotte* (10.07.2026)
 - **The Temper Trap** - *Sungazer* (10.07.2026)
 
