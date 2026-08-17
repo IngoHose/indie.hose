@@ -19,8 +19,10 @@ date: 16.11.2024
 - **Kasabian** - *Act III* (04.09.2026)
 
 - **Jonathan Bree** - *Don't Call It Love* (27.08.2026)
+- **Getdown Services** - *Massive Champion* (14.08.2026)
+- **Hovvdy** - *Big World* (14.08.2026)
 - **Jungle** - *Sunshine* (14.08.2026)
-
+- **Phoebe Bridgers** - *Lost Weekend* (14.08.2026)
 
 - **Love Spells** - *Love Is The Law* (24.07.2026)
 - **Yard Act** - *You're Gonna Need A Little Music* (17.07.2026)
@@ -105,6 +107,7 @@ date: 16.11.2024
 - **No Cigar** - *Under The Surface* (30.07.2025)
 
 - **Bret McKenzie** - *Freakout City* (15.08.2025)
+- **Sir Chloe** - *Swallow The Knife* (22.08.2025)
 - **TOPS** - *bury the key* (22.08.2025)
 - **Balu Brigada** - *Portal* (29.08.2025)
 - **The Hives** - *The Hives Forever Forever The Hives* (29.08.2025)
