@@ -20,6 +20,7 @@ date: 16.11.2024
 - **Blossoms** - *Songs From The Wedding Cake* (02.10.2026)
 - **Fat Dog** - *Cancel Me (I'm Tired)* (02.10.2026)
 - **Wishy** - *Nature's Pill* (02.10.2026)
+- **Everyone Says Hi** - *Funny Cos It's True* (09.10.2026)
 - **Remi Wolf** - *MUD* (09.10.2026)
 - **Fontaines D.C.** - *Dopamine Chamber* (16.10.2026)
 - **Michael Kiwanuka** - *Fudge* (23.10.2026)
