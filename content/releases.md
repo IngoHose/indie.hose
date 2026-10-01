@@ -11,7 +11,22 @@ date: 16.11.2024
 
 <!-- 2026 -->
 
+- **Friendly Fires** - *Dig Deeper* (15.01.2027)
+- **Lambrini Girls** - *No Refunds* (15.01.2027)
+
 - **La Roux** - *Old Flames* (06.11.2026)
+- **Desperate Journalist** - *Gilding The Lily* (20.11.2026)
+
+- **Blossoms** - *Songs From The Wedding Cake* (02.10.2026)
+- **Fat Dog** - *Cancel Me (I'm Tired)* (02.10.2026)
+- **Wishy** - *Nature's Pill* (02.10.2026)
+- **Remi Wolf** - *MUD* (09.10.2026)
+- **Fontaines D.C.** - *Dopamine Chamber* (16.10.2026)
+- **Michael Kiwanuka** - *Fudge* (23.10.2026)
+- **Twin Temple** - *Doomed Lovers* (23.10.2026)
+- **Caroline Rose** - *Getting The Horse At The Walt Whitman Mall* (30.10.2026)
+- **Fujiya & Miyagi** - *New Shiny Object* (30.10.2026)
+- **Queens of the Stone Age** - *Perfecth* (30.10.2026)
 
 - **Nothing But Thieves** - *Stray Dogs* (25.09.2026)
 - **Post Sex Nachos** - *Big Bad* (18.09.2026)
