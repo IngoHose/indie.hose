@@ -24,7 +24,7 @@ date: 16.11.2024
 - **Fontaines D.C.** - *Dopamine Chamber* (16.10.2026)
 - **Michael Kiwanuka** - *Fudge* (23.10.2026)
 - **Twin Temple** - *Doomed Lovers* (23.10.2026)
-- **Caroline Rose** - *Getting The Horse At The Walt Whitman Mall* (30.10.2026)
+- **Caroline Rose** - *Gentling The Horse At The Walt Whitman Mall* (30.10.2026)
 - **Fujiya & Miyagi** - *New Shiny Object* (30.10.2026)
 - **Queens of the Stone Age** - *Perfecth* (30.10.2026)
 
