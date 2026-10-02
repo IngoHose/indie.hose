@@ -13,7 +13,7 @@ kategorie: Hörempfehlung
 <h3 class="headline">Aller Guten Dinge sind vier</h3>
 
 <p class="intro-text">Ja, es stimmt. <strong>Indie.hose</strong> hat ein Herz für <strong>TOPS</strong>. 
-Sie laufen bei uns im Radio, waren im letztjährigen Adventskalender vertreten und das 2025 erschiene Album <em>bury the key</em> schaffte es in unsere <a href="http://127.0.0.1:5500/article.html?file=content%2Feoy2025.md" target="_blank">Jahresendliste</a>. 
+Sie laufen bei uns im Radio, waren im letztjährigen Adventskalender vertreten und das 2025 erschiene Album <em>bury the key</em> schaffte es in unsere <a href="https://www.radio-indie-hose.de/article.html?file=content%2Feoy2025.md" target="_blank">Jahresendliste</a>. 
 Da bleibt die berechtigte Frage: Wo ist die Hörempfehlung? Fragt nicht länger, hier kommt sie ja schon.</p>
 
 <p>Heute erkennen wir die 4-köpfige Dreampop-Band aus Montreal vor allem an dem vielseitigen Einsatz verschiedener Flöten. Doch wer den Weg des ursprünglichen Trios schon länger verfolgt, wird wissen dass dem nicht immer so war. Schließlich galten <strong>TOPS</strong> zunächst doch eher als spannendes Indie-Gitarren-Projekt, das dem Singer-Songwriterfeld eine völlig neue Note verlieh. Mit dem Eintritt von Marta Cikojevic als viertes festes Mitglied konnte sich Frontfrau Jane Penney im Songwritingprozess für das vierte Album jedoch endlich ihrer geliebten Flöte widmen und den charakteristischen Sound prägen der seit <em>I Feel Alive</em> so eng mit <strong>TOPS</strong> verbunden ist. 
