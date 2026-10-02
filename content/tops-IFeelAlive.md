@@ -23,7 +23,7 @@ Doch genug der Geschichte… Was gefällt uns an <strong>TOPS</strong> bzw. konk
 <div class="lyrics">
   <div class="strophe">
     <span class="verse">Conversation that I did not like;</span>
-    <span class="verse">Faces in the street I wish didn't recognize</span>
+    <span class="verse">Faces in the street I wish didn't recognize;</span>
     <span class="verse">I feel alive</span>
   </div>
   <span class="lyrics-title">- I Feel Alive</span>
@@ -38,8 +38,8 @@ Nun, es dreht sich wieder einmal alles um die Liebe, jedoch beobachten wir hier 
 <div class="lyrics">
   <div class="strophe">
     <span class="verse">Promise me we always be together;</span>
-    <span class="verse">We make sense in every type of weather</span>
-    <span class="verse">Take a dive, jump right in</span>
+    <span class="verse">We make sense in every type of weather;</span>
+    <span class="verse">Take a dive, jump right in;</span>
     <span class="verse">Even if you drown</span>
   </div>
   <span class="lyrics-title">- Direct Sunlight</span>
@@ -50,9 +50,9 @@ Nun, es dreht sich wieder einmal alles um die Liebe, jedoch beobachten wir hier 
 <div class="lyrics">
   <div class="strophe">
     <span class="verse">Slip into nostalgia;</span>
-    <span class="verse">Sweat dripping down your neck</span>
-    <span class="verse">Now you really want her</span>
-    <span class="verse">All the lovers that you just forget</span>
+    <span class="verse">Sweat dripping down your neck;</span>
+    <span class="verse">Now you really want her;</span>
+    <span class="verse">All the lovers that you just forget;</span>
     <span class="verse">What would you know?</span>
   </div>
   <span class="lyrics-title">- Colder & Closer</span>
@@ -63,8 +63,8 @@ Nun, es dreht sich wieder einmal alles um die Liebe, jedoch beobachten wir hier 
 <div class="lyrics">
   <div class="strophe">
     <span class="verse">My favorite ballads and sad movies;</span>
-    <span class="verse">Don't do nothing for me now</span>
-    <span class="verse">unfamiliar ending and sound</span>
+    <span class="verse">Don't do nothing for me now;</span>
+    <span class="verse">Unfamiliar ending and sound</span>
   </div>
   <span class="lyrics-title">- Ballads & Sad Movies</span>
 </div>
